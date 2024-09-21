@@ -1,0 +1,160 @@
+:root {
+    --paragraph-font: "Roboto", sans-serif;
+    --text-color: #000;
+    --accent1-color: #1D4D72;
+    --accent2-color: #000000;
+    --accent3-color: #F2F2F2;
+    --max-large-width: 50em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:grid;
+    grid-template-rows: auto auto 1fr auto;
+    background-color: var(--accent3-color);  
+    margin: 0 auto;
+   
+    /* height: 100vh; */
+    max-width: 90rem;
+}
+
+.container-header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 2rem;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: var(--accent3-color);
+    margin-left: 3rem;
+}
+
+.container-header-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+}
+
+nav a {
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: var(--accent3-color);
+    padding: 1rem;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color:gold
+}
+
+h2 {
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3, p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.container-main h2 {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+}
+
+.container-main hr {
+    margin-bottom: 1rem;
+}
+
+.card {
+    border-style: solid;
+    border-color: gray;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-top: 2rem;
+}
+.card h3 {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+}
+
+.card ul {
+    margin: 1rem  1rem;
+    list-style-type: none;
+}
+
+ul li {
+    font-family: var(--paragraph-font);
+    cursor: pointer;
+    padding: 0.25rem 0;
+
+}
+
+ul li:hover {
+    font-weight: 700;
+}
+
+.card p {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 2rem 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: var(--accent3-color);
+    padding: 1rem 1rem;
+}
+
+footer p:nth-child(2) {
+    font-size: 0.8rem;
+    color: gold;
+}
+
+/* Media Query for Larger Viewer */
+@media (min-width: 50em) {
+
+    .container-header-bottom {
+        display: flex;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+}
