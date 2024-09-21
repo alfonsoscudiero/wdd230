@@ -148,10 +148,11 @@ footer p:nth-child(2) {
 }
 
 /* Media Query for Larger Viewer */
-@media (min-width: 50em) {
+@media (min-width: 48em) {
 
     .container-header-bottom {
         display: flex;
+        flex-direction: row;
     }
 
     nav a {
