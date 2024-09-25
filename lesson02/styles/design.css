@@ -49,6 +49,7 @@ article p {
 }
 
 footer {
+	padding-top: 1rem;
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
@@ -56,9 +57,9 @@ footer {
 }
 
 div.banner {
-    border: 1px solid #bbb;
+    border: 1px solid #c0c0c0;
     padding: 1rem;
-    background-color: rgb(230, 243, 254);
+    background-color: #E6F3FE;
     font-weight: 700;
     word-break: break-word;
     text-align: center;
