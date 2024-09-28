@@ -1,0 +1,162 @@
+:root {
+    --paragraph-font: "Roboto", sans-serif;
+    --text-color: #000;
+    --accent1-color: #0D1F64;
+    --accent2-color: #003282;
+    --accent3-color: #BC1823;
+    --accent4-color: #EAEAEA;
+    --accent5-color: #F2F2F2F2;
+    --accent6-color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:grid;
+    grid-template-rows: auto auto 1fr auto;
+    background-color: var(--accent5-color);  
+    margin: 0 auto;
+    max-width: 90rem;
+}
+
+h1, h2, h3, nav a, p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.container-header-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+}
+
+.container-header-top img {
+    margin-left: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--accent6-color);
+    margin-left: 2rem;
+}
+
+#name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--accent5-color);
+    text-transform: uppercase;
+}
+
+.container-header-bottom {
+    background-color: var(--accent1-color);
+    max-width: 100%; /* Allow the container to take full width */
+    margin: 0 auto; /* Ensure it's centered */
+    border-top: 1px solid var(--accent6-color);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.nav-item a {
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--accent4-color);
+}
+
+.nav-item a:hover {
+    font-weight: 700;
+    color: var(--accent5-color);
+}
+
+h2 {
+    font-family: "Unna", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--accent1-color);
+}
+
+#location-year {
+    color: var(--accent3-color);
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.container-main h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.card-teams, .card-stadiums, .card-news {
+    border: 2px solid var(--accent4-color);
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the content stays within the rounded border */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+main h3 {
+    background-color: var(--accent2-color);
+    color: var(--accent5-color);
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.card-teams-content, .card-stadiums-content, .card-news-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem 0rem 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    text-align: center;
+    /* padding: 2rem 2rem; */
+    margin-top: 3rem;
+}
+
+footer p {
+    color: var(--accent4-color);
+    padding: 0.5rem 1rem;
+}
+
+footer p:nth-child(2) {
+    font-size: 0.8rem;
+    color: var(--accent5-color)
+}

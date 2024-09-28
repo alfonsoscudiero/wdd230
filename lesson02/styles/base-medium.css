@@ -1,0 +1,64 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .nav-item a {
+        font-size: 1rem;
+
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        /* grid-gap: 2rem; */
+    }
+
+    .container-main-title {
+        grid-column: span 2;
+    }
+
+    .card-teams {
+        grid-column: ;
+    }
+
+    .card h3 {
+        background-color: var(--accent1-color);
+        color: var(--accent5-color);
+        letter-spacing: 0.1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .card-teams-content img {
+        width: 250px;
+        height: 141px;
+    }
+    
+    .card-stadiums-content img{
+        width: 250px;
+        height: 115px;
+    } 
+    
+    .card-news-content img {
+        width: 250px;
+        height: 166px;
+    }
+}
