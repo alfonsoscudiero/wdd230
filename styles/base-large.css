@@ -6,7 +6,10 @@
     }
 
     nav ul li {
-        flex: 1 1 100%;
+        /* flex: 1 1 auto; Allow items to grow but not take up 100% width  */
+        width: auto; /* Let the width be based on the content */
+        flex-grow: 1; /* Allow the items to grow equally */
+        text-align: center; /* Center align the anchor links */
     }
 
     .container-main {
