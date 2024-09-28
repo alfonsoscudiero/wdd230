@@ -6,6 +6,6 @@ const pageLastModified = document.querySelector("#lastModified");
 currentCopyrightYear.textContent = new Date().getFullYear();
 pageLastModified.textContent = new Date().toLocaleString();
 
-console.log(currentCopyrightYear);
-console.log(pageLastModified);
+// console.log(currentCopyrightYear);
+// console.log(pageLastModified);
 

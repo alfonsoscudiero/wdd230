@@ -20,6 +20,12 @@ body {
     max-width: 67.5rem;
 }
 
+h1, h2, h3, nav a, p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
 .container-header-top {
     display: flex;
     justify-content: center;
@@ -79,15 +85,9 @@ h2 {
     text-align: center;
 }
 
-h3, p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
-
 main {
     width: 90%;
     margin: 0 auto;
-
 }
 
 .container-main {
@@ -100,10 +100,6 @@ main {
     margin-top: 2rem;
     font-size: 1.75rem;
 }
-
-/* .container-main hr {
-    margin-bottom: 1rem;
-} */
 
 .card {
     border-style: solid;
@@ -127,7 +123,6 @@ main {
 }
 
 ul li {
-    font-family: var(--paragraph-font);
     cursor: pointer;
     padding: 0.25rem 0;
 
