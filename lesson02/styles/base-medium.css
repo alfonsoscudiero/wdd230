@@ -30,10 +30,6 @@
         grid-column: span 2;
     }
 
-    .card-teams {
-        grid-column: ;
-    }
-
     .card h3 {
         background-color: var(--accent1-color);
         color: var(--accent5-color);
