@@ -1,11 +1,27 @@
 /* Media Query for Larger Viewer */
 @media (min-width: 48em) {
-    nav ul {
+
+    .container-header-top img {
+        width: 250px;
+        height: 239px;
+        transition: all ease-in-out 200ms;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    #navigation {
         display: flex;
         flex-direction: row;
     }
 
-    nav ul li {
+    .nav-item {
+        display: block;
+    }
+
+    #navigation li {
         /* flex: 1 1 auto; Allow items to grow but not take up 100% width  */
         width: auto; /* Let the width be based on the content */
         flex-grow: 1; /* Allow the items to grow equally */
@@ -14,10 +30,20 @@
 
     .container-main {
         display: grid;
-        grid-template-columns: 1fr 30%;
+        grid-template-columns: 65% 30%;
     }
 
     .container-main-title {
         grid-column: span 2;
     }
+
+    iframe {
+        grid-column: span 2;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
 }
