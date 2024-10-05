@@ -75,7 +75,7 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #C6B07E;
+  background-color: #808080;
 }
 .colors td{
   width: 25%;
@@ -220,7 +220,7 @@ span {
 }
 
 #site-name {
-  color: var(--accent2-color)
+  color: var(--secondary-color)
 }
 
 .primary,
