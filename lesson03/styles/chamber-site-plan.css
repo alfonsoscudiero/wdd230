@@ -211,7 +211,7 @@ main p {
   font-size: 1em;
 }
 
-#wireframe, #sitemap {
+#sitemap {
   display: none;
 }
 
@@ -237,5 +237,15 @@ span {
 
 .colored {
   padding: 1em;
+}
+
+#wireframe h3 {
+  text-align: left;
+}
+
+#wireframe img {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
