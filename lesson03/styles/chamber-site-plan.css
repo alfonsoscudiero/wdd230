@@ -1,0 +1,241 @@
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #012A5D; /*Berkeley Blue*/
+  --secondary-color: #013CA6; /*Egiptian Blue*/
+  --accent1-color: #DEE2E7; /*Platinum*/
+  --accent2-color: #DB9817; /*Harvest gold*/
+  --accent3-color: #88B03F; /*Apple Green*/
+
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Playfair Display", serif;
+  --paragraph-font: "Roboto", sans-serif;
+  --navigation-font: "Open Sans", sans-serif;
+  --footer-font: "Roboto", sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #000;  /* headlines on a white background */ 
+  --headline-color-on-color: #DB9817; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #000; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #fff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #013CA6;
+  --nav-link-color: #DEE2E7;
+  --nav-background-color: #012A5D;
+  --nav-hover-link-color: #012A5D;
+  --nav-hover-background-color: #DB9817;
+}
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 1rem;
+  text-align: center;
+}
+img {
+  display: block;
+  /* margin: 0 auto; */
+}
+h1 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--paragraph-font);
+    color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--secondary-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--primary-color);
+}
+header > h1, header > h2 {
+  color: var(--accent1-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #C6B07E;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: #FFF;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  font-family: var(--navigation-font);  
+  font-weight: 700;
+  letter-spacing: .2rem;
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  font-family: var(--navigation-font); 
+
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+
+/*My Styles*/
+main {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+main p {
+  padding: 0;
+  margin: 0;
+}
+.content, 
+/* .content h2, */
+.branding,
+/* .branding h2, */
+.style-guide
+ {
+  text-align: left;
+  font-family: var(--paragraph-font);
+}
+
+.style-guide nav a {
+  font-weight: 800;
+}
+
+.content li {
+  font-size: 1em;
+}
+
+#wireframe, #sitemap {
+  display: none;
+}
+
+span {
+  font-weight: 700;
+}
+
+#site-name {
+  color: var(--accent2-color)
+}
+
+.primary,
+.secondary {
+  color: var(--accent1-color);
+  font-weight: 700;
+}
+
+.accent1,
+.accent2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.colored {
+  padding: 1em;
+}
+
