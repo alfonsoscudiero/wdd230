@@ -1,0 +1,99 @@
+main {
+    width: 100%;
+    height: calc(80vh - 60px);
+    background-color: var(--site-color-01);
+    /* margin-top: 60px; */
+    background-image: url(../images/hero-image-host.png) , url(../images/hero-background.webp);
+    background-size: 70vh, cover;
+    background-repeat: no-repeat;
+    background-position: bottom right 40%, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+main .main-intro h1 {
+    margin-top: 0px;
+    font-size: 96px;
+    line-height: 106px;
+    font-weight: 800;
+}
+
+#subheading {
+    font-family: var(--navigation-font-family);
+    font-size: 32px;
+    color: #DB9817;
+    text-transform: uppercase;
+}
+
+main .main-intro p,
+main .main-quotes p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.main-intro-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+main a {
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    display: block;
+    border-radius: 10px;
+    background-color: #DB9817;
+    color: var(--site-color-01);
+    padding: 15px 25px;
+    width: fit-content;
+    transition: all ease-in-out 200ms;
+}
+
+main a:hover {
+    border: 3px solid #DB9817;
+    background-color: var(--site-color-01);
+    color: #DB9817;
+}
+
+main .main-intro p,
+main .main-quotes p {
+    color: #DEE2E7;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+main .main-intro p {
+    margin-bottom: 0;
+}
+
+main .main-quotes p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    border-left: 4px solid #DB9817;
+    padding-left: 10px;
+    margin: 40px 0;
+}
+
+main .main-quotes p:nth-child(2) {
+    margin: 100px;
+}
+
+main .main-intro {
+    position: relative;
+    right: 14vh;
+    padding-bottom: 10vh;
+}
+
+main .main-quotes {
+    position: relative;
+    left: 20vh;
+    padding-bottom: 5vh;
+}
