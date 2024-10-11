@@ -1,0 +1,31 @@
+/* Media Query for Medium Viewer */
+@media ( 480px <= width <= 778px ) {
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(75px, auto);
+        grid-gap: 10px;
+        align-items: center;
+        text-align: center; 
+    }
+
+    .hero-container {
+        grid-column: span 4;
+    }
+
+    .events-container {
+        grid-column: span 3;
+        grid-auto-rows: minmax(400px, auto);
+
+
+    }
+
+    .spotlights-container {
+        grid-column: span 4;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
