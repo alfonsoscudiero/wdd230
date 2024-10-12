@@ -1,5 +1,5 @@
 /* Media Query for Larger Viewer */
-@media ( 779px <= width ) {
+@media ( 781px <= width ) {
     .main-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -19,6 +19,65 @@
 
     .spotlights-container {
         grid-column: span 4;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer-sitemap {
+        padding-left: 10px;
+        border-left: 2px solid var(--site-color-04);
+    }
+   
+    .footer-image-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .footer-main-sm {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: -10px;
+    }
+    
+    .footer-main-sm-fb {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/footer-sm-fb-logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all ease-in-out 200ms;
+    }
+    
+    .footer-main-sm-in {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/footer-sm-in-logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all ease-in-out 200ms;
+    }
+    
+    .footer-main-sm-fb:hover,
+    .footer-main-sm-in:hover {
+        opacity: 0.4;;
+    } 
+    
+    #footer-address {
+        font-weight: 600;
+    }
+    
+    .footer-update-info {
+        padding: 40px 0 20px;
     }
 
     #menu {
