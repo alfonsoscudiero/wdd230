@@ -1,10 +1,11 @@
 /* Media Query for Larger Viewer */
-@media (min-width: 820px) {
+@media ( 541px <= width <= 819px) {
 
     .container-main {
         width: 95%;
         margin: 0 auto;
     }
+    
     .container-header-top img {
         width: 250px;
         height: 239px;
@@ -34,18 +35,21 @@
 
     .container-main {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 65% 30%;
     }
 
     .container-main-title {
-        grid-column: span 3;
+        grid-column: span 2;
     }
+
     iframe {
-        margin: 0 auto;
+        grid-column: span 2;
     }
 
     #menu {
         display: none;
     }
+
+
 
 }

@@ -7,75 +7,34 @@
 
     .header-main {
         display: flex;
-        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
     }
 
-    .header-main-logo {
-        width: fit-content;
-    }
-
-    header .nav {
-        max-width: 100%;
+    .header-main nav {
+        background-color: aqua;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header-main-nav {
-        width: fit-content;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 0;
-    }
-    .nav-item {
-        display: block;
-    }
-
-    header-main-nav a {
-        flex: 1 1 100%;
-
-    }
-
-    .header-main-nav a:hover,
-    .header-main-nav a:active {
-        color: var(--site-color-02);
-        text-decoration: overline;;
+        justify-content: center;
+        gap: 15px;
     }
 
     .header-main-sm {
-        width: fit-content;
-        height: 100%;
         display: flex;
-        align-items: center;
-        column-gap: 10px;
-        padding-right: 30px;
+        gap: 10px;
+        justify-content: flex-end;
     }
 
-    .header-main-sm-fb {
-        width: 20px;
-        height: 20px;
-        background-image: url(../images/fb-bw.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-    }
-    
-    .header-main-sm-fb:hover {
-        background-image: url(../images/fb-color.png);
-    }
-    
-    .header-main-sm-in {
-        width: 20px;
-        height: 20px;
-        background-image: url(../images/in-bw.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: none;
-    }
-    
-    .header-main-sm-in:hover {
-        background-image: url(../images/in-color.png);
-    }
+    .header-main .logo img {
+        width: 5000px; /* Ajustar tamaño del logo para el viewport mediano */
+      }
+
 
     .main-container {
         display: grid;
