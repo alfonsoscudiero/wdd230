@@ -32,7 +32,7 @@
         display: block;
     }
 
-    .nav-item:hover {
+    header .nav-item:hover {
         width: auto;
         background-color: var(--site-color-08);
     }
@@ -46,16 +46,14 @@
         transition: all ease-in-out 200ms;
     }
 
-    .nav-item a:hover,
-    .nav-item a:active {
-        color: var(--site-color-02);
+    header .nav-item a:hover {
+        color: var(--site-color-02) !important;
         text-decoration: underline;
         text-underline-offset: -25px;
         padding: 5px 0;
     }
 
     .header-main-sm {
-        /* background-color: red; */
         width: fit-content;
         height: 100%;
         display: flex;
@@ -125,6 +123,18 @@
     .footer-sitemap {
         padding-left: 10px;
         border-left: 2px solid var(--site-color-04);
+    }
+
+    .footer-sitemap a{
+        color: var(--site-color-03);
+        transition: all ease-in-out 100ms;
+        font-weight: 600;
+    }
+    
+    footer .footer-sitemap a:hover{
+        color: var(--site-color-04);
+        font-weight: 900;
+        text-decoration: none;
     }
    
     .footer-image-logo {
