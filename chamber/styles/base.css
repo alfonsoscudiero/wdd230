@@ -70,7 +70,7 @@ a {
     margin-top: 25px;
     right: 30px;
     font-size: 25px;
-    font-family: 700;
+    font-weight: 800;
     background-color: var(--site-color-08);
     color: var(--site-color-01);
     text-decoration: none;
