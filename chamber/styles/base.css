@@ -19,6 +19,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 1280px;
+    height: 100vh;
     background-color: var(--site-color-03);
 }
 
