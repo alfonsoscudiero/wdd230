@@ -1,5 +1,5 @@
 /* Media Query for Medium Viewer */
-@media ( 520px <= width <= 780px ) {
+@media ( 541px <= width <= 819px ) {
 
     #menu {
         display: none;
@@ -7,34 +7,90 @@
 
     .header-main {
         display: flex;
-        align-items: center;
+        width: 100%;
         justify-content: space-between;
     }
 
-    .header-main nav {
-        background-color: aqua;
+    .header-main-logo {
+        width: fit-content;
+    }
+
+    #navigation {
+        background-color: var(--site-color-08) !important;
+        align-self: center;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
     }
 
     .header-main-nav {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        display: block;
+    }
+
+    .nav-item:hover {
+        width: auto;
+        background-color: var(--site-color-08);
+
+    }
+
+    header .nav-item a {
+        padding: 10px;
+        font-size: 18px;
+        font-family: var(--navigation-font-family);
+        font-weight: 900;
+        color: var(--site-color-01);
+        transition: all ease-in-out 200ms;
+    }
+
+    .nav-item a:hover,
+    .nav-item a:active {
+        color: var(--site-color-02);
+        text-decoration: underline;
+        text-underline-offset: -20px;
+        padding: 5px 0;
     }
 
     .header-main-sm {
+        /* background-color: red; */
+        width: fit-content;
+        height: 100%;
         display: flex;
-        gap: 10px;
-        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+        align-self: center;
     }
 
-    .header-main .logo img {
-        width: 5000px; /* Ajustar tamaño del logo para el viewport mediano */
-      }
+    .header-main-sm-fb {
+        width: 15px;
+        height: 15px;
+        display: block;
+        background-image: url(../images/fb-bw.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+    .header-main-sm-fb:hover {
+        background-image: url(../images/fb-color.png);
+    }
+
+    .header-main-sm-in {
+        width: 15px;
+        height: 15px;
+        display: block;
+        background-image: url(../images/in-bw.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header-main-sm-in:hover {
+        background-image: url(../images/in-color.png);
+    }
 
     .main-container {
         display: grid;
@@ -50,12 +106,12 @@
     }
 
     .events-container {
-        grid-column: span 3;
+        grid-column: span 4;
         grid-row: 2 / 4;
     }
 
     .weather-container {
-        grid-column: 4/-1;
+        grid-column: 5 / -1;
         grid-row: 2 / 4;
     }
 

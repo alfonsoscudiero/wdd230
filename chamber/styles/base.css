@@ -55,21 +55,20 @@ a {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 18px;
-    color: var(--site-color-03);
+    color: var(--site-color-04);
     font-family: var(--navigation-font-family);
     font-weight: 800;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all ease-in-out 200ms;
 }
 
 #menu {
     display: block;
     position:absolute;
-    margin-top: 16px;
+    margin-top: 25px;
     right: 30px;
-    font-size: 2.5rem;
+    font-size: 25px;
     font-family: 700;
     background-color: var(--site-color-08);
     color: var(--site-color-01);
@@ -86,8 +85,9 @@ a {
 
 .header-main {
     width: 100%;
+    height: auto;
     background-color: var(--site-color-08);
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .header-main-logo img {
@@ -95,7 +95,7 @@ a {
     padding: 5px 0 0 20px;
 }
 
-nav {
+#navigation {
     background-color: var(--background-color);
     max-width: 100%;
     margin: 0 auto; /* Ensure it's centered */
@@ -112,7 +112,7 @@ nav {
 }
 
 .nav-item {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     display: none;
 }
 
@@ -120,10 +120,14 @@ nav {
     display: block; /* Show items when navigation is open */
 }
 
-.header-main-nav a:hover,
-.header-main-nav a:active {
-    color: var(--site-color-04);
-    text-decoration: underline overline;;
+.nav-item:hover {
+    background-color: #012A5D;
+    width: 100%;
+    text-align: center;
+}
+
+.header-main-nav .nav-item a:hover {
+    color: var(--site-color-03);
 }
 
 .header-main-sm {
@@ -166,7 +170,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -177,7 +181,8 @@ nav {
 .spotlights-container {
     padding: 40px 10px;
     background-color: var(--site-color-06);
-    border: 3px solid var(--site-color-04);
+    border: 3px solid var(--site-color-01);
+    border-radius: 10px;
 }
 
 .hero-container h1 {
@@ -193,6 +198,7 @@ nav {
     border: 2px solid var(--site-color-01);
     border-radius: 10px;
     background-color: var(--site-color-04);
+    font-weight: 900;
     color: var(--site-color-01);
     padding: 15px 25px;
     width: fit-content;
@@ -203,6 +209,13 @@ nav {
     border: 3px solid #DB9817;
     background-color: var(--site-color-01);
     color: #DB9817;    
+}
+
+.hero-container,
+.events-container,
+.weather-container,
+.spotlights-container {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);;
 }
 
 .footer-main {
@@ -225,16 +238,26 @@ nav {
 .footer-sitemap {
     margin: 0;
     padding: 0 0 0 20px;
+}
 
+.footer-sitemap a{
+    color: var(--site-color-03);
+    transition: all ease-in-out 100ms;
+    font-weight: 600;
+}
+
+.footer-sitemap a:hover{
+    color: var(--site-color-04);
+    font-weight: 900;
 }
 
 .footer-main .nav-item {
     display: block;
+    text-align: left;
+    background-color: var(--footer-background-color);
 }
 
-.footer-main .nav-item a:hover{
-    color: var(--site-color-04);
-}
+
 
 .footer-image-logo {
     display: none;
