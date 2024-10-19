@@ -1,18 +1,49 @@
 :root {
     font-size: 62.5%;
-    --background-color: #1e1e1e;
-    --footer-background-color: #141414;
+    /* --background-color: #1e1e1e;
+    --footer-background-color: #141414; */
     --navigation-font-family: "Raleway", system-ui;
     --body-text-font-family: "Montserrat", sans-serif;
     --headline-font-family: "Poppins", sans-serif;
-    --site-color-01: #012A5D;
+    /* --site-color-01: #012A5D;
     --site-color-02:#1877F2;
     --site-color-03: #E8E9EB;
     --site-color-04: #DB9817; 
     --site-color-05: #DEE2E7;
     --site-color-06: #FAFCFF;
     --site-color-07: #000000;
+    --site-color-08: #FFFFFF; */
+    --site-color-01: #122738;
+    --site-color-02:#FFFFFF;
+    --site-color-03: #E8E9EB;
+    --site-color-04: #DB9817; 
+    --site-color-05: #122738;
+    --site-color-06: #FFFFFF;
+    --site-color-07: #141414;
     --site-color-08: #FFFFFF;
+    --site-color-09: #000;
+    --site-color-10: #000;
+    --site-color-11: #122738;
+    -site-color-12: #fff;
+    -site-color-13: #1F4662;
+    --site-color-14: #1877F2;
+}
+
+.dark-mode {
+    --site-color-01: #E8E9EB;
+    --site-color-02: #FFFFFF;
+    --site-color-03: #122738;
+    --site-color-04: #DB9817; 
+    --site-color-05: #122738;
+    --site-color-06: #113D65;
+    --site-color-07: #141414;
+    --site-color-08: #1F4662;
+    --site-color-09: #79FFFF;
+    --site-color-10: #FFF;
+    --site-color-11: #E8E9EB;
+    -site-color-12:  #113D65;
+    -site-color-13: #1F4662;
+    --site-color-14: #DB9817;
 }
 
 body {
@@ -84,10 +115,29 @@ a {
     content: "X"; /* Change the content to an 'X' icon when the menu is open */;
 }
 
+#dark-mode-toggle {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+#dark-mode-toggle img {
+    width: 20px;
+    height: 22px;
+    background-color: #fff;
+    opacity: 70%;
+    border-radius: 50%;
+}
+
+
 .header-main {
     width: 100%;
     height: auto;
     background-color: var(--site-color-08);
+    position: relative;
     /* z-index: 1000; */
 }
 
@@ -97,7 +147,7 @@ a {
 }
 
 #navigation {
-    background-color: var(--background-color);
+    background-color: var(--site-color-07);
     max-width: 100%;
     margin: 0 auto; /* Ensure it's centered */
 }
@@ -138,32 +188,7 @@ a {
     align-items: center;
     column-gap: 10px;
     padding-right: 30px;
-}
-
-.header-main-sm-fb {
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/fb-bw.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: none;
-}
-
-.header-main-sm-fb:hover {
-    background-image: url(../images/fb-color.png);
-}
-
-.header-main-sm-in {
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/in-bw.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: none;
-}
-
-.header-main-sm-in:hover {
-    background-image: url(../images/in-color.png);
 }
 
 .main-container {
@@ -187,9 +212,15 @@ a {
 }
 
 .hero-container h1 {
-    /* text-align: left; */
+    color: var(--site-color-09);
     margin: 0 10px;
     margin-bottom: 20px;
+}
+.hero-container h2,
+.events-container h2,
+.weather-container h2,
+.spotlights-container h2 {
+    color: var(--site-color-09);
 }
 
 .main-cta a {
@@ -200,7 +231,7 @@ a {
     border-radius: 10px;
     background-color: var(--site-color-04);
     font-weight: 900;
-    color: var(--site-color-01);
+    color: var(--site-color-05);
     padding: 15px 25px;
     width: fit-content;
     transition: all ease-in-out 200ms;
@@ -208,7 +239,7 @@ a {
 
 .main-cta a:hover, .main-cta a:active {
     border: 3px solid #DB9817;
-    background-color: var(--site-color-01);
+    background-color: var(--site-color-05);
     color: #DB9817;    
 }
 
@@ -222,7 +253,7 @@ a {
 .footer-main {
     width: 100%;
     padding: 20px 0 0px;
-    background-color: var(--footer-background-color);
+    background-color: var(--site-color-07);
     margin: 0 auto;
     margin-top: 40px;
     
@@ -242,7 +273,7 @@ a {
 }
 
 .footer-sitemap a{
-    color: var(--site-color-03);
+    color: var(--site-color-02);
     transition: all ease-in-out 100ms;
     font-weight: 600;
 }
@@ -255,7 +286,7 @@ a {
 .footer-main .nav-item {
     display: block;
     text-align: left;
-    background-color: var(--footer-background-color);
+    background-color: var(--site-color-07);
 }
 
 .footer-image-logo {
@@ -264,6 +295,10 @@ a {
 
 .footer-contact-info {
     padding-left: 20px;
+}
+
+.footer-contact-info p {
+    color: var(--site-color-02);
 }
 
 #footer-address {
