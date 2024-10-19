@@ -157,28 +157,28 @@
     .footer-image-logo {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
     }
 
     .footer-image-logo img {
-        width: 150px;
+        width: 120px;
         height: auto;
     }
     
     .footer-main-sm {
-        width: fit-content;
-        height: 100%;
-        display: flex;
-        align-items: center;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2 , auto);
         justify-content: center;
-        column-gap: 10px;
-        margin-top: -10px;
+        column-gap: 20px;
+        /* margin-top: -10px; */
         /* display: none !important; */
     }
     
     .footer-main-sm-fb {
         width: 20px;
         height: 20px;
+        /* margin-right: 10px; */
         background-image: url(../images/footer-sm-fb-logo.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -188,6 +188,7 @@
     .footer-main-sm-in {
         width: 20px;
         height: 20px;
+        /* margin-left: 10px; */
         background-image: url(../images/footer-sm-in-logo.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -196,7 +197,7 @@
     
     .footer-main-sm-fb:hover,
     .footer-main-sm-in:hover {
-        opacity: 0.4;;
+        opacity: 0.2;
     } 
     
     #footer-address {
