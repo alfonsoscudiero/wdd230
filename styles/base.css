@@ -127,15 +127,16 @@ main {
 
 .hero-label {
     position: absolute;
-    top: 50px;
-    left: 10px;
+    top: 70px;
+    left: 20px;
     padding: 0.3rem;
 }
 
 .hero-label p {
     margin: 0;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
     font-family: var(--paragraph-font);
     color: var(--accent3-color);
 }
