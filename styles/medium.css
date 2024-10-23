@@ -6,10 +6,11 @@
         margin: 0 auto;
     }
     
-    .container-header-top img {
-        width: 250px;
-        height: 239px;
-        transition: all ease-in-out 200ms;
+    #portrait-photo {
+        width: 175px; /* Adjust the width of the image to its container */
+        height: auto; /* Automatically adjust the height based on the width to maintain the aspect ratio */
+        padding: 1.75rem;
+        border-radius: 50%;
     }
 
     h1 {

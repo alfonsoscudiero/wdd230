@@ -56,17 +56,18 @@ h1, h2, h3, nav a, p {
     background-color: var(--accent1-color);
 }
 
-.container-header-top img {
-    padding: 2rem;
-    width: 200px;
-    height: auto;
+#portrait-photo {
+    width: 150px; /* Adjust the width of the image to its container */
+    height: auto; /* Automatically adjust the height based on the width to maintain the aspect ratio */
+    padding: 1.5rem;
+    border-radius: 50%;
 }
 
 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--accent3-color);
     line-height: 2rem;
 }
@@ -114,21 +115,20 @@ main {
 }
 
 .container-main-hero {
-    margin: 0 auto;
+    margin: 1px auto;
     position: relative;
-    border: 1px solid rgba(0,0,0,.1);;
 }
 
 #hero-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* Adjust the width of the image to its container */
+    height: auto; /* Automatically adjust the height based on the width to maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container while keeping the aspect ratio */
 }
 
 .hero-label {
     position: absolute;
     top: 70px;
-    left: 20px;
+    left: 10px;
     padding: 0.3rem;
 }
 
@@ -136,7 +136,7 @@ main {
     margin: 0;
     font-weight: 700;
     font-size: 1rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.020rem;
     font-family: var(--paragraph-font);
     color: var(--accent3-color);
 }
