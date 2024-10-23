@@ -1,0 +1,156 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e;
+    font-size: 20px;
+    color: white;
+    line-height: 26px;
+}
+
+
+
+button:hover {
+    font-size: 1.1 em;
+    background-color: blue;
+    color: white;
+}
+
+button:active {
+    background-color: blueviolet;
+}
+
+a:link {
+    color: darkolivegreen;
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    margin-top: 1rem;
+}
+
+a:hover {
+    color:darkmagenta;
+    text-decoration: none;
+}
+
+
+#class li:first-child() {
+    font-size: 3rem;
+}
+
+#class li:last-child() {
+    font-size: 3rem;
+}
+
+#class li:first-of-type {
+    font-size: 2rem;
+}
+
+#class li:last-of-type{
+    font-size: 2rem;
+}
+
+#class li:nth-child(3n+1) {
+    background-color: rgb(126, 28, 28);
+}
+
+#greeting li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#greeting li:not(:hover) {
+    color: orange;
+    text-decoration: line-through;
+} 
+
+.not-pseudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.not-pseudo button {
+    background-color: rgb(14, 14, 170);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: .5rem 2.2rem;
+    border-radius: 1000px;
+} 
+
+.not-pseudo button:not(:first-child) {
+    background-color: rgb(230, 36, 36);
+}
+
+/* Pseudo-elements */
+/* p::first-letter {
+    font-size: 60px;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+/* p::first-line {
+    background-color: rgb(8, 95, 8);
+} */
+
+/* p::selection {
+    color: #1e1e1e;
+    background-color: #f2f2f2;
+} */
+
+/* #code li::marker, #programming li::marker {
+    color: coral;
+} */
+
+.before-after {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    /* border: 1px solid white; */
+}
+
+p::before {
+    content: "hello ";
+    background: red;
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+    text-align: left;
+    /* display: block; */
+    /* position: absolute; */
+    /* width: 10px;
+    height: 10px; */
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+p::after {
+    content: "goodbye 👌";
+    background: red;
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+    text-align: left;
+    /* display: block; */
+    /* position: absolute; */
+    /* width: 10px;
+    height: 10px; */
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+li::before {
+    content: "😬";
+}
+
+#programming li::before {
+    content: "😥";
+}
+
+#js::after {
+    content: " 👈";
+}
