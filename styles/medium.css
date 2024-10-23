@@ -13,7 +13,7 @@
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 3.5rem;
     }
 
@@ -36,6 +36,23 @@
     .container-main {
         display: grid;
         grid-template-columns: 65% 30%;
+    }
+
+    .container-main-hero {
+        grid-column: span 2;
+    }
+
+    .hero-label {
+        top: 60px;
+        left: 20px;
+        padding: 0.5rem;
+    }
+    
+    .hero-label p {
+        padding: 0.2rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        color: var(--accent3-color);
     }
 
     .container-main-title {

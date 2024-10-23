@@ -25,6 +25,11 @@
         display: block;
     }
 
+    .nav-item {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
     #navigation li {
         /* flex: 1 1 auto; Allow items to grow but not take up 100% width  */
         width: auto; /* Let the width be based on the content */
@@ -35,6 +40,23 @@
     .container-main {
         display: grid;
         grid-template-columns: 33% 33% 33%;
+    }
+
+    .container-main-hero {
+        grid-column: span 3;
+    }
+
+    .hero-label {
+        top: 100px;
+        left: 20px;
+        padding: 0.75rem;
+    }
+    
+    .hero-label p {
+        padding: 0.5rem;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: var(--accent3-color);
     }
 
     .container-main-title {

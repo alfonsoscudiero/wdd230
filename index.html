@@ -34,7 +34,7 @@
     <header class="container-header">
         <a id="menu" href="#" title="Hamburger menu"></a>
         <div class="container-header-top">
-            <img src="./images/Alfonso-Pict.jpg" alt="Portrait of Alfonso Scudiero" width="250" height="239" loading="lazy">
+            <img src="images/Alfonso-Pict.webp" alt="Portrait of Alfonso Scudiero" width="250" height="239" loading="lazy">
             <h1>Alfonso Donato<br>Scudiero Salazar</h1>
         </div>
         <nav>
@@ -49,6 +49,16 @@
     </header>
 
     <main class="container-main">
+        <div class="container-main-hero">
+            <picture>
+                <source media = "(max-width = 540px)" srcset="images/hero-image-small.jpg" width="540" height="498">
+                <source media = "(max-width = 820px)" srcset="images/hero-image-medium.jpg" width="820" height="725" >
+                <img src="images/hero-image-large.jpg" id="hero-image"  alt="Payson Utah Temple at night" title="Payson Utah Temple" width="1280" height="800">
+            </picture>
+            <div class="hero-label">
+                <p>Payson Utah Temple</p>
+            </div>
+        </div>
         <div class="container-main-title">
             <h2>WDD 230: Web Frontend Development</h2>
             <hr id="breakLine">

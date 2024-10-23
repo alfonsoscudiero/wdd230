@@ -18,6 +18,10 @@ body {
     max-width: 1440px;
 }
 
+header {
+    max-width: 100%;;
+}
+
 h1, h2, h3, nav a, p {
     font-family: var(--paragraph-font);
     color: var(--text-color);
@@ -30,8 +34,8 @@ h1, h2, h3, nav a, p {
     margin-top: 2rem;
     right: 1rem;
     font-family: var(--paragraph-font);
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 400;
     text-decoration: none;
     background-color: var(--accent1-color);
     color: #e1e1e1;
@@ -102,6 +106,38 @@ nav {
 #navigation a:hover {
     font-weight: 700;
     color:gold;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.container-main-hero {
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);;
+}
+
+#hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-label {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    padding: 0.3rem;
+}
+
+.hero-label p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: var(--paragraph-font);
+    color: var(--accent3-color);
 }
 
 h2 {
