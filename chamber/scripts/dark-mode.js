@@ -2,7 +2,7 @@
 const darkModeToggle = document.querySelector("#dark-mode-button");
 const logoImg = document.querySelector('#logo-img');
 
-// Function to toggle dark mode and update loogo
+// Function to toggle dark mode and update logo
 const toggleDarkMode = () => {
     // Check if dark mode is enabled
     // if it is enabled, turn it off

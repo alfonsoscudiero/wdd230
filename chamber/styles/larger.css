@@ -113,13 +113,13 @@
 
 
     .hero-container h1 {
-        font-size: 3rem;
+        font-size: 3.2rem;
         line-height: 3.2rem;
         top: 25%;
     }
 
     #subheading {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     
     .main-cta a {
@@ -134,6 +134,23 @@
 
     .weather-container {
         grid-column: span 2;
+    }
+
+    .weather-container h2 {
+        margin: 10px 0 20px 0;
+        font-size: 2.25rem;
+    }
+    
+    .weather-container .data-title {
+        font-family: var(--headline-font-family);
+        font-weight: 600;
+        font-size: 1.75rem;
+    }
+    
+    .weather-container .data-value {
+        font-family: var(--body-text-font-family);
+        font-weight: 400;
+        font-size: 1.75rem;
     }
 
     .spotlights-container {

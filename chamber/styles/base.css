@@ -41,7 +41,7 @@
     --site-color-09: #79FFFF;
     --site-color-10: #FFF;
     --site-color-11: #E8E9EB;
-    -site-color-12:  #113D65;
+    --site-color-12:  #113D65;
     -site-color-13: #1F4662;
     --site-color-14: #DB9817;
 }
@@ -267,8 +267,6 @@ a {
     color: var(--site-color-09);
 }
 
-
-
 .main-cta a:hover, .main-cta a:active {
     border: 3px solid #DB9817;
     background-color: var(--site-color-05);
@@ -279,8 +277,56 @@ a {
 .events-container,
 .weather-container,
 .spotlights-container {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 85%;
+    margin: 0 auto;
 }
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 10px 20px 10px;
+    margin: 0 auto;
+}
+
+.weather-container h2 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color: var(--site-color-09);
+
+}
+
+.weather-container .data-title {
+    font-family: var(--headline-font-family);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--site-color-01);
+
+}
+
+.weather-container .data-value {
+    font-family: var(--body-text-font-family);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--site-color-01);
+}
+
+.data-table {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1.75rem;
+    row-gap: 0.5rem;
+}
+
+.data-table .date-title {
+    font-family: var(--headline-font-family);
+    font-weight: bold !important;
+    font-size: 1.2rem;
+}
+
+
 
 .footer-main {
     width: 100%;

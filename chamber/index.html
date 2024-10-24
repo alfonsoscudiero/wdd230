@@ -23,6 +23,7 @@
      <!--External scripts-->
      <script src="scripts/script.js" defer></script>
      <script src="scripts/dark-mode.js" defer></script>
+     <script src="scripts/windchill.js" defer></script>
     <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,9 +77,16 @@
         </section>
 
         <section class="weather-container">
-            <div>
-                <h2>Weather</h2>
-            </div>
+            <h2>Weather</h2>
+            <div class="data-table">
+                <span class="data-title">Temperature (°F):</span>
+                <span class="data-value" id="current-temperature">50</span>
+                <span class="data-title">Conditions:</span>
+                <span class="data-value">Sunny</span>
+                <span class="data-title">Wind (mph):</span>
+                <span class="data-value" id="wind-speed">4</span>
+                <span class="data-title">Wind Chill (°F):</span>
+                <span class="data-value" id="wind-chill-value" aria-label="The wind chill factor is a calculated value that represents how cold it feels based on temperature and wind speed."></span>
         </section>
 
         <section class="spotlights-container">
