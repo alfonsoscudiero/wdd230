@@ -105,7 +105,7 @@
     .main-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 2fr 0.5fr 0.5fr 1fr ;
+        grid-template-rows: 2fr 0.5fr 0.5fr 1fr;
         grid-gap: 10px;
         align-items: center;
         text-align: center; 
@@ -113,6 +113,22 @@
 
     .hero-container {
         grid-column: span 6;
+    }
+
+    .hero-container h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        top: 27%;
+    }
+
+    #subheading {
+        font-size: 1.5rem;
+    }
+    
+    .main-cta a {
+        top: 55%;
+        font-size: 1.2rem;
+        padding: 5px 10px;
     }
 
     .events-container {

@@ -8,19 +8,13 @@
     <meta name="description" content="WDD 230 - Web Frontend Development - Alfonso Scudiero - The Utah County Chamber of Commerce supports local businesses through networking, resources, and community engagement.">
     <!-- Meta Author -->
     <meta name="author" content="Alfonso Scudiero">
-    <!--Meta Tags for Social Media-->
-	<meta property="og:url" content="https://alfonsoscudiero.github.io/wdd230/chamber/index.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Utah County Chamber of Commerce | Supporting Local Business Growth">
-    <meta property="og:description" content="WDD 230 - Web Frontend Development - Alfonso Scudiero - The Utah County Chamber of Commerce supports local businesses through networking, resources, and community engagement.">
-    <meta property="og:image" content="https://ibb.co/3kTfVGn">  
-    <!-- <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/d7d876ad-1de9-49ba-a955-5f77be73111a.jpg?token=f0CvkqGcpslId3rVKbiK4wNGM6xmBWIrYMN4e_Yab_I&height=715&width=1080&expires=33264786840"> -->
     <!--  Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!--Embed Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100;400;500;600;700;800&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <!--Meta Tags for Social Media-->
+    <meta property="og:title" content="Utah County Chamber of Commerce | Supporting Local Business Growth">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ibb.co/3kTfVGn">  
+	<meta property="og:url" content="https://alfonsoscudiero.github.io/wdd230/chamber/index.html">
     <!-- External styles -->
      <link rel="stylesheet" href="styles/normalize.css">
      <link rel="stylesheet" href="styles/base.css">
@@ -29,13 +23,18 @@
      <!--External scripts-->
      <script src="scripts/script.js" defer></script>
      <script src="scripts/dark-mode.js" defer></script>
+    <!--Embed Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100;400;500;600;700;800&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body class="body-container">
 
     <header class="header-main">
         <a id="menu" href="#" title="Hamburger menu"></a>
         <div class="header-main-logo">
-            <img src="images/nav-main-logo.png" id="logo-img" alt="Utah County Chamber of Commerce Logo" width="80" height="40">
+            <img src="images/nav-main-logo.webp" id="logo-img" alt="Utah County Chamber of Commerce Logo" width="80" height="40">
         </div>
         <nav id="navigation">
             <ul class="header-main-nav" >
@@ -57,7 +56,12 @@
 
     <main class="main-container">
         <section class="hero-container">
-            <div>
+            <div class="hero-container-img">
+                <picture>
+                    <source media="(max-width: 540px)" srcset="images/hero-chamber-small.webp">
+                    <source media="(max-width: 819px)" srcset="images/hero-chamber-medium.webp">
+                    <img src="images/hero-chamber-large.webp" id="hero-img" alt="Team having a business meeting" title="Utah County Chamber of Commerce" width="1680" height="1120">
+                </picture>
                 <h1>UTAH<br>COUNTY<br><span id="subheading">Chamber of Commerce</span><br></h1>
                 <div class="main-cta">
                     <a href="#">Join Us</a>
@@ -96,7 +100,7 @@
                 </div>
 
                 <div class="footer-image-logo">
-                    <img src="images/footer-logo.png" alt="Utah County Chamber of Commerce Logo" width="200" height="150" loading="lazy">
+                    <img src="images/footer-logo.webp" alt="Utah County Chamber of Commerce Logo" width="200" height="150" loading="lazy">
                     <div class="footer-main-sm">
                         <a href="https://www.facebook.com" target="_blank" aria-label="Follow us on Facebook"><div class="footer-main-sm-fb"></div></a>
                         <a href="https://www.instagram.com" target="_blank" aria-label="Follow us on Instagram"><div class="footer-main-sm-in"></div></a>

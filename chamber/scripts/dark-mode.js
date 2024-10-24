@@ -11,9 +11,9 @@ const toggleDarkMode = () => {
 
     // Change the logo image based on the dark mode
     if(document.body.classList.contains('dark-mode')) {
-        logoImg.src = "images/dark-theme-icon/main-logo-dark.png"; // Change to dark logo
+        logoImg.src = "images/footer-logo.webp"; // Change to dark logo
     } else {
-        logoImg.src = "images/nav-main-logo.png"; //Revert to light logo
+        logoImg.src = "images/nav-main-logo.webp"; //Revert to light logo
     }
 };
 

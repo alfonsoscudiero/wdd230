@@ -111,6 +111,23 @@
         grid-column: span 6;
     }
 
+
+    .hero-container h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        top: 25%;
+    }
+
+    #subheading {
+        font-size: 1.75rem;
+    }
+    
+    .main-cta a {
+        top: 45%;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
     .events-container {
         grid-column: span 2;
     }

@@ -64,8 +64,8 @@ body::after {
 }
 
 h1 {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 18px;
     color: var(--site-color-07);
     font-family: var(--headline-font-family);
     font-weight: 800;
@@ -198,10 +198,10 @@ a {
     gap: 10px;
     max-width: 95%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 1px;
 }
 
-.hero-container,
+/* .hero-container, */
 .events-container,
 .weather-container,
 .spotlights-container {
@@ -211,19 +211,42 @@ a {
     border-radius: 10px;
 }
 
+.hero-container {
+    margin: 0 auto ;
+}
+
+.hero-container-img {
+    position: relative;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .hero-container h1 {
     color: var(--site-color-09);
-    margin: 0 10px;
-    margin-bottom: 20px;
+    text-align: right;
+    color: #012A5D;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    background: #f2f2f2a1;
+    margin: 0;
 }
-.hero-container h2,
-.events-container h2,
-.weather-container h2,
-.spotlights-container h2 {
-    color: var(--site-color-09);
+
+#subheading {
+    margin: 0;
+    font-size: 1rem;
+    color: #1F4662
 }
 
 .main-cta a {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 45%;
+    right: 5%;
     margin: 0 auto;
     display: block;
     text-align: center; 
@@ -232,10 +255,19 @@ a {
     background-color: var(--site-color-04);
     font-weight: 900;
     color: var(--site-color-05);
-    padding: 15px 25px;
+    padding: 2px 5px;
     width: fit-content;
     transition: all ease-in-out 200ms;
 }
+
+.hero-container h2,
+.events-container h2,
+.weather-container h2,
+.spotlights-container h2 {
+    color: var(--site-color-09);
+}
+
+
 
 .main-cta a:hover, .main-cta a:active {
     border: 3px solid #DB9817;
@@ -243,7 +275,7 @@ a {
     color: #DB9817;    
 }
 
-.hero-container,
+/* .hero-container, */
 .events-container,
 .weather-container,
 .spotlights-container {
