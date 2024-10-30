@@ -7,8 +7,6 @@ body {
     line-height: 26px;
 }
 
-
-
 button:hover {
     font-size: 1.1 em;
     background-color: blue;
@@ -33,11 +31,11 @@ a:hover {
 }
 
 
-#class li:first-child() {
+#class li:first-child {
     font-size: 3rem;
 }
 
-#class li:last-child() {
+#class li:last-child {
     font-size: 3rem;
 }
 
@@ -53,6 +51,8 @@ a:hover {
     background-color: rgb(126, 28, 28);
 }
 
+
+/* :not pseudo-class */
 #greeting li {
     list-style: none;
     text-transform: uppercase;
@@ -62,6 +62,8 @@ a:hover {
     color: orange;
     text-decoration: line-through;
 } 
+
+
 
 .not-pseudo {
     display: flex;
@@ -83,24 +85,24 @@ a:hover {
 }
 
 /* Pseudo-elements */
-/* p::first-letter {
+p::first-letter {
     font-size: 60px;
     font-style: italic;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} */
+}
 
-/* p::first-line {
+p::first-line {
     background-color: rgb(8, 95, 8);
-} */
+}
 
-/* p::selection {
+p::selection {
     color: #1e1e1e;
     background-color: #f2f2f2;
-} */
+}
 
-/* #code li::marker, #programming li::marker {
+#code li::marker, #programming li::marker {
     color: coral;
-} */
+}
 
 .before-after {
     font-size: 3rem;
