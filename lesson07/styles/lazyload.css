@@ -17,11 +17,12 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 1.5em;
+    row-gap: 2em;
     max-width: 95%;
 }
 
-.main-container {
+.main-container p{
+    font-size: 1.2em;
     line-height: 1.5em;
 }
 
@@ -38,6 +39,10 @@ img {
     100% {
         opacity: 1;
     }
+}
+
+footer {
+    margin-top: 3em;
 }
 
 footer p{
