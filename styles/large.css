@@ -69,10 +69,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: 2em;
-        margin-top: 3em;
+        padding: 10px 10px 20px 10px;
+        /* row-gap: 1.2em; */
+        margin: .5em 0;
     }
-   
+  
     iframe {
         margin: 0 auto;
     }
