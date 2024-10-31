@@ -6,10 +6,10 @@ const visitDisplay = document.querySelector('.num-visits');
 let numVisits = Number(window.localStorage.getItem('numVisitsKey')) || 0;
 
 // Determine if this is the first visit or display the number of visits.
-if (numVisits == 0) {
-    visitDisplay.textContent = 'This is your first visit. 🎉Welcome!🎉';
-} else {
+if (numVisits !== 0) {
     visitDisplay.textContent = numVisits;
+} else {
+    visitDisplay.textContent = 'This is your first visit. 🎉Welcome!🎉';
 }
 
 // Increment the number of visits by one
