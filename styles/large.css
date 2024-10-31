@@ -63,6 +63,16 @@
     .container-main-title {
         grid-column: span 3;
     }
+
+    .weather-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2em;
+        margin-top: 3em;
+    }
+   
     iframe {
         margin: 0 auto;
     }
