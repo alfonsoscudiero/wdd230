@@ -16,4 +16,5 @@ if (numVisits !== 0) {
 numVisits++;
 
 // Store the new visit total into localStorage, key=numVisitsKey
-localStorage.setItem('numVisitsKey', 'numVisits');
+localStorage.setItem('numVisitsKey', numVisits);
+// The second argument (value) should be without quotes to store the actual number
