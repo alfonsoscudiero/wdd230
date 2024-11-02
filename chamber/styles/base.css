@@ -450,12 +450,13 @@ a {
     margin-bottom: 3.5em;
 }
 
-.main-cards-events figure {
+.main-cards-events figure img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-figure figcaption {
+.main-cards-events figure figcaption {
     text-align: left;
     background-color: var(--site-color-07);
     color: var(--site-color-02);
