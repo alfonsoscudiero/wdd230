@@ -24,6 +24,7 @@
      <script src="scripts/script.js" defer></script>
      <script src="scripts/dark-mode.js" defer></script>
      <script src="scripts/windchill.js" defer></script>
+     <script src="scripts/visit-date.js" defer></script>
     <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,32 +46,29 @@
                 <li class="nav-item"><a href="#">Join</a></li>
             </ul>
         </nav>
-        <!-- <div class="header-main-sm">
-            <a href="https://www.facebook.com" target="_blank" aria-label="Follow us on Facebook"><div class="header-main-sm-fb"></div></a>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Follow us on Instagram"><div class="header-main-sm-in"></div></a>
-        </div> -->
         <div id="dark-mode-toggle">
             <img src="images/dark-theme-icon/dark-theme-svgrepo-com.svg" id="dark-mode-button" alt="Dark mode button" width="20" height="05">
         </div>
 
     </header>
 
-    <main class="main-container">
-        <section class="hero-container">
-            <div class="hero-container-img">
+    <main class="main-container-discover">
+        <section class="hero-container-discover">
+            <div class="hero-container-discover-img">
                 <picture>
                     <source media="(max-width: 540px)" srcset="images/hero-discover-small.webp">
                     <source media="(max-width: 819px))" srcset="images/hero-discover-medium.webp">
                     <img src="images/discover/hero-discover-large.webp" id="hero-img" alt="Mural in Downtown Provo Painted by Dallas Clayton" width="1582" height="546">
                 </picture>
             </div>
-            <!-- <h1 id="discover-title">Events <br>&<br>Workshops</h1> -->
+            <h1 class="hero-container-discover-h1">Events <br>&<br>Workshops</h1>
         </section>
 
+        <h2><span id="latest-visit"></span></h2>
         <section class="main-cards">
             <div class="main-cards-events pumpkin-fest">
                 <figure>
-                    <img src="images/discover/fall-fair.webp" alt="" width="350" height="209">
+                    <img src="images/discover/fall-fair.webp" alt="Ferris wheel and other attractions" width="350" height="209" loading="lazy">
                     <figcaption>Ferris wheel and other attractions</figcaption>
                 </figure>
                 <div class="main-cards-events-info">
@@ -81,9 +79,9 @@
                 </div>
             </div>
 
-            <div class="main-cards-events">
+            <div class="main-cards-events dia-muertos">
                 <figure>
-                    <img src="images/discover/dia-de-los-muertos.webp" alt="" width="350" height="209">
+                    <img src="images/discover/dia-de-los-muertos.webp" alt="Have your face painted, make colorful flower crowns" width="350" height="209" loading="lazy">
                     <figcaption>Have your face painted, make colorful flower crowns</figcaption>
                 </figure>
                 <div class="main-cards-events-info">
@@ -94,9 +92,9 @@
                 </div>
             </div>
 
-            <div class="main-cards-events">
+            <div class="main-cards-events sourdough-bread">
                 <figure>
-                    <img src="images/discover/sourdough.webp" alt="" width="350" height="209">
+                    <img src="images/discover/sourdough.webp" alt="Learn how to make Traditional Dutch Oven Sourdough Bread" width="350" height="209" loading="lazy">
                     <figcaption>Learn how to make Traditional Dutch Oven Sourdough Bread</figcaption>
                 </figure>
                 <div class="main-cards-events-info">
@@ -107,9 +105,9 @@
                 </div>
             </div>
 
-            <div class="main-cards-events">
+            <div class="main-cards-events lighting-on">
                 <figure>
-                    <img src="images/discover/annual-lighting-event.webp" alt="" width="350" height="209">
+                    <img src="images/discover/annual-lighting-event.webp" alt="We light over 1.5 million lights to welcome the holiday season" width="350" height="209" loading="lazy">
                     <figcaption>We light over 1.5 million lights to welcome the holiday season</figcaption>
                 </figure>
                 <div class="main-cards-events-info">
@@ -120,9 +118,9 @@
                 </div>
             </div>
 
-            <div class="main-cards-events">
+            <div class="main-cards-events turkey-race">
                 <figure>
-                    <img src="images/discover/turkey-trot.webp" alt="" width="350" height="209">
+                    <img src="images/discover/turkey-trot.webp" alt="Lace up and Strut your Stuffing at the Lindon 5K Turkey Trot" width="350" height="209" loading="lazy">
                     <figcaption>Lace up and Strut your Stuffing at the Lindon 5K Turkey Trot</figcaption>
                 </figure>
                 <div class="main-cards-events-info">
@@ -133,9 +131,9 @@
                 </div>
             </div>
 
-            <div class="main-cards-events">
+            <div class="main-cards-events fall-concert">
                 <figure>
-                    <img src="images/discover/ensemble fall-concert.webp" alt="" width="350" height="209">
+                    <img src="images/discover/ensemble fall-concert.webp" alt="The Utah Ensemble and choir sing spiritually based music" width="350" height="209" loading="lazy">
                     <figcaption>The Utah Ensemble and choir sing spiritually based music</figcaption>
                 </figure>
                 <div class="main-cards-events-info">
@@ -146,9 +144,9 @@
                 </div>
             </div>
 
-            <div class="main-cards-events">
+            <div class="main-cards-events chocolate-cheese">
                 <figure>
-                    <img src="images/discover/chocolate-cheese-testing.webp" alt="" width="350" height="209">
+                    <img src="images/discover/chocolate-cheese-testing.webp" alt="These Tastings will include a selection of fine chocolate and cheese" width="350" height="209" loading="lazy">
                     <figcaption>These Tastings will include a selection of fine chocolate and cheese</figcaption>
                 </figure>
                 <div class="main-cards-events-info">

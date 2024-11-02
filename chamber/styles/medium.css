@@ -1,6 +1,11 @@
 /* Media Query for Medium Viewer */
 @media ( 541px <= width <= 819px ) {
 
+    body {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
     #menu {
         display: none;
     }
@@ -13,13 +18,14 @@
     
     #dark-mode-toggle img {
         width: 20px;
-        height: 25px;
+        height: 26px;
     }
 
     .header-main {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header-main-logo {
@@ -246,6 +252,22 @@
     .footer-update-info {
         padding: 40px 0 20px;
     }
+
+     /* Discover Site */
+     .hero-container-discover h1 {
+        font-size: 4em;
+    }
+
+    .main-cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        /* margin: 0 auto; */
+        /* padding: 0 10px; */
+        width: 100%;
+    }
+
+
 
 
 }

@@ -52,7 +52,6 @@
 }
 
 body {
-    margin: 0 auto;
     padding: 0;
     max-width: 1280px;
     height: 100vh;
@@ -67,6 +66,7 @@ body::after {
     z-index: -1;
     content: url(../images/fb-color.png) url(../images/in-color.png);
 }
+
 
 h1 {
     font-size: 20px;
@@ -125,8 +125,8 @@ a {
     height: 20px;
     align-self: center;
     position: absolute;
-    top: 18px;
-    right: 5px;
+    top: 20px;
+    right: 18px;
 }
 
 #dark-mode-toggle img {
@@ -137,14 +137,14 @@ a {
     border-radius: 50%;
 }
 
-
 .header-main {
     width: 100%;
     height: auto;
     background-color: var(--site-color-08);
     position: relative;
-    /* z-index: 1000; */
 }
+
+
 
 .header-main-logo img {
     height: auto;
@@ -400,10 +400,50 @@ a {
 
 /* Discover Site */
 
+.main-container-discover {
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    /* padding: 20px; */
+}
+
+.hero-container-discover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.hero-container-discover h1 {
+    font-size: 3em;
+    line-height: 1em;
+    background: #f2f2f2a1;
+    position: absolute;
+    /* padding: 1em; */
+}
+
+.main-container-discover h2,
+#latest-visit {
+    margin-bottom: 20px !important;
+    text-align: center;
+    color: var(--site-color-10)
+}
+
+.main-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
 .main-cards-events {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: center;
     justify-content: center;
     margin: 0 auto;
     gap: 1em;
