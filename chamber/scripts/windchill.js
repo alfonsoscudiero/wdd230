@@ -3,21 +3,24 @@
 // Without it, I would only have a reference to the element itself, not the data it contains.
 // parseFloat() is a method used to convert strings into floating-point numbers
 
-document.addEventListener('DOMContentLoaded', () => { //event to ensure it runs only after the DOM is fully loaded
-    let temperature = parseFloat(document.querySelector('#current-temperature').textContent); // Extracting the Temperature Value  
-    let windSpeed = parseFloat(document.querySelector('#wind-speed').textContent);
-
-    // Function to calculate Wind Chill - takes temperature and windSpeed as input
-    function calculateWindChill(temperature, windSpeed) {
-        if (temperature <= 50 && windSpeed > 3) {
-            // Define the variable windChill and the formula to calculate the value
-            let windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
-            // .toFixed(1) method converts the windChill value to a string, rounding it to 1 decimal place
-            document.querySelector('#wind-chill-value').textContent = windChill.toFixed(1); // .textContent set the new text content for the element
-        } else {
-            document.querySelector('#wind-chill-value').textContent = "N/A";
-        }
+function calculateWindChill(temperature, windSpeed) {
+    if (temperature <= 50 && windSpeed > 3) {
+        // Define the variable windChill and the formula to calculate the value
+        let windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+        // .toFixed(1) method converts the windChill value to a string, rounding it to 1 decimal place
+        document.querySelector('#wind-chill-value').textContent = windChill.toFixed(1); // .textContent set the new text content for the element
+    } else {
+        document.querySelector('#wind-chill-value').textContent = "N/A";
     }
+}
+
+document.addEventListener('DOMContentLoaded', () => { // Event to ensure it runs only after the DOM is fully loaded
+    // Extracting the Temperature Value
+    let temperature = parseFloat(document.querySelector('#current-temperature').textContent);
+    let windSpeed = parseFloat(document.querySelector('#wind-speed').textContent);
+    
+    // Call the function with actual values of temperature and wind speed extracted from the DOM elements
+    calculateWindChill(temperature, windSpeed);
 });
 
 // Callback function runs after the page has finished loading
@@ -26,7 +29,7 @@ window.onload = () => {
     // Extract the temperature and wind speed to guarantee that the latest values are used
     let temperature = parseFloat(document.querySelector('#current-temperature').textContent);
     let windSpeed = parseFloat(document.querySelector('#wind-speed').textContent);
-
+    
     // Call the function with actual values of temperature and wind speed extracted from the DOM elements
     calculateWindChill(temperature, windSpeed);
 };
