@@ -101,10 +101,11 @@
     .main-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: minmax(100px, auto);
+        grid-auto-rows: repeat(6, auto);
         grid-gap: 15px;
-        align-items: center;
-        text-align: center; 
+        /* align-items: center;
+        text-align: center;  */
+        width: 100%;
     }
 
     .hero-container {
@@ -115,7 +116,7 @@
     .hero-container h1 {
         font-size: 3.2rem;
         line-height: 3.2rem;
-        top: 25%;
+        top: 50%;
     }
 
     #subheading {
@@ -123,7 +124,7 @@
     }
     
     .main-cta a {
-        top: 45%;
+        top: 75%;
         font-size: 1.5rem;
         padding: 10px 20px;
     }
@@ -192,6 +193,10 @@
         width: 150px;
         height: auto;
     }
+
+    .footer-contact-info p {
+        font-size: 1.5em;
+    }
     
     .footer-main-sm {
         display: grid;
@@ -233,5 +238,22 @@
     .footer-update-info {
         padding: 40px 0 20px;
     }
+
+    #discover-title .hero-container h1{
+        grid-column: 3 / 5 !important; 
+        text-align: center;
+    }
+
+    /* Discover Site */
+
+
+    .main-cards-events {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
 
 }

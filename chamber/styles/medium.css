@@ -118,7 +118,8 @@
     .hero-container h1 {
         font-size: 2.75rem;
         line-height: 2.75rem;
-        top: 27%;
+        top: 50%;
+        right: 3%;
     }
 
     #subheading {
@@ -126,7 +127,8 @@
     }
     
     .main-cta a {
-        top: 55%;
+        top: 75%;
+        right: 3%;
         font-size: 1.2rem;
         padding: 5px 10px;
     }
@@ -196,6 +198,10 @@
     .footer-image-logo img {
         width: 120px;
         height: auto;
+    }
+
+    .footer-contact-info p {
+        font-size: 1.2em;
     }
     
     .footer-main-sm {
