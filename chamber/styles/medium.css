@@ -267,7 +267,12 @@
         width: 100%;
     }
 
+    .main-cards-events figure img {
+        transition: ease-in-out 0.3s,filter 0.3s ease;
+    }
 
-
+    .main-cards-events figure:hover img {
+        filter: brightness(60%); /* Darkens the image */
+    }
 
 }
