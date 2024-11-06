@@ -233,3 +233,121 @@ footer p:nth-child(2) {
     font-size: 0.8rem;
     color: gold;
 }
+
+/* Form Styling */
+#body-form {
+    /* background-image: url("https://example.com/path/to/test-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    color: #000000 !important;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+}
+
+.wf1 {
+    width: 420px;
+    /* background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
+    color: var(--accent3-color);
+    margin: 4em 0;
+}
+
+.wf1 fieldset {
+    margin: 1rem;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 6px;
+    padding: .5em 1rem;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+}
+
+.wf1 h3 {
+    font-family: var(--paragraph-font);
+    color: var(--accent3-color);
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.wf1 label{
+    display: block;
+    padding-top: 1em;
+    color: var(--accent1-color);
+    font-size: .9em;
+    font-weight: 600;
+    font-family: var(--paragraph-font);
+}
+
+.wf1 div {
+    padding-top: 1em;
+    color: var(--accent1-color);
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"] 
+{
+    background: #eee;
+    display: block;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: .75em;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    padding: 1em .75em 1em 1em;
+}
+
+.wf1 input[type="password"]::placeholder,
+.wf1 input[type="email"]::placeholder {
+    font-family: var(--paragraph-font);
+    font-size: 0.8em;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-family: var(--paragraph-font);
+    font-size: 1em;
+    font-weight: 800;
+    width: 100%;
+    max-width: 400px;
+    padding: 1em .75em 1em 1em;
+    box-shadow: 1px 1px 4px #999;
+    margin: 8% 0 0;
+    box-shadow: 1px 1px 4px #999;
+    cursor: pointer;
+}
+
+.wf1 .register-link {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--paragraph-font);
+    font-size: .9em;
+    margin: .5em 0 2em;
+}
+
+.wf1 .register-link p {
+    color: var(--accent1-color);
+}
+
+.wf1 .register-link a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+.wf1 .register-link a:hover {
+    text-decoration: underline;
+}
