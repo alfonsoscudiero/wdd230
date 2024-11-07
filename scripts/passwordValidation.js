@@ -10,7 +10,7 @@ function checkSame() {
     message.classList.remove("show-message");
 
     if (kp1.value !== kp2.value) {
-        message.textContent = "❗ Key Phrases DO NOT MATCH!";
+        message.textContent = "Password DO NOT MATCH!";
         message.classList.add('show-message');
         kp2.value = "";
         kp2.focus();

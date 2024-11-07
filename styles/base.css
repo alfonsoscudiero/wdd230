@@ -255,8 +255,16 @@ footer p:nth-child(2) {
     margin: 1em 0;
 }
 
+.wf1 #form-message {
+    color: red;
+    font-size: 1.2em;
+    font-family: var(--paragraph-font);
+}
+
 .show-message {
     display: block;
+    text-align: center;
+    padding-bottom: .75em;
 }
 
 .wf1 fieldset {
@@ -360,60 +368,68 @@ footer p:nth-child(2) {
 }
 
 /* Effects for star-rating */
-.wf1 .star-rating {
-    width: 350px;
-    display: flex;
-    flex-direction: row-reverse; /* Reverse order for proper selection */
-    justify-content: space-evenly;
-}
-
-.wf1 .star-rating #st-11 {
-    display: none;
-}
-
-/* Hide radio inputs */
-.wf1 .star-rating input {
-    display: none;
-}
-
-.wf1 .star-rating {
+.wf1 .rating {
     padding-top: 0;
 }
 
-/* Default style for each star label */
-.wf1 .star-rating label {
-    font-size: 2em;
-    color: lightgray; /* Default color for unfilled stars */
+.wf1 .rating label {
+    font-family: var(--paragraph-font);
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--accent3-color);
+}
+
+.wf1 .rating input {
+    width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    height: 1px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    /* opacity: 1; */
+    transition: opacity .2s;
+}
+
+
+.wf1 .rating input:hover {
+    opacity: 1;
+}
+
+#page-rating::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #1e81ce;
     cursor: pointer;
-    position: relative;
-    padding-top: 0;
-    padding-bottom: 0;
+    border-radius: 50%;
 }
 
-/* Default empty star shape */
-.wf1 .star-rating label::before {
-    content: '\2606'; /* Unicode for an empty star */
-}
-
-/* Show filled stars for the selected star and all preceding stars */
-.wf1 .star-rating input:checked ~ label::before,
-.wf1 .star-rating label:hover ~ label::before {
-    content: '\2605'; /* Unicode for a filled star */
-    color: gold;
+#page-rating::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #1e81ce;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .wf1 .rating p {
+    font-family: var(--paragraph-font);
+    font-size: 1em;
     color: var(--accent3-color);
-    font-weight: 600;
+    margin-top: .75em;
 }
 
-.wf1 #result {
+#rating-value {
+    margin-top: em;
+    font-size: 1.25em;
+    font-weight: 600;
     color: var(--accent3-color);
-    text-align: center;
-    font-size: 0.9em;
-    margin-top: -1.5em;
-    /* font-family: var(--paragraph-font); */
+    margin-left: 10px;
 }
+
+
 
 /* Confirmation Page Styling */
 #body-confirmation {

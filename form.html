@@ -53,60 +53,11 @@
                     <label>Confirm Password<input type="password" id="keyphrase2" name="password" minlength="8" pattern="[A-Za-z0-9]{8,}" title="Must match the password above" placeholder="Re-enter password"></label>
                     <label>Email*<input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address" placeholder="Your BYU-I email address" required></label>
                     <div class="rating">
-                        <p>Rating</p>
-                    </div>    
-                    <div class="star-rating">
-                        <input class="star" type="radio" id="st-10" value="10" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-9" value="9" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-8" value="8" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-7" value="7" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-6" value="6" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-5" value="5" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-4" value="4" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-3" value="3" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-2" value="2" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
-
-                        <input class="star" type="radio" id="st-1" value="1" name="star-radio">
-                        <label class="star-label">
-                            <div class="star-shape"></div>
-                        </label>
+                        <label>Rate this page (1-10):</label>
+                        <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" value="5">
+                        <p>Rating: <span id="rating-value"></span></p>
                     </div>
-                    <p id="result">Not chosen</p>
+  
                     <input type="submit" value="Log in">
                     <div class="register-link">
                         <p>Don't have an account?</p>
