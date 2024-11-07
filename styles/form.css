@@ -422,7 +422,6 @@ footer p:nth-child(2) {
 }
 
 #rating-value {
-    margin-top: em;
     font-size: 1.25em;
     font-weight: 600;
     color: var(--accent3-color);
