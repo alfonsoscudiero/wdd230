@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfonso Scudiero - WDD 230 - Web Frontend Development - HTML Form</title>
+    <title>Alfonso Scudiero - WDD 230 - Web Frontend Development - Registration Form</title>
     <!-- Meta Description -->
     <meta name="description" content="WDD 230 - Web Frontend Development - Alfonso Scudiero - Login Form">
     <!-- Meta Author -->
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <!--  External Scripts directory and named getdates.js  -->
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/rating.js" defer></script>
     <!-- Google Fonts API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
                 <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/index.html" target="_blank">Chamber</a></li>
                 <li class="nav-item"><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
                 <li class="nav-item"><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/27?lang=eng&id=p31#p31" target="_blank">Scripture</a></li>
-                <li class="nav-item"><a href="form.html" target="_blank">Login Form</a></li>
+                <li class="nav-item"><a href="form.html" target="_blank">Registration</a></li>
             </ul>
         </nav>
     </header>
@@ -44,14 +45,67 @@
         <div class="form-wrapper">
             <form method="get" action="record.html" class="wf1">
                 <fieldset>
-                    <h3>My Account</h3>
+                    <h3>Registration</h3>
                     <label>Username*<input type="text" id="username" name="username" required></label>
                     <label>Password*<input type="password" id="keyphrase" name="password" minlength="8" pattern="[A-Za-z0-9]{8,}" title="Must contain at least 8 characters long and can only be alpha-numeric" placeholder="At least eight characters long and can only be alpha-numeric" required></label>
-                    <label>Re-enter Password*<input type="password" id="keyprase2" name="password" minlength="8" pattern="[A-Za-z0-9]{8,}" title="Must match the password above" required></label>
+                    <label>Confirm Password*<input type="password" id="keyprase2" name="password" minlength="8" pattern="[A-Za-z0-9]{8,}" title="Must match the password above" placeholder="Re-enter password"></label>
                     <label>Email*<input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address" placeholder="Your BYU-I email address" required></label>
-                    <div class="star-rating">Select a Rating
-                        <input type="radio" >
+                    <div class="rating">
+                        <p>Rating</p>
+                    </div>    
+                    <div class="star-rating">
+                        <!-- Adding 10 star inputs -->
+                        <input class="star" type="radio" id="st-10" value="10" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-9" value="9" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-8" value="8" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-7" value="7" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-6" value="6" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-5" value="5" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-4" value="4" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-3" value="3" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-2" value="2" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
+
+                        <input class="star" type="radio" id="st-1" value="1" name="star-radio">
+                        <label class="star-label">
+                            <div class="star-shape"></div>
+                        </label>
                     </div>
+                    <p id="result">Not chosen</p>
                     <input type="submit" value="Log in">
                     <div class="register-link">
                         <p>Don't have an account?</p>

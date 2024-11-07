@@ -236,11 +236,11 @@ footer p:nth-child(2) {
 
 /* Form Styling */
 #body-form {
-    /* background-image: url("https://example.com/path/to/test-image.jpg");
+    background-image: url("../images/background-img-form.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
-    color: #000000 !important;
+    background-position: center;
+    max-width: 1920px;
 }
 
 .form-wrapper {
@@ -252,10 +252,6 @@ footer p:nth-child(2) {
 
 .wf1 {
     width: 420px;
-    /* background: transparent;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
-    color: var(--accent3-color);
     margin: 4em 0;
 }
 
@@ -263,11 +259,9 @@ footer p:nth-child(2) {
     margin: 1rem;
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 6px;
-    padding: .5em 1rem;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-
+    padding: 1.5em 1em 1em;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 }
 
 .wf1 h3 {
@@ -280,8 +274,8 @@ footer p:nth-child(2) {
 
 .wf1 label{
     display: block;
-    padding-top: 1em;
-    color: var(--accent1-color);
+    padding: 1em 0 .5em;
+    color: var(--accent3-color);
     font-size: .9em;
     font-weight: 600;
     font-family: var(--paragraph-font);
@@ -298,15 +292,15 @@ footer p:nth-child(2) {
 .wf1 input[type="password"],
 .wf1 input[type="email"] 
 {
-    background: #eee;
+    background: #f9f9f9;
     display: block;
     border: 1px solid;
     border-radius: 6px;
-    padding: .75em;
     color: #555;
     width: 100%;
     max-width: 400px;
     padding: 1em .75em 1em 1em;
+    margin-top: .25em;
 }
 
 .wf1 input[type="password"]::placeholder,
@@ -316,6 +310,8 @@ footer p:nth-child(2) {
 }
 
 .wf1 input[type="submit"] {
+    background: #1e81ce;
+    color: var(--accent3-color);
     border: none;
     outline: none;
     border-radius: 6px;
@@ -325,10 +321,18 @@ footer p:nth-child(2) {
     width: 100%;
     max-width: 400px;
     padding: 1em .75em 1em 1em;
-    box-shadow: 1px 1px 4px #999;
+    /* box-shadow: 1px 1px 4px #999; */
     margin: 8% 0 0;
-    box-shadow: 1px 1px 4px #999;
+    /* box-shadow: 1px 1px 4px; */
     cursor: pointer;
+    transition: ease-in-out all 0.3s;
+}
+
+.wf1 input[type="submit"]:hover {
+    background: #f9f9f9;
+    color: var(--accent1-color);
+    font-weight: 700;
+
 }
 
 .wf1 .register-link {
@@ -340,14 +344,68 @@ footer p:nth-child(2) {
 }
 
 .wf1 .register-link p {
-    color: var(--accent1-color);
+    color: var(--accent3-color);
 }
 
 .wf1 .register-link a {
     text-decoration: none;
-    color: var(--accent1-color);
+    color: var(--accent3-color);
 }
 
 .wf1 .register-link a:hover {
     text-decoration: underline;
+}
+
+.wf1 .star-rating {
+    width: max-content;
+    /* margin: 0 auto; */
+    position: relative;
+    display: flex;
+    gap: .75em;
+    padding-top: 0;
+}
+
+.wf1 .star-label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.75em;
+    height: 1.75em;
+}
+
+.wf1 .star-shape {
+    background-color: gold;
+    width: 80%;
+    height: 80%;
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%,
+        79% 91%, 50% 70%, 21% 91%, 32% 57%,
+        2% 35%, 39% 35%
+      );
+}
+
+/* Make stars after the checked radio gray */
+.star:checked + .star-label ~ .star-label .star-shape {
+    background-color: lightgray;
+  }
+
+/* Hide radio inputs */
+.star {
+    position: fixed;
+    opacity: 0;
+    left: -90000px;
+}  
+
+.wf1 .rating p {
+    color: var(--accent3-color);
+    font-weight: 600;
+}
+
+.wf1 #result {
+    color: var(--accent3-color);
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    /* font-family: var(--paragraph-font); */
+
 }
