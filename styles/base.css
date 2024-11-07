@@ -323,7 +323,7 @@ footer p:nth-child(2) {
 }
 
 .wf1 input[type="submit"] {
-    background: #1e81ce;
+    background: #2897A2;
     color: var(--accent3-color);
     border: none;
     outline: none;
@@ -341,7 +341,7 @@ footer p:nth-child(2) {
 
 .wf1 input[type="submit"]:hover {
     background: #f9f9f9;
-    color: var(--accent1-color);
+    color: #2897A2;
     font-weight: 700;
 
 }
@@ -401,7 +401,7 @@ footer p:nth-child(2) {
     appearance: none;
     width: 20px;
     height: 20px;
-    background: #1e81ce;
+    background: #2897A2;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -409,7 +409,7 @@ footer p:nth-child(2) {
 #page-rating::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: #1e81ce;
+    background: #2897A2;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -428,8 +428,6 @@ footer p:nth-child(2) {
     color: var(--accent3-color);
     margin-left: 10px;
 }
-
-
 
 /* Confirmation Page Styling */
 #body-confirmation {
