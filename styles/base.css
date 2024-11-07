@@ -252,7 +252,11 @@ footer p:nth-child(2) {
 
 .wf1 {
     width: 420px;
-    margin: 4em 0;
+    margin: 1em 0;
+}
+
+.show-message {
+    display: block;
 }
 
 .wf1 fieldset {
@@ -270,6 +274,7 @@ footer p:nth-child(2) {
     font-weight: 700;
     font-size: 1.5em;
     text-align: center;
+    margin-bottom: .5em;
 }
 
 .wf1 label{
@@ -321,9 +326,7 @@ footer p:nth-child(2) {
     width: 100%;
     max-width: 400px;
     padding: 1em .75em 1em 1em;
-    /* box-shadow: 1px 1px 4px #999; */
     margin: 8% 0 0;
-    /* box-shadow: 1px 1px 4px; */
     cursor: pointer;
     transition: ease-in-out all 0.3s;
 }
@@ -356,45 +359,48 @@ footer p:nth-child(2) {
     text-decoration: underline;
 }
 
+/* Effects for star-rating */
 .wf1 .star-rating {
-    width: max-content;
-    /* margin: 0 auto; */
-    position: relative;
+    width: 350px;
     display: flex;
-    gap: .75em;
+    flex-direction: row-reverse; /* Reverse order for proper selection */
+    justify-content: space-evenly;
+}
+
+.wf1 .star-rating #st-11 {
+    display: none;
+}
+
+/* Hide radio inputs */
+.wf1 .star-rating input {
+    display: none;
+}
+
+.wf1 .star-rating {
     padding-top: 0;
 }
 
-.wf1 .star-label {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 1.75em;
-    height: 1.75em;
+/* Default style for each star label */
+.wf1 .star-rating label {
+    font-size: 2em;
+    color: lightgray; /* Default color for unfilled stars */
+    cursor: pointer;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.wf1 .star-shape {
-    background-color: gold;
-    width: 80%;
-    height: 80%;
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 68% 57%,
-        79% 91%, 50% 70%, 21% 91%, 32% 57%,
-        2% 35%, 39% 35%
-      );
+/* Default empty star shape */
+.wf1 .star-rating label::before {
+    content: '\2606'; /* Unicode for an empty star */
 }
 
-/* Make stars after the checked radio gray */
-.star:checked + .star-label ~ .star-label .star-shape {
-    background-color: lightgray;
-  }
-
-/* Hide radio inputs */
-.star {
-    position: fixed;
-    opacity: 0;
-    left: -90000px;
-}  
+/* Show filled stars for the selected star and all preceding stars */
+.wf1 .star-rating input:checked ~ label::before,
+.wf1 .star-rating label:hover ~ label::before {
+    content: '\2605'; /* Unicode for a filled star */
+    color: gold;
+}
 
 .wf1 .rating p {
     color: var(--accent3-color);
@@ -405,7 +411,30 @@ footer p:nth-child(2) {
     color: var(--accent3-color);
     text-align: center;
     font-size: 0.9em;
-    margin-top: 0.5em;
+    margin-top: -1.5em;
     /* font-family: var(--paragraph-font); */
+}
 
+/* Confirmation Page Styling */
+#body-confirmation {
+    max-width: 1920px;
+}
+
+.confirmation-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 3em;
+    min-width: 400px;
+    padding: 1em 1em;
+    min-height: calc(65vh - 200px);
+
+}
+
+.confirmation-main-container h2,
+.confirmation-main-container p
+{
+    font-family: var(--paragraph-font);;
 }
