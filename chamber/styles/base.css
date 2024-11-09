@@ -586,7 +586,7 @@ a {
     max-width: 450px;
     color: var(--site-color-06);
     font-size: 1.4em;
-    background: var(--site-color-14);
+    background: var(--site-color-09);
     box-shadow: 1px 1px 4px var(--site-color-11);
     text-transform: uppercase;
     font-weight: 700;
@@ -597,8 +597,8 @@ a {
 }
 
 .membership-form input[type="submit"]:hover {
-    background: var(--site-color-09);
-    color: var(--site-color-08);
+    background: var(--site-color-14);
+    color: var(--site-color-03);
     font-weight: bold;
 }
 
