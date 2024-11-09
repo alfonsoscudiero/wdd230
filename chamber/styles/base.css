@@ -1,18 +1,8 @@
 :root {
     font-size: 62.5%;
-    /* --background-color: #1e1e1e;
-    --footer-background-color: #141414; */
     --navigation-font-family: "Raleway", system-ui;
     --body-text-font-family: "Montserrat", sans-serif;
     --headline-font-family: "Poppins", sans-serif;
-    /* --site-color-01: #012A5D;
-    --site-color-02:#1877F2;
-    --site-color-03: #E8E9EB;
-    --site-color-04: #DB9817; 
-    --site-color-05: #DEE2E7;
-    --site-color-06: #FAFCFF;
-    --site-color-07: #000000;
-    --site-color-08: #FFFFFF; */
     --site-color-01: #122738;
     --site-color-02:#FFFFFF;
     --site-color-03: #E8E9EB;
@@ -507,4 +497,180 @@ a {
 
 .location::before {
     content: '📌';
+}
+
+/* General styling for form elements */
+.join-main  {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em;
+    /* height: calc(100vh - 330px); */
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    width: 100%;
+    max-width: 450px;
+    /* padding: 2em; */
+    font-family: var(--body-text-font-family);
+    color: var(--site-color-01);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.form-section h1,
+.benefits-section h2 {
+    font-family: var(--headline-font-family);
+    color: var(--site-color-09);
+    padding: 1em;
+    margin: 0;
+}
+
+.membership-form {
+    width: clamp(300px, 100%, 400px);
+    border: 1px solid var(--site-color-01);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.membership-form label {
+    display: block;
+    padding-top: .5em;
+    font-family: var(--body-text-font-family);
+    color: var(--site-color-01);
+    font-size: 1em;
+}
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    appearance: none;
+    max-width: 400px;
+    border-radius: 6px;
+}
+
+.membership-form div {
+    padding-top: 1em;
+    margin: 0;
+}
+
+.membership-form .membership-level label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-top: 0 !important;
+}
+
+.membership-form input[type="radio"] {
+    margin-right: 6px;
+}
+
+.membership-form #label-description {
+    padding-top: 1em;
+}
+
+.membership-form input[type="submit"] {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    height: 2.75em;
+    padding: .8em;
+    max-width: 400px;
+    color: var(--site-color-06);
+    font-size: 1.1em;
+    background: var(--site-color-14);
+    box-shadow: 1px 1px 4px var(--site-color-11);
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 96%;
+    margin: 1.5em 2% 1.5rem 2%;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.membership-form input[type="submit"]:hover {
+    background: var(--site-color-09);
+    color: var(--site-color-08);
+    font-weight: bold;
+}
+
+/* Styling for the benefits table */
+.benefits-section table {
+    border-collapse: collapse;
+    font-family: var(--body-text-font-family);
+    font-size: 1.1em;
+    border: 1px solid var(--site-color-01);
+    box-shadow: 1px 1px 1px var(--site-color-10);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.benefits-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+}
+
+.benefits-section th,
+.benefits-section td {
+    padding: 0.75em;
+    text-align: left;
+    border: 1px solid var(--site-color-01);
+    color: var(--site-color-10);
+}
+
+.benefits-section th {
+    text-align: center;
+    padding: 1em;
+    font-size: 1.1em;
+    /* background: var(--site-color-10); */
+    color: var(--site-color-10);
+}
+
+.benefits-section td ul {
+    padding-left: 1.25em;
+}
+
+.benefits-section tbody tr:nth-child(odd) {
+    background: hsl(0, 0%, 85%);
+}
+
+/* Styling for the Thank You page content */
+.thank-you-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 2em;
+    padding: 1em 2em;
+    gap: 1em;
+    height: calc(100vh - 380px);
+}
+
+.thank-you-main h1 {
+    font-family: var(--headline-font-family);
+    font-size: 1.75em;
+}
+
+.thank-you-main p {
+    color: var(--site-color-10);
+}
+
+.thank-you-main a {
+    font-family: var(--body-text-font-family);
+    text-transform: capitalize;
+    color: var(--site-color-14);
+    transition: all ease-in-out 0.2s;
+}
+
+.thank-you-main a:hover {
+    color: var(--site-color-01);
 }

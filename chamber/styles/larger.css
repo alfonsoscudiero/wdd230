@@ -283,4 +283,15 @@
         filter: brightness(60%); /* Darkens the image */
     }
 
+    
+    /* General styling for form elements */
+    .join-main {
+        display: flex;
+        flex-direction: column !important;
+        gap: 2rem;
+        padding: 2rem;
+        /* height: calc(100vh - 350px); */
+    }
+
+
 }

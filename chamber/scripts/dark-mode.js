@@ -15,6 +15,17 @@ const toggleDarkMode = () => {
     } else {
         logoImg.src = "images/nav-main-logo.webp"; //Revert to light logo
     }
+
+    // Select all odd rows and change the background color
+    const oddRows = document.querySelectorAll('.benefits-section tbody tr:nth-child(odd)');
+    oddRows.forEach(row => {
+        if (document.body.classList.contains('dark-mode')) {
+            row.style.background = 'hsl(0, 0%, 30%)'; // Dark mode background
+        } else {
+            row.style.background = 'hsl(0, 0%, 80%)'; // Light mode background
+        }
+    });
+
 };
 
 // Add a click event listener to the toggle button
