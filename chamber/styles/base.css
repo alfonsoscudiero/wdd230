@@ -510,10 +510,8 @@ a {
 .form-section{
     display: flex;
     flex-direction: column;
-    /* gap: 1em; */
     width: 100%;
-    max-width: 500px;
-    /* padding: 2em; */
+    max-width: 450px;
     font-family: var(--body-text-font-family);
     color: var(--site-color-01);
     font-size: 1.2em;
@@ -551,7 +549,7 @@ a {
     padding: 0.5em;
     font-size: 1.2em;
     appearance: none;
-    max-width: 400px;
+    max-width: 450px;
     border-radius: 6px;
 }
 
@@ -585,9 +583,9 @@ a {
     border-radius: 6px;
     height: 2.75em;
     padding: .8em;
-    max-width: 400px;
+    max-width: 450px;
     color: var(--site-color-06);
-    font-size: 1.1em;
+    font-size: 1.4em;
     background: var(--site-color-14);
     box-shadow: 1px 1px 4px var(--site-color-11);
     text-transform: uppercase;

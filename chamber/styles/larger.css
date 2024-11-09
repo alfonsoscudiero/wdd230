@@ -315,7 +315,7 @@
     .membership-form input[type="email"],
     .membership-form input[type="tel"],
     .membership-form textarea {
-      max-width: none;  /* Allow inputs to expand to full width of the form */
+        max-width: none;  /* Allow inputs to expand to full width of the form */
         font-size: 1.3em;
     }
 
@@ -323,8 +323,12 @@
         font-size: 1.2em;
     }
 
-    .membership-form input[type="submit"] {
+    .membership-form label:has(input[type="radio"]) {
         font-size: 1.2em;
+    }
+
+    .membership-form input[type="submit"] {
+        font-size: 1.6em;
     }
 
     /* Styling for the benefits table */
