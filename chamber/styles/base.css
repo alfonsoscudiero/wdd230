@@ -560,15 +560,19 @@ a {
     margin: 0;
 }
 
-.membership-form .membership-level label {
+.membership-form label:has(input[type="radio"]) {
     display: flex;
     align-items: center;
     margin: 0;
-    padding-top: 0 !important;
+    padding: 10px 0; 
+    cursor: pointer;
+    font-size: 1em;
 }
 
 .membership-form input[type="radio"] {
     margin-right: 6px;
+    padding: 10px 0;
+    cursor: pointer; /* Add cursor pointer for better UX */
 }
 
 .membership-form #label-description {
