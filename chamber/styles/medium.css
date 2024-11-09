@@ -1,5 +1,5 @@
 /* Media Query for Medium Viewer */
-@media ( 541px <= width <= 819px ) {
+@media ( 580px <= width <= 839px ) {
 
     body {
         max-width: 1280px;
@@ -276,6 +276,16 @@
     }
 
     /* General styling for form elements */
+
+    /* Styling for the benefits table */
+    .benefits-section table {
+        width: 100%;  /* Make the table full-width within the aside */
+        font-size: 1.25em;
+    }
+
+    .benefits-section h2 {
+        font-size: 1.5em;  /* Slightly smaller than the main form heading */
+    }
 
 
 }

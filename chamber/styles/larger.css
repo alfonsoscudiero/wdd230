@@ -1,5 +1,5 @@
 /* Media Query for Larger Viewer */
-@media ( 820px <= width ) {
+@media ( min-width: 840px ) {
 
     body {
         max-width: 1280px;
@@ -285,13 +285,67 @@
 
     
     /* General styling for form elements */
+
+    /* Change the layout of .join-main to create two columns */
     .join-main {
-        display: flex;
-        flex-direction: column !important;
-        gap: 2rem;
-        padding: 2rem;
-        /* height: calc(100vh - 350px); */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1em;
+        height: calc(100vh - 350px);
+        margin: 0;
+        /* padding: 1em; */
+      }
+
+    .form-section {
+        flex: 1;  /* This allows the form to grow and take available space */
+        max-width: 60%;  /* Limit the maximum width to 60% of the container */
+        margin-top: 2em;
     }
+
+    .form-section h1 {
+        font-size: 2.2em;
+    }
+
+    .membership-form label {
+        font-size: 1.2em;
+        padding-top: .75em;
+    }
+
+    .membership-form input[type="text"],
+    .membership-form input[type="email"],
+    .membership-form input[type="tel"],
+    .membership-form textarea {
+      max-width: none;  /* Allow inputs to expand to full width of the form */
+        font-size: 1.3em;
+    }
+
+    .membership-form div {
+        font-size: 1.2em;
+    }
+
+    .membership-form input[type="submit"] {
+        font-size: 1.2em;
+    }
+
+    /* Styling for the benefits table */
+    .benefits-section {
+        flex: 1;  /* This allows the benefits section to grow and take available space */
+        max-width: 40%;  /* Limit the maximum width to 35% of the container */
+        position: sticky;  /* Make the benefits section stick when scrolling */
+        top: 8vh;  /* Add some top spacing when sticking */
+    }
+
+    .benefits-section table {
+        width: 100%;  /* Make the table full-width within the aside */
+        font-size: 1.5em;
+    }
+
+    .benefits-section h2 {
+        font-size: 1.75em;  /* Slightly smaller than the main form heading */
+    }
+
+
 
 
 }

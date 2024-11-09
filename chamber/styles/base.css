@@ -505,7 +505,6 @@ a {
     flex-direction: column;
     gap: 2em;
     padding: 1em;
-    /* height: calc(100vh - 330px); */
 }
 
 .form-section{
@@ -513,7 +512,7 @@ a {
     flex-direction: column;
     /* gap: 1em; */
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     /* padding: 2em; */
     font-family: var(--body-text-font-family);
     color: var(--site-color-01);
@@ -527,10 +526,11 @@ a {
     color: var(--site-color-09);
     padding: 1em;
     margin: 0;
+    text-align: center;
 }
 
 .membership-form {
-    width: clamp(300px, 100%, 400px);
+    width: clamp(300px, 100%, 450px);
     border: 1px solid var(--site-color-01);
     border-radius: 6px;
     padding: .5rem 2%;
@@ -609,6 +609,7 @@ a {
     box-shadow: 1px 1px 1px var(--site-color-10);
     border-radius: 6px;
     padding: .5rem 2%;
+    width: 100%;
 }
 
 .benefits-section {
