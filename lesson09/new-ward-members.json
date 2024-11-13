@@ -1,0 +1,31 @@
+[
+    {
+        "familyName" : "Smith",
+        "moveInDate" : "2024-04-05",
+        "numberOfPeople" : 2,
+        "visitedByBishopric" : false,
+        "familyMembers" : [
+            {
+                "name" : "Joseph",
+                "gender" : "male",
+                "birthdate" : "1989-04-19"
+            },
+            {
+                "name" : "Emma",
+                "gender" : "female",
+                "birthdate" : "1991-10-14"
+            }
+        ]
+    },
+    {
+        "familyName" : "Monson",
+        "moveInDate" : "2024-07-15",
+        "numberOfPeople" : 1,
+        "visitedByBishopric" : true,
+        "familyMembers" : {
+            "name" : "Lynda",
+            "gender" : "female",
+            "birthdate" : "1996-08-15"
+        }
+    }
+]
