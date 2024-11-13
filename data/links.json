@@ -1,0 +1,122 @@
+{
+    "lessons" : [
+        {
+            "lesson" : "01",
+            "links" : [
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/week01/holygrail.html",
+                    "title" : "Holy Layout"
+                },
+                {
+                    "url" : "https://codepen.io/Alfonso-Scudiero/pen/rNEXewm",
+                    "title" : "JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson" : "02",
+            "links" : [
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson02/media-query.html",
+                    "title" : "Media Query"
+                },
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson02/design-principles.html",
+                    "title" : "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson" : "03",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/Alfonso-Scudiero/pen/BaXjwwQ",
+                    "title" : "Pseudo Elements"
+                },
+                {
+                    "url" : "https://codepen.io/Alfonso-Scudiero/pen/eYqJeNo",
+                    "title" : "Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lesson" : "04",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/Alfonso-Scudiero/pen/KKOaxaQ",
+                    "title" : "Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "lesson" : "05",
+            "links" : [
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson05/bom.html",
+                    "title" : "Book of Mormon App"
+                }
+            ]
+        },
+        {
+            "lesson" : "06",
+            "links" : [
+                {
+                    "url" : "lesson03/images/landscape-compressed.webp",
+                    "title" : "WebP"
+                }
+            ]
+        },
+        {
+            "lesson" : "07",
+            "links" : [
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson07/lazyload.html",
+                    "title" : "Lazy Load Page"
+                },
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson07/newBOM.html",
+                    "title" : "New BOM app"
+                }
+            ]
+        },
+        {
+            "lesson" : "08",
+            "links" : [
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson08/tablebuild.html",
+                    "title" : "HTML Responsive Table"
+                },
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson08/index.html",
+                    "title" : "HTML Form"
+                }
+            ]
+        },
+        {
+            "lesson" : "0",
+            "links" : [
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title" : "JSON file"
+                },
+                {
+                    "url" : "",
+                    "title" : ""
+                }
+            ]
+        },
+        {
+            "lesson" : "10",
+            "links" : [
+                {
+                    "url" : "",
+                    "title" : ""
+                },
+                {
+                    "url" : "",
+                    "title" : ""
+                }
+            ]
+        }
+    ]
+}
