@@ -100,8 +100,12 @@
                     "title" : "JSON file"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson09/prophets.html",
+                    "title" : "Latter-day Prophets Page"
+                },
+                {
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson09/weather-app.html",
+                    "title" : "Weather App"
                 }
             ]
         },
