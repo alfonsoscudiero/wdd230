@@ -42,7 +42,7 @@ h1 {
 section {   
     display: flex;
     flex-direction: column;
-    justify-self: center;
+    justify-self: center; /* Center content horizontally within the section */
     background: #FFFFFF;
     border-radius: 14px;
     padding: 20px 30px;
