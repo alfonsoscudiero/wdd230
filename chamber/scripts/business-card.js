@@ -6,6 +6,9 @@ const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const display = document.querySelector(".business-grid");
 
+// Initialize a variable to store member data
+let membersData = [];
+
 // Fetch data from the JSON file
 async function getBusinessData() {
     try {
@@ -14,9 +17,10 @@ async function getBusinessData() {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json(); // Convert the response to JSON
-        console.log(data.businesses); // Log the fetched JSON data Object for debugging
-        
-        displayMembers(data.businesses); // Call the display function with the data
+        membersData = data.businesses; // Store the fetched data in a global variable
+
+        // Initially display members in grid view
+        displayMembers(membersData, 'grid');
     } catch (error) {
         console.error("Error fetching data:", error);
         display.innerHTML = `<p class="error-message">Failed to load data. Please try again later.</p>`;
@@ -25,17 +29,10 @@ async function getBusinessData() {
 
 // Render member cards on the page
 function displayMembers(members, viewType) {
-    console.log(members); // Log the data passed for debugging
-
     display.innerHTML = ""; // Clear previous content
-    if (viewType === 'grid') {
-        display.className = 'business-grid';
-    } else {
-        display.className = 'business-list';
-    }
 
     members.forEach((member) => {
-        let card = document.createElement("section");
+        const card = document.createElement("section");
 
         if (viewType === 'grid') {
             card.classList.add("business-card");
@@ -45,32 +42,38 @@ function displayMembers(members, viewType) {
                 <p class="business-card-p">${member.address}</p>
                 <p class="business-card-p">${member.phone}</p>
                 <p class="business-card-p">Membership Level: <span class="business-card-span">${member.membershipLevel}</span></p>
-                <p class="business-card-a">${member.url}</p>
+                <p class="business-card-a">
+                    <a href="${member.url}" target="_blank" rel="noopener noreferrer">${member.url}</a>
+                </p>
             `;
         } else {
-            card.id = "list";
+            card.classList.add("card-list");
             card.innerHTML = `
                 <h2 class="list-card-h2">${member.name}</h2>
                 <p class="list-address">${member.address}</p>
                 <p class="list-contact">${member.phone}</p>
                 <p class="list-membership">Membership level: <span class="business-list-card-span">${member.membershipLevel}</span></p>
-                <p class="list-url">${member.url}</p>
+                <p class="list-url">
+                    <a href="${member.url}" target="_blank" rel="noopener noreferrer">${member.url}</a>
+                </p>
             `;
         }
 
         display.appendChild(card);
     });
+
+    // Update the display container's class
+    display.className = viewType === 'grid' ? 'business-grid' : 'business-list';
 }
 
-// Function to toggle view
-function toggleView(viewType) {
-    const members = JSON.parse(display.dataset.members || '[]');
-    displayMembers(members, viewType);
-}
+// Event listeners for grid/list toggling
+gridButton.addEventListener("click", () => {
+    displayMembers(membersData, 'grid');
+});
 
-// Add event listeners for grid/list toggling
-gridButton.addEventListener("click", () => toggleView('grid'));
-listButton.addEventListener("click", () => toggleView('list'));
+listButton.addEventListener("click", () => {
+    displayMembers(membersData, 'list');
+});
 
 // Fetch and display the business data when the page loads
 getBusinessData();

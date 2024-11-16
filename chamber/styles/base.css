@@ -698,10 +698,12 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 4rem 0;
+    margin: 4rem auto;
+    width: 95%;
 }
 
-.grid-list-menu button {
+.grid-list-menu #grid,
+.grid-list-menu #list  {
     padding: 1rem;
     font-family: var(--body-text-font-family);
     font-size: 1.5rem;
@@ -729,9 +731,9 @@ a {
 .business-grid {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* gap: 3em; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 3em;
     background: none; 
     border: none; 
     box-shadow: none; 
@@ -744,14 +746,11 @@ a {
     flex-direction: column;
     align-items: flex-start;
     background: var(--site-color-02);
-    /* border-radius: 1.4em; */
+    border-radius: 1.4em;
     border: none;
     box-shadow: none;
     padding: 20px 30px;
     margin: 0;
-    margin-bottom: 1rem; /* Add spacing between list items */
-
-    /* border: 1px solid black */
 }
 
 .business-card:hover {
@@ -782,54 +781,72 @@ a {
     font-size: 1em;
 }
 
-.business-card-a {
+.business-card-a a{
     font-family: var(--body-text-font-family);
     color: var(--site-color-05);
     font-weight: bold;
     text-transform: lowercase;
-    font-size: 1.1em;
+    font-size: .8em;
+    text-decoration: underline;
+    cursor: pointer;
+    pointer-events: none;
 }
 
 /* Styling for the Directory page List*/
-
-
-.business-list #list {
+.business-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 20px;
-    width: clamp(250px, 90%, 350px);
+    justify-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.business-list #list:nth-child(even) {
+.card-list {
+    padding: 10px 20px;
+    width: clamp(250px, 90%, 400px);
+    /* border: 1px solid red; */
+}
+
+.card-list:nth-child(even) {
 	background-color: #1876f21f;
 }
 
-.list-card-img {
-    display: none;
-}
-
 .list-card-h2 {
-    align-self: start;
-    margin-left: 0;
+    padding: 5px 0;
     color: var(--site-color-09);
+    justify-self: flex-start;
 }
 
 .list-address,
 .list-contact,
-.list-url,
 .list-membership {
     font-family: var(--body-text-font-family);
     font-size: 1.1em;
     color: var(--site-color-11);
-    line-height: 1.3em;
+    line-height: 1.5em;
     margin-left: 0;
 }
 
+
+
 .business-list-card-span {
     font-family: var(--body-text-font-family);
-    font-weight: bold;
-    font-size: 1.1em;
-    color: var(--site-color-04);
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: .1em;
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.list-url a{
+    font-family: var(--body-text-font-family);
+    font-size: .8em;
+    text-decoration: underline;
+    text-transform: lowercase;
+    color: var(--site-color-01);
+    font-weight: 600;
+    padding-top: 5px;
+    pointer-events: none;
 }
 

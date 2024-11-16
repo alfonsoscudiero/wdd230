@@ -295,12 +295,13 @@
 
     .business-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
         justify-content: center;
         justify-items: center;
         align-items: center;
-        gap: 3em;
+        gap: 1em;
         margin-inline: auto;
+        width: 100%;
         max-width: 95%;
     }
 
@@ -326,9 +327,14 @@
     }
 
     /* Styling for the Directory page List*/
-    /* .business-grid {
-        display: none;
-    } */
+    .business-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3em;
+        width: 100%;
+    }
+
+
     .list-card-h2 {
         font-size: 1.5em;
     }
