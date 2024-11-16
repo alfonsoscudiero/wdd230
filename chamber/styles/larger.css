@@ -402,7 +402,7 @@
         }
 
         .list-card-h2 {
-            font-size: 1.6em;
+            font-size: 1.5em;
         }
 
         .list-address,
@@ -416,21 +416,5 @@
             display: block;
         }
 
-        .list-membership {
-            font-family: var(--body-text-font-family);
-            font-size: 1.3em;
-            color: #000;
-            padding-bottom: .3em;
-            text-align: center;
-            margin-left: 0;
-            color: var(--site-color-11);
-        }
-        
-        .business-list-card-span {
-            font-family: var(--body-text-font-family);
-            font-weight: bold;
-            font-size: 1em;
-            color: var(--site-color-04);
 
-        }
 }

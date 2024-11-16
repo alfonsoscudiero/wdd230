@@ -685,7 +685,6 @@ a {
 /* Styling for the Directory page */
 .body-container .directory {
     margin: 0 auto;
-
 }
 
 .main-container-directory .hero-container-directory h1 {
@@ -699,7 +698,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 3rem 0;
+    margin: 4rem 0;
 }
 
 .grid-list-menu button {
@@ -721,29 +720,38 @@ a {
     border: none;
 }
 
-/* Grid/List Toggle Buttons */
+.error-message {
+    color: var(--site-color-01);
+    font-weight: bold;
+}
 
+/* Grid/List Toggle Buttons */
 .business-grid {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 3em;
+    /* gap: 3em; */
+    background: none; 
+    border: none; 
+    box-shadow: none; 
+    width: clamp(250px, 90%, 350px);
 }
 
-.business-grid .business-card {
+.business-card {
+    width: clamp(250px, 90%, 350px);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background: var(--site-color-02);
-    width: clamp(250px, 90%, 350px);
-    border-radius: 1.4em;
-    padding: 1em 2em;
-    margin: 0;
+    /* border-radius: 1.4em; */
     border: none;
+    box-shadow: none;
     padding: 20px 30px;
-    gap: 0;
-    border: 1px solid black
+    margin: 0;
+    margin-bottom: 1rem; /* Add spacing between list items */
+
+    /* border: 1px solid black */
 }
 
 .business-card:hover {
@@ -757,7 +765,7 @@ a {
 }
 
 .business-card-h2 {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .business-card-p {
@@ -783,9 +791,7 @@ a {
 }
 
 /* Styling for the Directory page List*/
-.business-grid {
-    display: none;
-}
+
 
 .business-list #list {
     display: flex;
@@ -811,7 +817,8 @@ a {
 
 .list-address,
 .list-contact,
-.list-url {
+.list-url,
+.list-membership {
     font-family: var(--body-text-font-family);
     font-size: 1.1em;
     color: var(--site-color-11);
@@ -819,6 +826,10 @@ a {
     margin-left: 0;
 }
 
-.list-membership {
-    display: none;
+.business-list-card-span {
+    font-family: var(--body-text-font-family);
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--site-color-04);
 }
+

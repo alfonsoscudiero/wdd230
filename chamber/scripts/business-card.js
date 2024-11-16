@@ -4,7 +4,7 @@ const url = "https://alfonsoscudiero.github.io/wdd230/chamber/data/member.json";
 // Select DOM elements
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
-const businessDirectory = document.querySelector(".business-grid");
+const display = document.querySelector(".business-grid");
 
 // Fetch data from the JSON file
 async function getBusinessData() {
@@ -15,65 +15,62 @@ async function getBusinessData() {
         }
         const data = await response.json(); // Convert the response to JSON
         console.log(data.businesses); // Log the fetched JSON data Object for debugging
+        
         displayMembers(data.businesses); // Call the display function with the data
     } catch (error) {
         console.error("Error fetching data:", error);
-        display.innerHTML = `<p class="error-message">Failed to load reference. Please try again later.</p>`;
+        display.innerHTML = `<p class="error-message">Failed to load data. Please try again later.</p>`;
     }
 }
 
 // Render member cards on the page
-function displayMembers(members) {
+function displayMembers(members, viewType) {
     console.log(members); // Log the data passed for debugging
 
+    display.innerHTML = ""; // Clear previous content
+    if (viewType === 'grid') {
+        display.className = 'business-grid';
+    } else {
+        display.className = 'business-list';
+    }
+
     members.forEach((member) => {
-        // Create card elements
         let card = document.createElement("section");
-        let img = document.createElement("img");
-        let title = document.createElement("h2");
-        let location = document.createElement("p");
-        let contact = document.createElement("p");
-        let membership = document.createElement("p");
-        let membershipSpan = document.createElement('span');
-        let link = document.createElement("p");
 
-        // Populate content
-        img.src = `${member.logo}`;
-        title.textContent = `${member.name}`;
-        location.textContent = `${member.address}`;
-        contact.textContent = `${member.phone}`;
-        membershipSpan.textContent = member.membershipLevel;
-        membership.textContent = "Membership Level: ";
-        link.textContent = `${member.url}`;
+        if (viewType === 'grid') {
+            card.classList.add("business-card");
+            card.innerHTML = `
+                <img src="${member.logo}" alt="${member.name} Logo" width="200" height="200" class="business-card-img">
+                <h2 class="business-card-h2">${member.name}</h2>
+                <p class="business-card-p">${member.address}</p>
+                <p class="business-card-p">${member.phone}</p>
+                <p class="business-card-p">Membership Level: <span class="business-card-span">${member.membershipLevel}</span></p>
+                <p class="business-card-a">${member.url}</p>
+            `;
+        } else {
+            card.id = "list";
+            card.innerHTML = `
+                <h2 class="list-card-h2">${member.name}</h2>
+                <p class="list-address">${member.address}</p>
+                <p class="list-contact">${member.phone}</p>
+                <p class="list-membership">Membership level: <span class="business-list-card-span">${member.membershipLevel}</span></p>
+                <p class="list-url">${member.url}</p>
+            `;
+        }
 
-        // Apply CSS classes
-        card.classList.add("business-grid", "business-card");
-        img.classList.add("business-card-img");
-        title.classList.add("business-card-h2");
-        location.classList.add("business-card-p");
-        contact.classList.add("business-card-p");
-        membershipSpan.classList.add("business-card-span");
-        membership.classList.add("business-card-p");
-
-        link.classList.add("business-card-a");
-
-        // Append elements to the card
-        membership.appendChild(membershipSpan);
-        card.append(img, title, location, contact, membership, link);
-        businessDirectory.appendChild(card);
+        display.appendChild(card);
     });
 }
 
-// Add event listeners for grid/list toggling
-gridButton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
+// Function to toggle view
+function toggleView(viewType) {
+    const members = JSON.parse(display.dataset.members || '[]');
+    displayMembers(members, viewType);
+}
 
-listButton.addEventListener("click", () => {
-    display.classList.add("list");
-    display.classList.remove("grid");
-});
+// Add event listeners for grid/list toggling
+gridButton.addEventListener("click", () => toggleView('grid'));
+listButton.addEventListener("click", () => toggleView('list'));
 
 // Fetch and display the business data when the page loads
 getBusinessData();
