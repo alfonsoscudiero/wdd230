@@ -37,13 +37,13 @@ function displayMembers(members, viewType) {
         if (viewType === 'grid') {
             card.classList.add("business-card");
             card.innerHTML = `
-                <img src="${member.logo}" alt="${member.name} Logo" width="200" height="200" class="business-card-img">
+                <img src="${member.logo}" alt="${member.name} Logo" width="200" height="200" class="business-card-img" loading="lazy">
                 <h2 class="business-card-h2">${member.name}</h2>
                 <p class="business-card-p">${member.address}</p>
                 <p class="business-card-p">${member.phone}</p>
                 <p class="business-card-p">Membership Level: <span class="business-card-span">${member.membershipLevel}</span></p>
                 <p class="business-card-a">
-                    <a href="${member.url}" target="_blank" rel="noopener noreferrer">${member.url}</a>
+                    <a href="${member.url}" target="_blank">${member.url}</a>
                 </p>
             `;
         } else {
@@ -54,7 +54,7 @@ function displayMembers(members, viewType) {
                 <p class="list-contact">${member.phone}</p>
                 <p class="list-membership">Membership level: <span class="business-list-card-span">${member.membershipLevel}</span></p>
                 <p class="list-url">
-                    <a href="${member.url}" target="_blank" rel="noopener noreferrer">${member.url}</a>
+                    <a href="${member.url}" target="_blank">${member.url}</a>
                 </p>
             `;
         }

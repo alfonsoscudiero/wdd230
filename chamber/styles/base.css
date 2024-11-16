@@ -835,7 +835,7 @@ a {
     font-weight: 600;
     font-size: 1em;
     letter-spacing: .1em;
-    color: orangered;
+    color: var(--site-color-01);
     text-transform: uppercase;
 }
 
