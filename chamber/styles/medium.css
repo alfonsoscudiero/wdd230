@@ -287,5 +287,35 @@
         font-size: 1.5em;  /* Slightly smaller than the main form heading */
     }
 
+    /* Styling for the Directory page */
+    .business-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 3em;
+        margin-inline: auto;
+        max-width: 95%;
+    }
+
+    .business-card-img {
+        width: 120px;
+        height: auto;
+    }
+
+    .business-card-h2 {
+        font-size: 1.75em;
+    }
+
+    .business-card-p {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
+    .business-card-a{
+        font-size: 1.25em;
+    }
+
 
 }

@@ -390,13 +390,16 @@ a {
 
 /* Discover Site */
 
-.main-container-discover {
+.main-container-discover,
+.main-container-directory {
     max-width: 1280px !important;
     margin: 0 auto !important;
     /* padding: 20px; */
 }
 
-.hero-container-discover{
+.hero-container-discover,
+.hero-container-directory
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,8 +408,9 @@ a {
     margin-bottom: 2em;
 }
 
-.hero-container-discover h1 {
-    font-size: 3em;
+.hero-container-discover h1,
+.hero-container-directory h1 {
+    font-size: 2.5em;
     line-height: 1em;
     background: #f2f2f2a1;
     position: absolute;
@@ -676,4 +680,83 @@ a {
 
 .thank-you-main a:hover {
     color: var(--site-color-01);
+}
+
+/* Styling for the Directory page */
+.grid-list-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.grid-list-menu button {
+    padding: 1rem;
+    font-family: var(--body-text-font-family);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid var(--site-color-11);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);;
+    width: 85px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.grid-list-menu button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    border: none;
+}
+
+/* Grid/List Toggle Buttons */
+
+.business-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--site-color-02);
+    width: clamp(250px, 90%, 350px);
+    border-radius: 1.4em;
+    padding: 1em 2em;
+    margin: 0;
+    border: none;
+}
+
+.business-card:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2), 
+                -10px -10px 10px white inset;
+}
+
+.business-card-img {
+    width: 100px;
+    height: auto;
+}
+
+.business-card-h2 {
+    font-size: 1.5em;
+}
+
+.business-card-p {
+    font-family: var(--body-text-font-family);
+    font-size: 1.2em;
+    color: #000;
+}
+
+.business-card-span {
+    color: orange;
+    font-weight: bold;
+}
+
+.business-card-a {
+    font-size: var(--body-text-font-family);
+    color: #000;
 }

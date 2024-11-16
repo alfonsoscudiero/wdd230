@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah County Chamber of Commerce and Discover | Chamber of Commerce Member Directory</title>
+    <!-- Meta Description -->
+    <meta name="description" content="WDD 230 - Web Frontend Development - Alfonso Scudiero - Connect with local businesses and organizations in our chamber directory.">
+    <!-- Meta Author -->
+    <meta name="author" content="Alfonso Scudiero">
+    <!--  Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Meta Tags for Social Media-->
+    <meta property="og:title" content="Utah County Chamber of Commerce | Supporting Local Business Growth">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ibb.co/3kTfVGn">  
+	<meta property="og:url" content="https://alfonsoscudiero.github.io/wdd230/chamber/index.html">
+    <!-- External styles -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/medium.css">
+     <link rel="stylesheet" href="styles/larger.css">
+     <!--External scripts-->
+     <script src="scripts/script.js" defer></script>
+     <script src="scripts/dark-mode.js" defer></script>
+     <script src="scripts/business-card.js" defer></script>
+    <!--Embed Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100;400;500;600;700;800&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="body-container">
+
+    <header class="header-main">
+        <a id="menu" href="#" title="Hamburger menu"></a>
+        <div class="header-main-logo">
+            <img src="images/nav-main-logo.webp" id="logo-img" alt="Utah County Chamber of Commerce Logo" width="80" height="40">
+        </div>
+        <nav id="navigation">
+            <ul class="header-main-nav" >
+                <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li class="nav-item"><a href="#">Directory</a></li>
+                <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div id="dark-mode-toggle">
+            <img src="images/dark-theme-icon/dark-theme-svgrepo-com.svg" id="dark-mode-button" alt="Dark mode button" width="20" height="05">
+        </div>
+
+    </header>
+
+    <main class="main-container-directory">
+        <section class="hero-container-directory">
+            <div class="hero-container-discover-img">
+                <picture>
+                    <source media="(max-width: 540px)" srcset="images/directory/directory-header-small.webp">
+                    <source media="(max-width: 819px)" srcset="images/directory/directory-header-medium.webp">
+                    <img src="images/directory/directory-header.jpg" id="hero-img" alt="" width="1280" height="440">
+                </picture>
+            </div>
+            <h1 class="hero-container-directory-h1">Chamber of Commerce<br>Member Directory</h1>
+        </section>
+
+        <div class="grid-list-menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📄List</button>
+        </div>
+
+        <article class="business-grid">
+            <!-- The JavaScript will dynamically insert elements here -->
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-container">
+                <div>
+                    <ul class="footer-sitemap">
+                        <li class="nav-item" ><a href="https://alfonsoscudiero.github.io/wdd230/chamber/index.html">Home</a></li>
+                        <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                        <li class="nav-item"><a href="#">Directory</a></li>
+                        <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/join.html">Join</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-image-logo">
+                    <img src="images/footer-logo.webp" alt="Utah County Chamber of Commerce Logo" width="200" height="150" loading="lazy">
+                    <div class="footer-main-sm">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Follow us on Facebook"><div class="footer-main-sm-fb"></div></a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Follow us on Instagram"><div class="footer-main-sm-in"></div></a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact-info">
+                    <p><span id="footer-address">Address:</span></p>
+                    <p>1234 Main St.</p>
+                    <p>Provo, Utah, 84600</p>
+                    <p>Phone: 555-123-4567</p>
+                </div>
+            </div> 
+    
+            <div class="footer-update-info">
+                    <p>&copy; <span id="currentYear"></span></p>
+                    <p>Alfonso Scudiero - WDD 230</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

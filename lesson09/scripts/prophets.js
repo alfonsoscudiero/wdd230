@@ -68,6 +68,7 @@ const displayProphets = (prophets) => {
 
         // Append the created card element to the div in HTML
         cards.appendChild(card);
+        
     });
 }
 
