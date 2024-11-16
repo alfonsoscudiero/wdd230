@@ -349,31 +349,88 @@
     }
 
     /* Styling for the Directory page */
+    .main-container-directory .hero-container-directory h1 {
+        font-size: 3em;
+        line-height: 2em;
+    }
+
     .business-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         justify-items: center;
         gap: 3em;
         margin-inline: auto;
         max-width: 95%;
     }
 
-    .business-card-img {
-        width: 150px;
+    .business-card-img  {
+        width: 200px;
         height: auto;
     }
+    
     .business-card-h2 {
-        font-size: 2em;
+        font-size: 1.75em;
+    }
+    
+    .business-card .business-card-p {
+        font-size: 1.35em;
     }
 
-    .business-card-p {
-        font-size: 1.5em;
-        line-height: 1.6em;
+    .business-card-span {
+        font-size: 1.1em;
+    }
+    
+    .business-card-a {
+        font-family: 1.2em;
     }
 
-    .business-card-a{
-        font-size: 1.5em;
-    }
+        /* Styling for the Directory page List*/
+        .business-grid {
+            display: none;
+        }
 
+        .business-list #list {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr .75fr 1.2fr 1fr;
+            justify-content: center;
+            padding: .25em;
+            width: 95%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1em;
+            row-gap: 2em;
+        }
 
+        .list-card-h2 {
+            font-size: 1.6em;
+        }
+
+        .list-address,
+        .list-contact,
+        .list-url {
+            font-size: 1.3em;
+            line-height: 1.75em;
+        }
+
+        .list-membership {
+            display: block;
+        }
+
+        .list-membership {
+            font-family: var(--body-text-font-family);
+            font-size: 1.3em;
+            color: #000;
+            padding-bottom: .3em;
+            text-align: center;
+            margin-left: 0;
+            color: var(--site-color-11);
+        }
+        
+        .business-list-card-span {
+            font-family: var(--body-text-font-family);
+            font-weight: bold;
+            font-size: 1em;
+            color: var(--site-color-04);
+
+        }
 }

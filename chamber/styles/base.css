@@ -683,6 +683,17 @@ a {
 }
 
 /* Styling for the Directory page */
+.body-container .directory {
+    margin: 0 auto;
+
+}
+
+.main-container-directory .hero-container-directory h1 {
+    font-size: 2em;
+    line-height: 1.8em;
+    padding: .5em;
+}
+
 .grid-list-menu {
     display: flex;
     align-items: center;
@@ -720,15 +731,19 @@ a {
     gap: 3em;
 }
 
-.business-card {
+.business-grid .business-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: var(--site-color-02);
     width: clamp(250px, 90%, 350px);
     border-radius: 1.4em;
     padding: 1em 2em;
     margin: 0;
     border: none;
+    padding: 20px 30px;
+    gap: 0;
+    border: 1px solid black
 }
 
 .business-card:hover {
@@ -736,27 +751,74 @@ a {
                 -10px -10px 10px white inset;
 }
 
-.business-card-img {
-    width: 100px;
+.business-card-img  {
+    width: 150px;
     height: auto;
 }
 
 .business-card-h2 {
-    font-size: 1.5em;
+    padding: 10px 0;
 }
 
 .business-card-p {
     font-family: var(--body-text-font-family);
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #000;
+    padding-bottom: .3em;
 }
 
 .business-card-span {
-    color: orange;
+    font-family: var(--body-text-font-family);
+    color: #122738 !important;
     font-weight: bold;
+    font-size: 1em;
 }
 
 .business-card-a {
-    font-size: var(--body-text-font-family);
-    color: #000;
+    font-family: var(--body-text-font-family);
+    color: var(--site-color-05);
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 1.1em;
+}
+
+/* Styling for the Directory page List*/
+.business-grid {
+    display: none;
+}
+
+.business-list #list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    width: clamp(250px, 90%, 350px);
+}
+
+.business-list #list:nth-child(even) {
+	background-color: #1876f21f;
+}
+
+.list-card-img {
+    display: none;
+}
+
+.list-card-h2 {
+    align-self: start;
+    margin-left: 0;
+    color: var(--site-color-09);
+}
+
+.list-address,
+.list-contact,
+.list-url {
+    font-family: var(--body-text-font-family);
+    font-size: 1.1em;
+    color: var(--site-color-11);
+    line-height: 1.3em;
+    margin-left: 0;
+}
+
+.list-membership {
+    display: none;
 }

@@ -26,7 +26,7 @@ async function getBusinessData() {
 function displayMembers(members) {
     console.log(members); // Log the data passed for debugging
 
-    members.forEach(({ name, address, phone, membershipLevel, url, logo }) => {
+    members.forEach((member) => {
         // Create card elements
         let card = document.createElement("section");
         let img = document.createElement("img");
@@ -34,27 +34,31 @@ function displayMembers(members) {
         let location = document.createElement("p");
         let contact = document.createElement("p");
         let membership = document.createElement("p");
+        let membershipSpan = document.createElement('span');
         let link = document.createElement("p");
 
         // Populate content
-        img.src = logo;
-        // img.alt = `${name} logo`;
-        title.textContent = name;
-        location.textContent = address;
-        contact.textContent = phone;
-        membership.innerHTML = `<span>Membership Level:</span> ${membershipLevel}`;
-        link.innerHTML = `<a href="${url}" target="_blank">${url}</a>`;
+        img.src = `${member.logo}`;
+        title.textContent = `${member.name}`;
+        location.textContent = `${member.address}`;
+        contact.textContent = `${member.phone}`;
+        membershipSpan.textContent = member.membershipLevel;
+        membership.textContent = "Membership Level: ";
+        link.textContent = `${member.url}`;
 
         // Apply CSS classes
-        card.classList.add("business-card");
+        card.classList.add("business-grid", "business-card");
         img.classList.add("business-card-img");
         title.classList.add("business-card-h2");
         location.classList.add("business-card-p");
         contact.classList.add("business-card-p");
-        membership.classList.add("business-card-p", "business-card-span");
+        membershipSpan.classList.add("business-card-span");
+        membership.classList.add("business-card-p");
+
         link.classList.add("business-card-a");
 
         // Append elements to the card
+        membership.appendChild(membershipSpan);
         card.append(img, title, location, contact, membership, link);
         businessDirectory.appendChild(card);
     });
