@@ -63,7 +63,7 @@ const displayProphets = (prophets) => {
         card.appendChild(birthDate);
         card.appendChild(birthPlace);
         card.appendChild(length);
-        card.appendChild(deathDate);
+        // card.appendChild(deathDate);
         card.appendChild(portrait);
 
         // Append the created card element to the div in HTML
