@@ -102,10 +102,6 @@
                 {
                     "url" : "https://alfonsoscudiero.github.io/wdd230/lesson09/prophets.html",
                     "title" : "Latter-day Prophets Page"
-                },
-                {
-                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson09/weather-app.html",
-                    "title" : "Weather App"
                 }
             ]
         },
@@ -113,12 +109,12 @@
             "lesson" : "10",
             "links" : [
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson10/weather.html",
+                    "title" : "Weather API"
                 },
                 {
-                    "url" : "",
-                    "title" : ""
+                    "url" : "https://alfonsoscudiero.github.io/wdd230/lesson09/weather-app.html",
+                    "title" : "Weather App"
                 }
             ]
         }
