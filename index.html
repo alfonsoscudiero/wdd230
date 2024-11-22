@@ -25,8 +25,10 @@
     <!--  External Scripts directory and named getdates.js  -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/localStorage.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <!-- <script src="scripts/windchill.js" defer></script> -->
     <script src="scripts/links.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
     <!-- Google Fonts API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,10 +65,12 @@
                 <p>Payson Utah Temple</p>
             </div>
         </div>
+
         <div class="container-main-title">
             <h2>WDD 230: Web Frontend Development</h2>
             <hr id="breakLine">
         </div>
+
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
@@ -84,18 +88,21 @@
                 <!-- The JavaScript will dynamically insert <li> elements here -->
             </ul>
         </section>
+
         <section class="card">
             <h3>Information</h3>
             <div class="weather-content">
-                <h4>Lecheria, Venezuela</h4>
-                <p><span class="data-label">Conditions: </span><span id="conditions">Sunny</span> </p>
-                <p><span class="data-label">Temperature (°F): </span><span id="current-temperature">91</span></p>
-                <p><span class="data-label">Wind (mph): </span><span id="wind-speed">13</span></p>
-                <p><span class="data-label">Wind Chill (°F):  </span><span id="wind-chill-value"></span></p>
-                <p><span class="data-label">Humidity (%): </span>74</p>
-                <p><span class="data-label">Number of Visits: </span><span class="num-visits"></span></p>
+                <p id="error-display"></p>
+                <h4 id="city-display">Lecheria, Vzla</h4>
+                <p id="temp-display">Temperature will appear here</p>
+                <p id="desc-display">Description will appear here</p>
+                <div class="image-display">
+                    <img id="weather-emoji"  src="" alt="">
+                </div>
+                <p><span class="data-label">Number of Visits: </span><span class="num-visits">number of visits will appear here</span></p>
             </div>
         </section>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31414.15785137905!2d-64.70772404379655!3d10.199346042193179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2d736754808be5%3A0x2fe867b57d7d6659!2sLecheria%2C%20Anzoategui%2C%20Venezuela!5e0!3m2!1sen!2sus!4v1727909982496!5m2!1sen!2sus" title="embed-location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>

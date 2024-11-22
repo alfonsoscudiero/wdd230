@@ -2,8 +2,9 @@
 @media ( 580px <= width <= 819px) {
 
     .container-main {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
     
     #portrait-photo {
@@ -36,7 +37,9 @@
 
     .container-main {
         display: grid;
-        grid-template-columns: 55% 40%;
+        grid-template-columns: 47.5% 47.5%;
+        align-items: center;
+        justify-content: center;
     }
 
     .container-main-hero {
@@ -58,24 +61,31 @@
 
     .container-main-title {
         grid-column: span 2;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .weather-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5px 5px 10px 5px;
-        /* row-gap: .5em; */
-        margin: 1em 0;
+    .card {
+        height: 100%;
+        width: 90%;
     }
 
     iframe {
+        width: 95%;
         grid-column: span 2;
     }
 
     #menu {
         display: none;
+    }
+
+    /* Weather Content style */
+    .weather-content {
+    row-gap: .75rem;
+    }
+
+    .card p {
+        padding: 1rem;
     }
 
 
