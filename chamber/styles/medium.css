@@ -111,14 +111,15 @@
     .main-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 2fr 0.5fr 0.5fr 1fr;
         grid-gap: 10px;
+        row-gap: 15px;
         align-items: center;
         text-align: center; 
     }
 
     .hero-container {
         grid-column: span 6;
+        grid-row: 1 / 2;
     }
 
     .hero-container h1 {
@@ -139,14 +140,26 @@
         padding: 5px 10px;
     }
 
+    .banner {
+        grid-column: span 6;
+        grid-row: 2 / 3;
+    }
+
+    .banner p {
+        font-size: 1.6rem;
+    }
+
     .events-container {
         grid-column: span 3;
-        grid-row: 2 / 4;
+        grid-row: 3 / 4;
+        height: 100%;
+        margin-left: 40px;
     }
 
     .weather-container {
         grid-column: 4 / -1;
-        grid-row: 2 / 4;
+        grid-row: 3 / 4;
+        margin-right: 40px;
     }
 
     .weather-container h2 {
@@ -168,7 +181,11 @@
 
     .spotlights-container {
         grid-column: span 6;
-        grid-row: 4 / -1;
+        grid-row: 4 / 5;
+        min-height: 250px;
+        max-height: 300px;
+        width: 90%;
+        margin-top: 15px;
     }
 
     .footer-container {
@@ -216,14 +233,11 @@
         grid-template-columns: repeat(2 , auto);
         justify-content: center;
         column-gap: 20px;
-        /* margin-top: -10px; */
-        /* display: none !important; */
     }
     
     .footer-main-sm-fb {
         width: 20px;
         height: 20px;
-        /* margin-right: 10px; */
         background-image: url(../images/footer-sm-fb-logo.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -233,7 +247,6 @@
     .footer-main-sm-in {
         width: 20px;
         height: 20px;
-        /* margin-left: 10px; */
         background-image: url(../images/footer-sm-in-logo.png);
         background-repeat: no-repeat;
         background-size: cover;

@@ -23,7 +23,8 @@
      <!--External scripts-->
      <script src="scripts/script.js" defer></script>
      <script src="scripts/dark-mode.js" defer></script>
-     <script src="scripts/windchill.js" defer></script>
+     <script src="scripts/weather.js" defer></script>
+     <!-- <script src="scripts/windchill.js" defer></script> -->
     <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,24 +71,64 @@
             </div>
         </section>
 
+        <div class="banner">
+            <p><strong>You are invited!</strong><br>Join us for the Chamber of Commerce Meet & Greet<br>Wednesday, 7:00PM</p>
+        </div>
+
         <section class="events-container">
             <div>
                 <h2>Events</h2>
             </div>
         </section>
 
+        <!-- Weather Container Section -->
         <section class="weather-container">
             <h2>Weather</h2>
+
+            <!-- Container for displaying data in a table-like layout -->
             <div class="data-table">
-                <span class="data-title">Temperature (°F):</span>
-                <span class="data-value" id="current-temperature">50</span>
-                <span class="data-title">Conditions:</span>
-                <span class="data-value">Sunny</span>
-                <span class="data-title">Wind (mph):</span>
-                <span class="data-value" id="wind-speed">4</span>
-                <span class="data-title">Wind Chill (°F):</span>
-                <span class="data-value" id="wind-chill-value"></span>
+                <div class="weather-display">
+                    <!-- Placeholder for the date -->
+                    <p class="date-display"></p>
+                    <!-- Placeholder for the weather icon -->
+                    <img class="weather-icon" src="" alt="">
+                    <!-- Container for the temperature details -->
+                    <div class="temp-display">
+                        <p>Temp:</p>
+                        <!-- Placeholder for temperature -->
+                        <p class="temp-value"></p>
+                    </div>
+                </div>
+
+                <div class="weather-display">
+                    <!-- Placeholder for the date -->
+                    <p class="date-display"></p>
+                    <!-- Placeholder for the weather icon -->
+                    <img class="weather-icon" src="" alt="">
+                    <!-- Container for the temperature details -->
+                    <div class="temp-display">
+                        <p>Temp:</p>
+                        <!-- Placeholder for temperature -->
+                        <p class="temp-value"></p>
+                    </div>
+                </div>
+
+                <div class="weather-display">
+                    <!-- Placeholder for the date -->
+                    <p class="date-display"></p>
+                    <!-- Placeholder for the weather icon -->
+                    <img class="weather-icon" src="" alt="">
+                    <!-- Container for the temperature details -->
+                    <div class="temp-display">
+                        <p>Temp:</p>
+                        <!-- Placeholder for temperature -->
+                        <p class="temp-value"></p>
+                    </div>
+                </div>
             </div>
+
+            <!-- Container for error messages if fetching data fails -->
+            <div id="error-display"></div>
         </section>
 
         <section class="spotlights-container">

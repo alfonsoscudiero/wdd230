@@ -190,7 +190,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     max-width: 1280px;
     margin: 0 auto;
     margin-top: 1px;
@@ -204,6 +204,7 @@ a {
     background-color: var(--site-color-06);
     border: 3px solid var(--site-color-01);
     border-radius: 10px;
+    min-height: 250px;
 }
 
 .hero-container {
@@ -828,8 +829,6 @@ a {
     margin-left: 0;
 }
 
-
-
 .business-list-card-span {
     font-family: var(--body-text-font-family);
     font-weight: 600;
@@ -850,3 +849,82 @@ a {
     pointer-events: none;
 }
 
+/* Style Weather Card */
+.weather-container {
+    height: 100%;
+    background: linear-gradient(180deg, #a5c9ff, #fff59b);
+}
+
+.weather-container h2 {
+    color: #000;
+}
+
+.data-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.weather-display {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 1rem;
+    padding: .5rem;
+    width: 100%;
+    margin: 0;
+}
+
+.temp-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-table p {
+    color: #000;
+    font-weight: 600;
+}
+
+.date-display {
+    align-self: center;
+}
+
+.weather-icon {
+    font-size: 2.5em;
+    align-self: center;
+}
+
+.temp-value {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#error-display {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Style Banner */
+.banner {
+    background: var(--site-color-03);
+    width: 100%;
+}
+
+.banner p {
+    color: var(--site-color-01);
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 1em 0;
+}
+
+.close-banner {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
