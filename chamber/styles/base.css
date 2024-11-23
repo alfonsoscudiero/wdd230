@@ -57,7 +57,6 @@ body::after {
     content: url(../images/fb-color.png) url(../images/in-color.png);
 }
 
-
 h1 {
     font-size: 20px;
     line-height: 18px;
@@ -202,7 +201,7 @@ a {
 .spotlights-container {
     padding: 40px 10px;
     background-color: var(--site-color-06);
-    border: 3px solid var(--site-color-01);
+    border: 1px solid var(--site-color-01);
     border-radius: 10px;
     min-height: 250px;
 }
@@ -263,6 +262,57 @@ a {
     color: var(--site-color-09);
 }
 
+.category-events h2,
+.category-spotlights h2 {
+    font-size: 2rem;
+    color: #E8E9EB;
+    text-shadow: -2px 2px 4px #000;
+    z-index: 100 !important;
+}
+
+.events-container {
+    background-image: url(../images/Events.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.events-container:hover .dark-overlay {
+    opacity: 0;
+}
+
+.spotlights-container {
+    background-image: url(../images/spotlights.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.spotlights-container:hover .dark-overlay {
+    opacity: 0;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    border-radius: 10px;
+    opacity: .3;
+    transition: all ease-in-out 0.2s;
+}
+
 .main-cta a:hover, .main-cta a:active {
     border: 3px solid #DB9817;
     background-color: var(--site-color-05);
@@ -291,7 +341,10 @@ a {
     margin: 0 0 10px 0;
     font-size: 2rem;
     color: var(--site-color-09);
-
+    margin-top: 20px;
+    text-shadow: -2px 2px 4px #fff;
+    text-transform: uppercase;
+    font-family: var(--headline-font-family);
 }
 
 .weather-container .data-title {
@@ -928,3 +981,4 @@ a {
     font-size: 1.4rem;
     margin-left: 10px;
 }
+
