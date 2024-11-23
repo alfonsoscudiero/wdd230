@@ -265,9 +265,10 @@ a {
 .category-events h2,
 .category-spotlights h2 {
     font-size: 2rem;
-    color: #E8E9EB;
+    color: #fff;
     text-shadow: -2px 2px 4px #000;
-    z-index: 100 !important;
+    z-index: 100;
+    position: relative;
 }
 
 .events-container {
@@ -309,7 +310,7 @@ a {
     left: 0;
     background: #000;
     border-radius: 10px;
-    opacity: .3;
+    opacity: .5;
     transition: all ease-in-out 0.2s;
 }
 
