@@ -512,10 +512,10 @@ a {
     transition: all ease-in 0.3s;
 }
 
-.main-cards-events figure:hover img {
-    filter: brightness(60%); /* Darkens the image */
-    /* filter: brightness(80%) contrast(120%) sepia(40%); */
-}
+/* There is a hover affect applied to the images in the larger views only. */
+/* .main-cards-events figure:hover img {
+    filter: brightness(60%); 
+} */
 
 /* .main-cards-events figure:hover img {
     filter: grayscale(50%);
