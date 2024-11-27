@@ -333,6 +333,10 @@
         height: auto;
     }
 
+    .main-cards-events figure:hover img {
+        filter: brightness(60%); 
+    }
+
     .main-cards-events figure figcaption {
         width: 350px;
     }
