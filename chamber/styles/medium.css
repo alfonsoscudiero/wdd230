@@ -10,26 +10,21 @@
         display: none;
     }
 
-    #dark-mode-toggle  {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    
-    #dark-mode-toggle img {
-        width: 20px;
-        height: 26px;
-    }
-
     .header-main {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        align-items: center;
+        align-content: center;
     }
 
     .header-main-logo {
         width: fit-content;
+    }
+
+    .header-main-logo img {
+        width: 100px;
+        height: auto;
+        padding-top: 0;
     }
 
     #navigation {
@@ -38,6 +33,16 @@
         width: 100%;
     }
 
+    #dark-mode-toggle {
+        display: block;
+        position: relative;
+        inset: 0;
+        align-self: flex-start;
+        padding-top: .4em;
+        width: 20px;
+        height: auto;
+    }
+    
     .header-main-nav {
         display: flex;
         flex-direction: row !important;
@@ -53,7 +58,6 @@
     header .nav-item:hover {
         width: auto;
         background-color: var(--site-color-08);
-
     }
 
     header .nav-item a {
@@ -134,10 +138,11 @@
     }
     
     .main-cta a {
+        font-size: 1.1rem;
         top: 75%;
         right: 3%;
         font-size: 1.2rem;
-        padding: 5px 10px;
+        padding: 10px 15px;
     }
 
     .banner {
@@ -271,25 +276,43 @@
         font-size: 4em;
     }
 
-    .main-cards {
+    .main-container-discover h2 {
+        font-size: 1.8em;
+    }
+
+    .discover-content-container {
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 10px;
-        /* margin: 0 auto; */
-        /* padding: 0 10px; */
+        grid-template-columns: 40% 60%;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .discover-weather-column {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .discover-weather-column .weather-container{
+        margin-inline: auto;
+        width: minmax(220px, 275px);
+    }
+
+    .main-cards {
         width: 100%;
     }
 
     .main-cards-events figure img {
-        transition: ease-in-out 0.3s,filter 0.3s ease;
+        width: 310px;
+        height: auto;
     }
 
-    .main-cards-events figure:hover img {
-        filter: brightness(60%); /* Darkens the image */
+    .main-cards-events figure figcaption {
+        width: 310px;
     }
+
 
     /* General styling for form elements */
-
     /* Styling for the benefits table */
     .benefits-section table {
         width: 100%;  /* Make the table full-width within the aside */

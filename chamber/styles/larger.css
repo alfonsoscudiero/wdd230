@@ -6,20 +6,11 @@
         margin: 0 auto;
     }
 
-
     #menu {
         display: none;
     }
 
-    #dark-mode-toggle  {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        margin-right: 5px;
-        height: 18px;
-    }
-
-    .header-main {
+     .header-main {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -29,10 +20,26 @@
         width: fit-content;
     }
 
+    .header-main-logo img {
+        width: 150px;
+        height: auto;
+        padding: 0 0 0 20px;
+    }
+
     #navigation {
         background-color: var(--site-color-08) !important;
         align-self: center;
         width: 100%;
+    }
+
+    #dark-mode-toggle {
+        display: block;
+        position: relative;
+        inset: 0;
+        align-self: flex-start;
+        padding-top: .5em;
+        width: 20px;
+        height: auto;
     }
 
     .header-main-nav {
@@ -40,9 +47,8 @@
         flex-direction: row !important;
         align-self: center;
         justify-content: flex-start;
-        padding: 10px 0;
+        padding: 10px 20px;
         gap: 20px;
-        margin-left: 40px
     }
 
     .nav-item {
@@ -56,7 +62,7 @@
 
     header .nav-item a {
         padding: 10px;
-        font-size: 22px;
+        font-size: 2.5em;
         font-family: var(--navigation-font-family);
         font-weight: 900;
         color: var(--site-color-11);
@@ -132,9 +138,10 @@
     }
     
     .main-cta a {
+        font-size: 1.3rem;
         top: 75%;
         font-size: 1.5rem;
-        padding: 10px 20px;
+        padding: 15px 25px;
     }
 
     .banner {
@@ -162,6 +169,12 @@
     .weather-container h2 {
         margin: 20px 0 10px 0;
         font-size: 2.25rem;
+    }
+
+    .category-events h2,
+    .weather-container h2,
+    .category-spotlights h2 {
+        font-size: 2.5rem;
     }
     
     .weather-container .data-title {
@@ -276,34 +289,65 @@
     .hero-container-discover h1 {
         font-size: 4.5em;
         line-height: 1.5em;
-
     }
 
-    .main-container-discover {
-        display: flex;
-        flex-direction: column;
+    .main-container-discover h2 {
+        font-size: 2em;
+    }
+
+    .discover-content-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        width: 100%;
+        justify-items: center;
         align-items: center;
-        justify-content: center;
-        row-gap: 20px;
+    }
+
+    .discover-weather-column {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .discover-weather-column .weather-container{
+        margin-inline: auto;
+        width: minmax(220px, 300px);
     }
 
     .main-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-flow: row;
-        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        column-gap: 4em;
         width: 100%;
-        margin: 0 auto;
+    }
+
+    .main-cards-events {
+        flex: 1 1 auto;
+        max-width: 350px;
     }
 
     .main-cards-events figure img {
-        transition: ease-in-out 0.3s,filter 0.3s ease;
+        width: 100%;
+        height: auto;
     }
 
-    .main-cards-events figure:hover img {
-        filter: brightness(60%); /* Darkens the image */
+    .main-cards-events figure figcaption {
+        width: 350px;
     }
 
+    .main-cards-events-info p {
+        font-size: 1.1em;
+    }
+
+    .main-cards-events-info .category {
+        font-size: 1.2em;
+    }
+
+    .main-cards-events-info .tittle {
+        font-size: 1.3em;
+    }
     
     /* General styling for form elements */
 

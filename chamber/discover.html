@@ -23,7 +23,8 @@
      <!--External scripts-->
      <script src="scripts/script.js" defer></script>
      <script src="scripts/dark-mode.js" defer></script>
-     <script src="scripts/windchill.js" defer></script>
+     <!-- <script src="scripts/windchill.js" defer></script> -->
+     <script src="scripts/weather.js" defer></script>
      <script src="scripts/visit-date.js" defer></script>
     <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,8 +36,11 @@
 
     <header class="header-main">
         <a id="menu" href="#" title="Hamburger menu"></a>
+
         <div class="header-main-logo">
-            <img src="images/nav-main-logo.webp" id="logo-img" alt="Utah County Chamber of Commerce Logo" width="80" height="40">
+            <a href="https://alfonsoscudiero.github.io/wdd230/chamber/index.html">
+                <img src="images/nav-main-logo.webp" id="logo-img" alt="Utah County Chamber of Commerce Logo" width="80" height="40">
+            </a>
         </div>
         <nav id="navigation">
             <ul class="header-main-nav" >
@@ -44,12 +48,11 @@
                 <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/discover.html">Discover</a></li>
                 <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/directory.html">Directory</a></li>
                 <li class="nav-item"><a href="https://alfonsoscudiero.github.io/wdd230/chamber/join.html">Join</a></li>
+                <div id="dark-mode-toggle">
+                    <img src="images/dark-theme-icon/dark-theme-svgrepo-com.svg" id="dark-mode-button" alt="Dark mode button" width="20" height="05">
+                </div>
             </ul>
         </nav>
-        <div id="dark-mode-toggle">
-            <img src="images/dark-theme-icon/dark-theme-svgrepo-com.svg" id="dark-mode-button" alt="Dark mode button" width="20" height="05">
-        </div>
-
     </header>
 
     <main class="main-container-discover">
@@ -64,101 +67,157 @@
             <h1 class="hero-container-discover-h1">Events <br>&<br>Workshops</h1>
         </section>
 
-        <h2><span id="latest-visit"></span></h2>
-        <section class="main-cards">
-            <div class="main-cards-events pumpkin-fest">
-                <figure>
-                    <img src="images/discover/fall-fair.webp" alt="Ferris wheel and other attractions" width="350" height="209" loading="lazy">
-                    <figcaption>Ferris wheel and other attractions</figcaption>
-                </figure>
-                <div class="main-cards-events-info">
-                    <p class="category">Event</p>
-                    <p class="tittle">Pumpkin Fest</p>
-                    <p class="date">November 01, 2024</p>
-                    <p class="location">Spanish Fork, UT 84660</p>
+        <section class="discover-content-container">
+            <aside class="discover-weather-column">
+                <div class="banner">
+                    <p><strong>You are invited!</strong><br>Join us for the Chamber of Commerce Meet & Greet<br>Wednesday, 7:00PM</p>
                 </div>
-            </div>
+                <h2><span id="latest-visit"></span></h2>
+    
+                <section class="weather-container">
+                    <h2>Weather</h2>
+        
+                    <!-- Container for displaying data in a table-like layout -->
+                    <div class="data-table">
+                        <div class="weather-display">
+                            <!-- Placeholder for the date -->
+                            <p class="date-display"></p>
+                            <!-- Placeholder for the weather icon -->
+                            <img class="weather-icon" src="../chamber/images/weather-icon-placeholder.png" alt="Placeholder Icon" width="50" height="50">
+                            <!-- Container for the temperature details -->
+                            <div class="temp-display">
+                                <p>Temp:</p>
+                                <!-- Placeholder for temperature -->
+                                <p class="temp-value"></p>
+                            </div>
+                        </div>
+        
+                        <div class="weather-display">
+                            <!-- Placeholder for the date -->
+                            <p class="date-display"></p>
+                            <!-- Placeholder for the weather icon -->
+                            <img class="weather-icon" src="../chamber/images/weather-icon-placeholder.png" alt="Placeholder Icon" width="50" height="50">
+                            <!-- Container for the temperature details -->
+                            <div class="temp-display">
+                                <p>Temp:</p>
+                                <!-- Placeholder for temperature -->
+                                <p class="temp-value"></p>
+                            </div>
+                        </div>
+        
+                        <div class="weather-display">
+                            <!-- Placeholder for the date -->
+                            <p class="date-display"></p>
+                            <!-- Placeholder for the weather icon -->
+                            <img class="weather-icon" src="../chamber/images/weather-icon-placeholder.png" alt="Placeholder Icon" width="50" height="50">
+                            <!-- Container for the temperature details -->
+                            <div class="temp-display">
+                                <p>Temp:</p>
+                                <!-- Placeholder for temperature -->
+                                <p class="temp-value"></p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Container for error messages if fetching data fails -->
+                    <div id="error-display"></div>
+                </section>
+            </aside>
+    
+            <section class="main-cards">
+                <div class="main-cards-events pumpkin-fest">
+                    <figure>
+                        <img src="images/discover/fall-fair.webp" alt="Ferris wheel and other attractions" width="350" height="209" loading="lazy">
+                        <figcaption>Ferris wheel and other attractions</figcaption>
+                    </figure>
+                    <div class="main-cards-events-info">
+                        <p class="category">Event</p>
+                        <p class="tittle">Pumpkin Fest</p>
+                        <p class="date">November 01, 2024</p>
+                        <p class="location">Spanish Fork, UT 84660</p>
+                    </div>
+                </div>
 
-            <div class="main-cards-events dia-muertos">
-                <figure>
-                    <img src="images/discover/dia-de-los-muertos.webp" alt="Have your face painted, make colorful flower crowns" width="350" height="209" loading="lazy">
-                    <figcaption>Have your face painted, make colorful flower crowns</figcaption>
-                </figure>
-                <div class="main-cards-events-info">
-                    <p class="category">Event</p>
-                    <p class="tittle">Día de los Muertos</p>
-                    <p class="date">November 02, 2024</p>
-                    <p class="location">Orem, UT 84057</p>
+                <div class="main-cards-events dia-muertos">
+                    <figure>
+                        <img src="images/discover/dia-de-los-muertos.webp" alt="Have your face painted, make colorful flower crowns" width="350" height="209" loading="lazy">
+                        <figcaption>Have your face painted, make colorful flower crowns</figcaption>
+                    </figure>
+                    <div class="main-cards-events-info">
+                        <p class="category">Event</p>
+                        <p class="tittle">Día de los Muertos</p>
+                        <p class="date">November 02, 2024</p>
+                        <p class="location">Orem, UT 84057</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="main-cards-events sourdough-bread">
-                <figure>
-                    <img src="images/discover/sourdough.webp" alt="Learn how to make Traditional Dutch Oven Sourdough Bread" width="350" height="209" loading="lazy">
-                    <figcaption>Learn how to make Traditional Dutch Oven Sourdough Bread</figcaption>
-                </figure>
-                <div class="main-cards-events-info">
-                    <p class="category">Workshop</p>
-                    <p class="tittle">Learn the art of sourdough</p>
-                    <p class="date">November 08, 2024</p>
-                    <p class="location">Provo, UT 84601</p>
+                <div class="main-cards-events sourdough-bread">
+                    <figure>
+                        <img src="images/discover/sourdough.webp" alt="Learn how to make Traditional Dutch Oven Sourdough Bread" width="350" height="209" loading="lazy">
+                        <figcaption>Learn how to make Traditional Dutch Oven Sourdough Bread</figcaption>
+                    </figure>
+                    <div class="main-cards-events-info">
+                        <p class="category">Workshop</p>
+                        <p class="tittle">Learn the art of sourdough</p>
+                        <p class="date">November 08, 2024</p>
+                        <p class="location">Provo, UT 84601</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="main-cards-events lighting-on">
-                <figure>
-                    <img src="images/discover/annual-lighting-event.webp" alt="We light over 1.5 million lights to welcome the holiday season" width="350" height="209" loading="lazy">
-                    <figcaption>We light over 1.5 million lights to welcome the holiday season</figcaption>
-                </figure>
-                <div class="main-cards-events-info">
-                    <p class="category">Event</p>
-                    <p class="tittle">Lighting of Riverwoods</p>
-                    <p class="date">November 22, 2024</p>
-                    <p class="location">Provo, UT 84604</p>
+                <div class="main-cards-events lighting-on">
+                    <figure>
+                        <img src="images/discover/annual-lighting-event.webp" alt="We light over 1.5 million lights to welcome the holiday season" width="350" height="209" loading="lazy">
+                        <figcaption>We light over 1.5 million lights to welcome the holiday season</figcaption>
+                    </figure>
+                    <div class="main-cards-events-info">
+                        <p class="category">Event</p>
+                        <p class="tittle">Lighting of Riverwoods</p>
+                        <p class="date">November 22, 2024</p>
+                        <p class="location">Provo, UT 84604</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="main-cards-events turkey-race">
-                <figure>
-                    <img src="images/discover/turkey-trot.webp" alt="Lace up and Strut your Stuffing at the Lindon 5K Turkey Trot" width="350" height="209" loading="lazy">
-                    <figcaption>Lace up and Strut your Stuffing at the Lindon 5K Turkey Trot</figcaption>
-                </figure>
-                <div class="main-cards-events-info">
-                    <p class="category">Event</p>
-                    <p class="tittle">Turkey Trot 5K</p>
-                    <p class="date">November 23, 2024</p>
-                    <p class="location">Lindon, UT 84042</p>
+                <div class="main-cards-events turkey-race">
+                    <figure>
+                        <img src="images/discover/turkey-trot.webp" alt="Lace up and Strut your Stuffing at the Lindon 5K Turkey Trot" width="350" height="209" loading="lazy">
+                        <figcaption>Lace up and Strut your Stuffing at the Lindon 5K Turkey Trot</figcaption>
+                    </figure>
+                    <div class="main-cards-events-info">
+                        <p class="category">Event</p>
+                        <p class="tittle">Turkey Trot 5K</p>
+                        <p class="date">November 23, 2024</p>
+                        <p class="location">Lindon, UT 84042</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="main-cards-events fall-concert">
-                <figure>
-                    <img src="images/discover/ensemble-fall-concert.webp" alt="The Utah Ensemble and choir sing spiritually based music" width="350" height="209" loading="lazy">
-                    <figcaption>The Utah Ensemble and choir sing spiritually based music</figcaption>
-                </figure>
-                <div class="main-cards-events-info">
-                    <p class="category">Event</p>
-                    <p class="tittle">Ensemble Fall Concert</p>
-                    <p class="date">November 24, 2024</p>
-                    <p class="location">Orem, UT 84057</p>
-                </div>
-            </div>
+                <!-- <div class="main-cards-events fall-concert">
+                    <figure>
+                        <img src="images/discover/ensemble-fall-concert.webp" alt="The Utah Ensemble and choir sing spiritually based music" width="350" height="209" loading="lazy">
+                        <figcaption>The Utah Ensemble and choir sing spiritually based music</figcaption>
+                    </figure>
+                    <div class="main-cards-events-info">
+                        <p class="category">Event</p>
+                        <p class="tittle">Ensemble Fall Concert</p>
+                        <p class="date">November 24, 2024</p>
+                        <p class="location">Orem, UT 84057</p>
+                    </div>
+                </div> -->
 
-            <div class="main-cards-events chocolate-cheese">
-                <figure>
-                    <img src="images/discover/chocolate-cheese.webp" alt="These Tastings will include a selection of fine chocolate and cheese" width="350" height="209" loading="lazy">
-                    <figcaption>These Tastings will include a selection of fine chocolate and cheese</figcaption>
-                </figure>
-                <div class="main-cards-events-info">
-                    <p class="category">Workshop</p>
-                    <p class="tittle">Chocolate & Cheese Tasting</p>
-                    <p class="date">November 28, 2024</p>
-                    <p class="location">Provo, UT 84601</p>
+                <div class="main-cards-events chocolate-cheese">
+                    <figure>
+                        <img src="images/discover/chocolate-cheese.webp" alt="These Tastings will include a selection of fine chocolate and cheese" width="350" height="209" loading="lazy">
+                        <figcaption>These Tastings will include a selection of fine chocolate and cheese</figcaption>
+                    </figure>
+                    <div class="main-cards-events-info">
+                        <p class="category">Workshop</p>
+                        <p class="tittle">Chocolate & Cheese Tasting</p>
+                        <p class="date">November 28, 2024</p>
+                        <p class="location">Provo, UT 84601</p>
+                    </div>
                 </div>
-            </div>
+            </section>
 
         </section>
-
     </main>
 
     <footer>
