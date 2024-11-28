@@ -1,25 +1,38 @@
 // Initialize display elements
 const latestVisit = document.querySelector('#latest-visit');
 const theDateToday = new Date(); //today's date
-const msToDays = 3600 * 24 * 1000; //milliseconds to days constant
+const msToDays = 86400000; //milliseconds to days constant
 
 // Retrieve the last visit from LocalStorage
 const lastVisitDate = localStorage.getItem('lastVisit');
 
+console.log("Today's date:", theDateToday);
+console.log("Last visit date from localStorage:", lastVisitDate);
+
+
 // Check if this is the user's first visit
 if (!lastVisitDate) {
-    latestVisit.textContent = "Welcome! Let us know if you have any questions."
+    console.log("This is a new visit");
+    latestVisit.textContent = "Welcome! Let us know if you have any questions.";
 } else {
-    // Calculate the time difference in days
-    const daysSinceLastVisit = Math.floor((theDateToday - new Date(lastVisitDate)) / msToDays); 
+    const daysSinceLastVisit = Math.floor((theDateToday - new Date(lastVisitDate)) / msToDays);
+    
     if (daysSinceLastVisit < 1) {
-       latestVisit.textContent = "Back to soon! Awesome"; 
+        latestVisit.textContent = "Back too soon! Awesome!";
     } else {
-        // Display message based on the number of days
-        const dayLabel = daysSinceLastVisit === 1 ? "day" : "days";
-        lastestVisit.textContent = `You last visited ${daysSinceLastVisit} ${dayLabel} ago.`;
+        const daysSinceLastVisit = Math.floor((theDateToday - new Date(lastVisitDate)) / msToDays);
+        console.log("Days since last visit:", daysSinceLastVisit);
+    
+        if (daysSinceLastVisit < 1) {
+            latestVisit.textContent = "Back to soon! Awesome";
+        } else {
+            const dayLabel = daysSinceLastVisit === 1 ? "day" : "days";
+            latestVisit.textContent = `You last visited ${daysSinceLastVisit} ${dayLabel} ago.`;
+        }
     }
 }
 
 // Update localStorage with the current date for the next visit
-localStorage.setItem('lastVisit', theDateToday);
+localStorage.setItem('lastVisit', theDateToday.toISOString());
+
+console.log("Updated localStorage with new visit date:", theDateToday.toISOString());
