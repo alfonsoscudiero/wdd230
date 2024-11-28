@@ -66,6 +66,8 @@ function displayMembers(members, viewType) {
     display.className = viewType === 'grid' ? 'business-grid' : 'business-list';
 }
 
+
+
 // Event listeners for grid/list toggling
 gridButton.addEventListener("click", () => {
     displayMembers(membersData, 'grid');

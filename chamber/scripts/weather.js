@@ -161,5 +161,8 @@ function handleBanner() {
 // Call the function to handle the banner
 handleBanner();
 
+
+
+
 // Call the apiFetch function to fetch and display data
 updateWeather()
