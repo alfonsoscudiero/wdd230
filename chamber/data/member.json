@@ -24,7 +24,7 @@
             "phone" : "(789) 012-3456",
             "url" : "https://theepairservices.com",
             "logo" : "https://alfonsoscudiero.github.io/wdd230/chamber/images/Logos-Chamber-Commerce/home-repair-services-llc.jpg",
-            "membershipLevel" : "Bronze",
+            "membershipLevel" : "Silver",
             "service-provided" : "Plumbing, electrical, carpentry, painting, and more"
         },
         {
@@ -51,7 +51,7 @@
             "phone" : "(345) 678-9012",
             "url" : "https://ingoudefin.com",
             "logo" : "https://alfonsoscudiero.github.io/wdd230/chamber/images/Logos-Chamber-Commerce/ingoude-inc.jpg",
-            "membershipLevel" : "Silver",
+            "membershipLevel" : "Gold",
             "service-provided" : "Financial planning, investment advice, loan consulting"
         },
         {
