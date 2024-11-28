@@ -120,7 +120,7 @@ main {
     border: 2px solid var(--accent4-color);
     border-radius: 10px;
     overflow: hidden; /* Ensures the content stays within the rounded border */
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
 }
 
 
