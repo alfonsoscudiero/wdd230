@@ -1013,6 +1013,8 @@ a {
 .temp-display {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .data-table p {
@@ -1024,9 +1026,26 @@ a {
     align-self: center;
 }
 
+.icon-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-description {
+    display: none;
+}
+
 .weather-icon {
     font-size: 2.5em;
     align-self: center;
+}
+
+.temp-string {
+    align-self: flex-start;
+    margin: 0;
+    opacity: .8;
 }
 
 .temp-value {

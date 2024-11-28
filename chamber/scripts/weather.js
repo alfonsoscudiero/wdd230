@@ -2,6 +2,7 @@
 const dateDisplays = document.querySelectorAll('.date-display'); // Multiple dates
 const tempDisplays = document.querySelectorAll('.temp-value'); // Multiple temps
 const weatherIcons = document.querySelectorAll('.weather-icon'); // Multiple icons
+const weatherDescription = document.querySelectorAll('.weather-description'); //Multiple strings
 const errorDisplay = document.querySelector('#error-display');
 const banner = document.querySelector('.banner');
 
@@ -97,7 +98,7 @@ function displayResults(data) {
         tempDisplays[index].textContent = `${(temp.toFixed(1))}°F`; // Update temperature
         weatherIcons[index].src = `https://openweathermap.org/img/wn/${icon}.png`; // Update icon
         weatherIcons[index].alt = description; // Set alt text
-
+        weatherDescription[index].textContent = description;
     });
 }
 

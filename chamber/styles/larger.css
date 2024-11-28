@@ -401,11 +401,19 @@
     }
 
     /* Styling for the benefits table */
+    .join-main {
+        display: flex;
+        justify-content: center;
+        max-width: 95%;
+        margin-inline: auto;
+        margin-top: 2em;
+    }
+
     .benefits-section {
         flex: 1;  /* This allows the benefits section to grow and take available space */
         max-width: 40%;  /* Limit the maximum width to 35% of the container */
         position: sticky;  /* Make the benefits section stick when scrolling */
-        top: 10vh;  /* Add some top spacing when sticking */
+        top: 12vh;  /* Add some top spacing when sticking */
     }
 
     .benefits-section table {
@@ -496,4 +504,28 @@
         padding-top: 0;
         font-size: .9em;
     }
+
+    /* Style Weather Card */
+    .date-display {
+        font-size: 2em !important;
+        width: 140px;
+    }
+
+    .icon-container {
+        min-width: 100px;
+    }
+
+    .weather-description {
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: 1.2em;
+        display: block;
+        margin-top: -1.25em;
+        opacity: .8;
+    }
+
+    .temp-value {
+        font-size: 2.5em;
+    }
+
 }
