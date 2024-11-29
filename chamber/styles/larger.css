@@ -310,7 +310,7 @@
 
     .discover-weather-column .weather-container{
         margin-inline: auto;
-        width: minmax(220px, 300px);
+        width: min(max(220px, 100%), 300px);
     }
 
     .main-cards {

@@ -295,7 +295,7 @@
 
     .discover-weather-column .weather-container{
         margin-inline: auto;
-        width: minmax(220px, 275px);
+        width: min(max(220px, 100%), 275px);
     }
 
     .main-cards {
@@ -384,5 +384,16 @@
     .list-url {
         font-size: 1.2em;
         line-height: 1.6em;
+    }
+
+    /* Style Weather Card */
+    .date-display {
+        /* font-size: 2em !important; */
+        width: 100px;
+        /* border: 1px solid black; */
+    }
+
+    .icon-container {
+        min-width: 50px;
     }
 }

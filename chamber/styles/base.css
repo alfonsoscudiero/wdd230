@@ -576,7 +576,7 @@ a {
     content: '📌';
 } */
 
-/* General styling for form elements */
+/* General styling for form elements  */
 .join-main  {
     display: flex;
     flex-direction: column;
@@ -1004,10 +1004,12 @@ a {
     display: flex;
     flex-direction: row;
     align-self: center;
+    justify-content: space-evenly;
     gap: 1rem;
     padding: .5rem;
     width: 100%;
     margin: 0;
+    /* border: 1px solid black; */
 }
 
 .temp-display {
@@ -1015,6 +1017,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid black; */
+
 }
 
 .data-table p {
@@ -1024,13 +1028,17 @@ a {
 
 .date-display {
     align-self: center;
+    /* border: 1px solid black; */
+    width: 100px;
 }
 
-.icon-display {
+.icon-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid black; */
+
 }
 
 .weather-description {
