@@ -128,18 +128,18 @@
 
 
     .hero-container h1 {
-        font-size: 3.2rem;
-        line-height: 3.2rem;
+        font-size: 6rem;
+        line-height: 5rem;
         top: 50%;
     }
 
     #subheading {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     .main-cta a {
         font-size: 1.3rem;
-        top: 75%;
+        top: 79%;
         font-size: 1.5rem;
         padding: 15px 25px;
     }
