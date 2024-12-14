@@ -1,0 +1,223 @@
+:root {
+    --headline-font-family: "Roboto Slab", serif;
+    --navigation-font-family: "Rubik", sans-serif;
+    --main-font-family: "Open Sans", sans-serif;
+    --site-color-01: #000;
+    --site-color-02: #fff;
+    --site-color-03: #fb872c;
+    --site-color-04: #141023;
+    --site-color-05: #333;
+    --site-color-06: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font-family);
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    background-color: var(--site-color-06);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headline-font-family);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* -----Header---- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 3% 3% 0;
+    background-color: var(--site-color-01);
+    color: var(--site-color-06);
+    width: 98%;
+}
+
+.logo  {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 100px;
+}
+
+.logo-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 0 .2rem 0;
+    font-family: var(--headline-font-family);
+}
+
+.logo-brand h1 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.logo-brand p {
+    font-size: .65rem;
+    color: var(--site-color-03);
+    margin: 0;
+}
+
+/* Hamburger Button */
+#menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+#menu-btn span {
+    display: block;
+    height: 5px;
+    background-color: var(--site-color-02);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* -----Navigation---- */
+#menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%; /* Hidden initially */
+    width: 100%; /* Adjust for desired menu width */
+    color: var(--site-color-02);
+    background-color: var(--site-color-01);
+    z-index: 100;
+    transition: left 0.3s ease-out; /* Smooth slide animation */
+}
+
+/* Slide-menu left */
+#menu.show-menu {
+    left: 0; /* Slides in */
+}
+
+#close-btn {
+    position: absolute;
+    top: -1%;
+    right: 5.5%;
+    font-size: 4rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--site-color-06);
+}
+
+#menu ul {
+    list-style: none;
+    padding: 5rem 2rem;
+}
+
+#menu ul li {
+    font-family: var(--navigation-font-family);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+#menu ul li.active a {
+    color: var(--site-color-03);
+}
+
+#menu ul li a {
+    color: rgba(221, 221, 221, 0.6);
+}
+
+/* -----Footer---- */
+footer {
+    margin-inline: auto;
+}
+
+.footer-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--site-color-01);
+    color: var(--site-color-02);
+    padding: 1.5rem;
+}
+
+footer p {
+    font-size: .75rem;
+}
+
+.footer-about-us {
+    align-self: center;
+}
+
+.footer-about-us img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-contact-info a {
+    color: var(--site-color-02);
+    padding: 1rem;
+}
+
+.footer-contact-info h4,
+.footer-social-media-channels h4 {
+    font-size: .9rem;
+    margin: 1rem 0 0;
+}
+
+.footer-contact-info p {
+    margin-top: 0.2rem;
+}
+
+.footer-social-media-channels {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-social-media-channels .sm-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 1rem;
+    margin: .5rem 0;
+    cursor: pointer;
+}
+
+.social-media-icon {
+    width: 30px;
+    height: auto;
+}
+
+.footer-bottom-container {
+    background-color: var(--site-color-05);
+    padding: 1.5rem;
+    margin-top: 0;
+}
+
+.footer-bottom-container p,
+.footer-bottom-container a {
+    color: var(--site-color-02);
+}
