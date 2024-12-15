@@ -1,0 +1,15 @@
+{
+    "options": [
+        {
+            "make": "Honda",
+            "model": "Metro Scooter",
+            "type": "Scooter",
+            "max-persons": 1,
+            "reservation-half-day": "$20",
+            "reservation-full-day": "$30",
+            "walk-in-half-day": "$25",
+            "walk-in-full-day": "$35",
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-metro-scooter.jpg" // Corrected to imageUrl (common practice)
+        }
+    ]
+}
