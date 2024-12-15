@@ -22,6 +22,7 @@ body {
     max-width: 1440px;
     height: 100vh;
     background-color: var(--site-color-06);
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
