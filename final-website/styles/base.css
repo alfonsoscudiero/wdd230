@@ -590,3 +590,22 @@ footer p {
     background: var(--site-color-01);
     color: var(--site-color-03);
 }
+
+/* -----Thank You Page--- */
+.thank-you-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    row-gap: 1rem;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    height: calc(100vh - 500px);
+
+}
+
+.thank-you-section p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
