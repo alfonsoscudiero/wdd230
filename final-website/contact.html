@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Adventure- Motor Rental Company</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Escape the crowds and explore Cozumel's hidden gems! Rent scooters, ATVs, or jeeps from Scoots Adventure and experience the island your way.">
+    <!-- Meta Author -->
+    <meta name="author" content="Alfonso Scudiero">
+    <!--  Favicon -->
+    <link rel="icon" href="favivon.ico" type="image/x-icon">
+    <!--Meta Tags for Social Media-->
+    <meta property="og:url" content="https://alfonsoscudiero.github.io/wdd230/final-website/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Scoots Adventure- Motor Rental Company">
+    <meta property="og:description" content="Explore Cozumel's beauty with Scooters Adventure. Rent scooters, ATVs, and Jeeps today!">
+	<meta property="og:image" content="https://ibb.co/BNZzzfh">    
+    <!-- External styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <!--External scripts-->
+    <script src="scripts/date-copyright.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <!--Embed Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+     <header>
+        <div class="logo">
+            <img src="images/Scoots-Logo-Dark.svg" alt="Logo" width="200" height="75">
+            <div class="logo-brand">
+                <h1>Scoots Adventure</h1>
+                <p>Motor Rental Company</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+         <nav id="menu">
+            <!--'&times;' represents the multiplication symbol (×) -->
+            <div id="close-btn">&times;</div> <!--resembles the traditional "close" symbol -->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Rentals</a></li>
+                <li><a href="">Reservations</a></li>
+                <li class="active"><a href="">Contact</a></li>
+            </ul>
+         </nav>
+
+         <div id="menu-btn"> <!--The Hamburger Icon-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+     </header>
+
+    <!-- Main Content -->
+     <main class="content-container">
+        <section class="hero-container">
+            <div class="hero-container-img">
+                <picture>
+                    <source media="(min-width: 978px)" srcset="images/contact/hero-lg.webp">
+                    <source media="(min-width: 600px)" srcset="images/contact/hero-med.webp">
+                    <img src="images/contact/hero-small.jpg" id="hero-image" alt="Jeep on the beach" width="600" height="400">
+                </picture>
+            </div>
+            <h2 class="hero-container-heading">Your Adventure Starts Here</h2>
+        </section>
+
+        <section class="content-container-contact">
+            <section class="company-location-card">
+                <h3>Discover Cozumel Your Way</h3>
+                <p>Scoots Adventure offers convenient rental locations throughout Cozumel to cater to your needs. Whether you're arriving by ferry or cruise ship, we've got you covered.</p>
+                <div class="location-card-main">
+                    <div>
+                        <h4>Downtown Cozumel</h4>
+                        <p>Av. Rafael E. Melgar 1253<br>
+                            Colonos Cuzamil<br>
+                            77668 Cozumel, Q.R.<br>    
+                            Mexico
+                        </p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2200.839486352472!2d-86.96219896237099!3d20.499610700330997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59de693feaeb%3A0xc44b6407c8226ebc!2sAv.%20Rafael%20E.%20Melgar%201253%2C%20Colonos%20Cuzamil%2C%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1734240471434!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+                <div class="location-card-alt">
+                    <div>
+                        <h4>Puerto Maya</h4>
+                        <p>Carr. Costera Sur 4<br>
+                            Zona Hotelera Sur<br>
+                            77675 Cozumel, Q.R.<br>    
+                            Mexico
+                        </p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1868.8591509548212!2d-86.97586521839933!3d20.476760080598666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748a32ba76d%3A0xa0a3abac2af10fb8!2sCarr.%20Costera%20Sur%204%2C%20Zona%20Hotelera%20Sur%2C%2077675%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1734240641431!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            </section>
+
+            <aside class="form-section">
+                <h3>Contact Us</h3>
+                <form action="thankyou.html" method="get" class="contact-form">
+                    <label for="firt-name">First Name *</label>
+                    <input type="text" id="first-name" name="first-name" required autofocus>
+                    
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="someone@example.com" required>
+
+
+                    <label for="comment" id="comment">Message / Comment</label>
+                    <textarea name="comment" id="comment" rows="6"></textarea>
+
+                    <input type="submit" value="Get in Touch">
+                </form>
+            </aside>
+        </section>
+
+     </main>
+
+    <!-- Footer -->
+     <footer>
+        <div class="footer-top-container">
+            <div class="footer-about-us">
+                <img src="images/Scoots-Logo-Dark.svg" alt="Logo" width="200" height="75" loading="lazy">
+            </div>
+
+            <div class="footer-contact-info">
+                <h4>Address:</h4>
+                <p>Av. Rafael E. Melgar 1253<br>
+                    Colonos Cuzamil<br>
+                    77668 Cozumel, Q.R.<br>    
+                    Mexico
+                 </p>
+                <h4>Contact Us:</h4>
+                <p>+52 55 5563 0011<br>
+                scootscozumel@email.com</p> 
+            </div>
+
+            <div class="footer-social-media-channels">
+                <h4>Follow Us:</h4>
+                <ul class="sm-icons">
+                    <li><a href="https://www.facebook.com/" target="_blank" aria-label="Follow us on Facebook"><img class="social-media-icon" src="images/sm-icons/fb-sm.svg" alt="Facebook" width="30" height="30" loading="lazy"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram"><img class="social-media-icon" src="images/sm-icons/ig-sm.svg" alt="Instagram" width="30" height="30" loading="lazy"></a></li>
+                    <li><a href="https://x.com/" target="_blank"><img class="social-media-icon" src="images/sm-icons/x-sm.svg" alt="X" width="30" height="30" loading="lazy"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-container">
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year"></span> Alfonso Scudiero | Images by <a href="https://unsplash.com/" target="_blank"> Unplash</a> and <a href="https://www.pexels.com/" target="_blank"> Pexels</a> 
+                | Icons by <a href="https://www.canva.com/" target="_blank">Canva</a></p>
+                <p>Weather Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap.org</a></p>
+                <p>Last Modified <span id="date-modified"></span></p>
+            </div>
+
+        </div>
+     </footer>
+    
+</body>
+</html>
