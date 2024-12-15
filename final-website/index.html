@@ -54,7 +54,91 @@
      </header>
 
     <!-- Main Content -->
-     <main>
+     <main class="content-container">
+        <section class="hero-container">
+            <div class="hero-container-img">
+                <picture>
+                    <source media="(min-width: 978px)" srcset="images/hero-lg.webp">
+                    <source media="(min-width: 60px)" srcset="images/hero-med.webp">
+                    <img src="images/hero-small.jpg" id="hero-image" alt="Sea star by the shore" width="600" height="400">
+                </picture>
+            </div>
+            <h2 class="hero-container-heading">Your Island Adventure Awaits</h2>
+            <!-- <h3 class="hero-container-subheading">Rent Your Ride, Explore Your Way</h3> -->
+        </section>
+
+        <section class="company-highlight-container">
+            <h3>Your Guide to the Good Life</h3>
+            <div class="company-mission-values">
+                <p>Discover the heart of Cozumel. We are more than just a rental company; we are your local guide to unforgettable island adventures. Our mission is to provide top-notch rental services and insider tips to help you explore the hidden gems of our beautiful island.</p>
+            </div>
+            <button>Reserve Now</button>
+            <img src="images/get-your-ride.webp" alt="Man riding motorcycle by the ocean" width="300" height="294" loading="lazy">
+        </section>
+
+        <section class="rentals-card">
+            <h3>View Our Fleet</h3>
+            <div class="rentals-type">
+                <a href="#" class="type-scooters">
+                    <div class="dark-overlay"></div>
+                    <h3>Scooters</h3>
+                </a>
+
+                <a href="" class="type-atvs">
+                    <div class="dark-overlay"></div>
+                    <h3>ATVs</h3>
+                </a>
+
+                <a href="" class="type-jeeps">
+                    <div class="dark-overlay"></div>
+                    <h3>Jeeps</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="current-weather-card">
+            <h3>Today's Weather</h3>
+            <p>Conditions: <span class="current-conditions"></span></p>
+            <p>Temperature: <span class="current-temperature"></span></p>
+            <p>Winds: <span class="current-winds"></span></p>
+            <p>Humidity: <span class="current-humidity"></span></p>
+            <p>Feels Like: <span class="feels-like"></span></p>
+            <p>Precipitation: <span class="current-precipitation"></span></p>
+        </section>
+
+        <section class="forecast-card">
+            <h3>Weather Forecast</h3>
+            <div class="forecast-table">
+               <div class="forecast-item">
+                <h4>Sunday</h4>
+                <img src="" alt="">
+                <p>80.35</p>
+               </div> 
+
+               <div class="forecast-item">
+                <h4>Monday</h4>
+                <img src="" alt="">
+                <p>80.35</p>
+               </div> 
+
+               <div class="forecast-item">
+                <h4>Tuesday</h4>
+                <img src="" alt="">
+                <p>80.35</p>
+               </div> 
+            </div>
+        </section>
+
+        <section class="location-card">
+            <h3>Get Ready to the Ride</h3>
+            <div class="location-card-desc">
+                <p>
+                    Scoots Adventure has been providing top-notch rental vehicles for island exploration since 2001.  Based in the heart of Cozumel, Mexico, we offer a wide range of rental vehicles, including scooters, ATVs, and Jeeps, perfect for exploring the island’s stunning beaches, lush jungles, and ancient Mayan ruins. 
+                </p>
+                <button>Contact Us</button>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d144541.42959067284!2d-87.0168315293716!3d20.47322811671595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1734232987142!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </section>
+            </div>
+
 
      </main>
 
@@ -62,11 +146,11 @@
      <footer>
         <div class="footer-top-container">
             <div class="footer-about-us">
-                <img src="images/Scoots-Logo-Dark.svg" alt="Logo" width="200" height="75">
+                <img src="images/Scoots-Logo-Dark.svg" alt="Logo" width="200" height="75" loading="lazy">
             </div>
 
             <div class="footer-contact-info">
-                <h4>Address:</h4>
+                <h4>Main Store:</h4>
                 <p>Av. Rafael E. Melgar 1253<br>
                     Colonos Cuzamil<br>
                     77668 Cozumel, Q.R.<br>    
@@ -80,9 +164,9 @@
             <div class="footer-social-media-channels">
                 <h4>Follow Us:</h4>
                 <ul class="sm-icons">
-                    <li><a href="https://www.facebook.com/" target="_blank" aria-label="Follow us on Facebook"><img class="social-media-icon" src="images/sm-icons/fb-sm.svg" alt="Facebook" width="30" height="30"></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram"><img class="social-media-icon" src="images/sm-icons/ig-sm.svg" alt="Instagram" width="30" height="30"></a></li>
-                    <li><a href="https://x.com/" target="_blank"><img class="social-media-icon" src="images/sm-icons/x-sm.svg" alt="X" width="30" height="30"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" aria-label="Follow us on Facebook"><img class="social-media-icon" src="images/sm-icons/fb-sm.svg" alt="Facebook" width="30" height="30" loading="lazy"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Follow us on Instagram"><img class="social-media-icon" src="images/sm-icons/ig-sm.svg" alt="Instagram" width="30" height="30" loading="lazy"></a></li>
+                    <li><a href="https://x.com/" target="_blank"><img class="social-media-icon" src="images/sm-icons/x-sm.svg" alt="X" width="30" height="30" loading="lazy"></a></li>
                 </ul>
             </div>
         </div>
