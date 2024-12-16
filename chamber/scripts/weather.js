@@ -127,7 +127,7 @@ function handleBanner() {
     console.log('Today\'s day number:', today);
 
     // Show the banner on Monday, Tuesday, or Wednesday
-    if (today >= 1 && today <= 3) {
+    if (today >= 0 && today <= 3) {
         console.log('Today is Monday, Tuesday, or Wednesday. Showing the banner.');
         banner.style.display = 'block'; // Show the banner
 

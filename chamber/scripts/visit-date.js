@@ -36,4 +36,5 @@ if (!lastVisitDate) {
 // toISOString() converts the current date to a string in ISO 8601 format
 localStorage.setItem('lastVisit', theDateToday.toISOString());
 
+// testing only
 console.log("Updated localStorage with new visit date:", theDateToday.toISOString());

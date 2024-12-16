@@ -177,6 +177,41 @@ header {
     z-index: 1;
 }
 
+/* ------Banner Style------ */
+.banner {
+    font-size: var(--navigation-font-family);
+    color: var(--site-color-06);
+    font-size: 1rem;;
+    text-align: center;
+    background: var(--site-color-05);
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.banner h3 {
+    margin-bottom: .5rem;
+}
+
+.banner p {
+    font-size: 1rem;
+}
+
+/* .close-banner {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 10px;
+} */
+
+#closeable-message {
+    border-radius: .25rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding: 2%;
+}
+
 /* -----Company Highlight--- */
 .company-highlight-container {
     display: flex;

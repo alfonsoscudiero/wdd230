@@ -1,0 +1,87 @@
+// Initialize display elements
+const currentDate = document.querySelector('#current-date');
+const maxTemp = document.querySelector('#max-temp');
+const currentConditions = document.querySelector('#current-conditions');
+const currentTemp = document.querySelector('#current-temperature');
+const currentHum = document.querySelector('#current-humidity');
+const feelsLike = document.querySelector('#feels-like');
+const errorMessage = document.querySelector('#error-message');
+const dateDisplays = document.querySelectorAll('.date-display'); // Multiple dates
+const tempDisplays = document.querySelectorAll('.temp-display');
+const mainWeather = document.querySelectorAll('.main-weather');
+const weatherDesc = document.querySelectorAll('.weather-desc');
+const weatherIcons = document.querySelectorAll('.weather-icon')
+const banner = document.querySelector('.banner');
+const closeBtn = document.querySelector('#closeable-message');
+
+// OpenWeatherMap API key
+const apiKey = "e122671826e7ca9f9baca798d6779d26"; 
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&appid=${apiKey}&units=imperial`;
+
+// Fetch and update weather data
+async function updateWeather() {
+
+    try {
+        // Fetch data from
+        const response = await fetch(url);
+        // testing only
+        console.log(response);
+
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+
+        // Convert response to JSON format
+        const data = await response.json();
+
+        // Call the displayResults function
+        displayResults(data);
+
+    } catch(error) {
+        // Call the function to display the error message
+        displayError("Unable to fetch weather data");
+    }
+}
+
+// Display weather results
+function displayResults(data) {
+    // Banner update
+    const today = new Date();
+    currentDate.textContent = today.toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'});
+    maxTemp.textContent = `${data.list[0].main.temp_max.toFixed(1)}°F`;
+
+    // Current weather card update
+    currentConditions.textContent = data.list[0].weather[0].description;
+    currentTemp.textContent = `${data.list[0].main.temp.toFixed(1)}°F`;
+    currentHum.textContent = `${data.list[0].main.humidity}%`;
+    feelsLike.textContent = `${data.list[0].main.feels_like.toFixed(1)}°F`;
+
+    // Forecast card update
+    const forecastItems = data.list.filter(item => item.dt_txt.includes('15:00:00')).slice(0, 3);
+    forecastItems.forEach((item, index) => {
+        dateDisplays[index].textContent = new Date(item.dt_txt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        mainWeather [index].textContent = item.weather[0].main;
+        weatherDesc[index].textContent = item.weather[0].description;
+        weatherIcons[index].src = `https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`;
+        weatherIcons[index].alt = item.weather[0].description;
+        tempDisplays[index].textContent = `${item.main.temp.toFixed(1)}°F`;
+    });
+}
+
+// Function to display an error message
+function displayError(message) {
+    // Set the error message text
+    errorMessage.textContent = message;
+
+    // Log the error for debugging purposes
+    console.error(message);
+}
+
+// Function to handle the banner functionality
+closeBtn.addEventListener('click', () => {
+    banner.style.display = 'none'; // Hide the banner
+});
+
+// Call the apiFetch function to fetch and update weather data
+updateWeather()
+

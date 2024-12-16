@@ -22,6 +22,8 @@
     <!--External scripts-->
     <script src="scripts/date-copyright.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/visit-date.js" defer></script>
+    <script src="scripts/weather-cozumel.js" defer></script>
     <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,6 +74,12 @@
             <!-- <h3 class="hero-container-subheading">Rent Your Ride, Explore Your Way</h3> -->
         </section>
 
+        <section class="banner">
+            <h3><span id="latest-visit"></span></h3>
+            <p>Expect a high of <span id="max-temp"></span> in Cozumel, Mexico, on <span id="current-date"></span>.</p>
+            <button id="closeable-message">Close Message</button>
+        </section>
+
         <section class="company-highlight-container">
             <h3>Your Guide to the Good Life</h3>
             <div class="company-mission-values">
@@ -102,34 +110,38 @@
         </section>
 
         <section class="current-weather-card">
-            <h3>Today's Weather</h3>
-            <p>Conditions: <span class="current-conditions"></span></p>
-            <p>Temperature: <span class="current-temperature"></span></p>
-            <p>Winds: <span class="current-winds"></span></p>
-            <p>Humidity: <span class="current-humidity"></span></p>
-            <p>Feels Like: <span class="feels-like"></span></p>
-            <p>Precipitation: <span class="current-precipitation"></span></p>
+            <h3>Today's Weather: <span id="error-message"> </span></h3>
+            <p>Condition: <span id="current-conditions"></span></p>
+            <p>Temperature: <span id="current-temperature"></span></p>
+            <p>Humidity: <span id="current-humidity"></span></p>
+            <p>Feels Like: <span id="feels-like"></span></p>
         </section>
 
         <section class="forecast-card">
             <h3>Weather Forecast</h3>
             <div class="forecast-table">
                <div class="forecast-item">
-                <h4>Sunday</h4>
-                <img src="" alt="">
-                <p>80.35</p>
+                <h4 class="date-display">Sunday</h4>
+                <h5 class="main-weather"></h5>
+                <p class="weather-desc"></p>
+                <img class="weather-icon" src="" alt="" width="50" height="50">
+                <p class="temp-display">80.35</p>
                </div> 
 
                <div class="forecast-item">
-                <h4>Monday</h4>
-                <img src="" alt="">
-                <p>80.35</p>
+                <h4 class="date-display">Sunday</h4>
+                <h5 class="main-weather"></h5>
+                <p class="weather-desc"></p>
+                <img class="weather-icon" src="" alt="" width="50" height="50">
+                <p class="temp-display">80.35</p>
                </div> 
 
                <div class="forecast-item">
-                <h4>Tuesday</h4>
-                <img src="" alt="">
-                <p>80.35</p>
+                <h4 class="date-display">Sunday</h4>
+                <h5 class="main-weather"></h5>
+                <p class="weather-desc"></p>
+                <img class="weather-icon" src="" alt="" width="50" height="50">
+                <p class="temp-display">80.35</p>
                </div> 
             </div>
         </section>
