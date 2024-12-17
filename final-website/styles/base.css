@@ -54,7 +54,6 @@ header {
     padding: 2% 2%;
     background-color: var(--site-color-01);
     color: var(--site-color-06);
-    /* width: 9%; */
 }
 
 .logo  {
@@ -94,7 +93,6 @@ header {
     width: 30px;
     padding: 5px 0;
     cursor: pointer;
-    /* margin-right: 2%; */
 }
 
 #menu-btn span {
@@ -197,17 +195,9 @@ header {
     font-size: 1rem;
 }
 
-/* .close-banner {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-left: 10px;
-} */
-
 #closeable-message {
     border-radius: .25rem;
     cursor: pointer;
-    font-size: 1.1rem;
     margin-top: 1rem;
     padding: 2%;
 }
@@ -235,16 +225,17 @@ header {
 
 .company-highlight-container button {
     padding: 2%;
+    border: none;
     border-radius: .25rem;
-    background: var(--site-color-05);
-    color: var(--site-color-06);
+    background: var(--site-color-03);
+    color: var(--site-color-01);
     margin: auto;
     transition: all ease-in-out 0.2s;
 }
 
 .company-highlight-container button:hover {
-    color: var(--site-color-03);
-    background: var(--site-color-01);
+    color: var(--site-color-01);
+    background: var(--site-color-03);
 
 }
 
@@ -252,6 +243,21 @@ header {
     width: 300px;
     height: auto;
     margin: 1rem 0;
+}
+
+/* -----Banner-2 Style---- */
+.banner-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--site-color-03);
+    color: var(--site-color-02);
+    padding: 1.5rem;
+}
+
+.banner-2 h3 {
+    line-height: 1.5rem;
 }
 
 /* -----Rentals Card--- */
@@ -343,7 +349,6 @@ header {
     height: 200px; 
 }
 
-
 /* -----Current Weather Card---- */
 .current-weather-card {
     display: grid;
@@ -364,10 +369,13 @@ header {
 }
 
 .current-weather-card p {
-    font-size: .7rem;
+    font-size: .8rem;
     margin: .25rem;
 }
 
+#current-conditions {
+    text-transform: capitalize;
+}
 
 /* -----Forecast Weather Card---- */
 .forecast-card {
@@ -379,17 +387,37 @@ header {
 
 .forecast-card h3 {
     padding: 1.5rem;
-    
 }
 
 .forecast-table {
     display: grid;
-    grid-template-columns: repeat(3, 90px);
+    grid-template-columns: repeat(3, 100px);
     justify-items: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: .5rem;
     margin: 0 auto 2.5rem;
     width: max-content;
+    border-radius: .25rem;
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: .5rem;
+}
+
+.forecast-item {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    row-gap: .2rem; 
+  }
+
+.weather-desc {
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.temp-display {
+    font-weight: 700;
 }
 
 /* -----location Card---- */
