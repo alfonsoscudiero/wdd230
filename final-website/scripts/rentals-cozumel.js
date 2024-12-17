@@ -1,74 +1,66 @@
 //Initialize elements
 const url = "https://alfonsoscudiero.github.io/wdd230/final-website/data/rentals.json";
-const rentalOption = document.querySelector('#rental-option');
+const rentalOptionContainer = document.querySelector('#card-section-rental-options'); // Target the container
 
-// Fetch and update rental data
+// Fetch and display rental data
 async function getRentalData() {
     try {
-        // Fetch data from
-        console.log('Fetching data from:', url); // Log the endpoint
-        const response = await fetch(url); // Make a network request
-        // testing only
-        console.log(response);
+        console.log('Fetching data from:', url);
+        const response = await fetch(url);
 
-        if(!response.ok) {
-            // If the response is not OK, throw an error with the status
-            console.error(`HTTP  error: ${response.status} ${response.statusText}`); // Debugging
-
+        if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
-        // Convert response to JSON format
         const data = await response.json();
-        console.log("Fetched options:", data.options); // Log the rental options array
-    
-        //Display cards on the viewport
+        console.log("Fetched options:", data.options);
         displayRentalCards(data.options);
-    } catch(error) {
+    } catch (error) {
         console.error("Error fetching data:", error);
-        document.querySelector("#rental-option").innerHTML = `<p>Failed to load reference. Please try again later.</p>`
+        rentalOptionContainer.innerHTML = `<p>Failed to load rental data. Please try again later.</p>`;
     }
 }
 
+// Dynamically display rental cards
 const displayRentalCards = (options) => {
     console.log('Displaying options:', options); //Debugging
+    rentalOptionContainer.innerHTML = ""; // Clear container before adding new cards
 
-    //Loop through each rental option object within the Json data
     options.forEach((option) => {
-        // Create elements to add to the div.cards element
+        // Create elements for each card
         let card = document.createElement('section');
+        card.classList.add('rental-option');
+
+        let image = document.createElement('img');
         let makeModel = document.createElement('h4');
         let maxCapacity = document.createElement('p');
         let fullDay = document.createElement('p');
         let halfDay = document.createElement('p');
-        let rentPict = document.createElement('img');
 
-        //Build the h4 content out to show the prophet's full name
+        // Set element content
+        image.setAttribute('src', option.imageUrl);
+        image.setAttribute('alt', `Image of ${option.make} ${option.type}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '300');
+        image.setAttribute('height', '200');
+
         makeModel.textContent = `${option.make} ${option.model} - ${option.type}`;
+        maxCapacity.innerHTML = `<span class="bold-span">Max. persons:</span> ${option["max-persons"]}`;
+        fullDay.innerHTML = `<span class="bold-price">${option["reservation-full-day"]}</span> /Full Day`;
+        halfDay.innerHTML = `<span class="bold-price">${option["reservation-half-day"]}</span> /Up to 3hrs`;
 
-        //Set the p content
-        maxCapacity.innerHTML = `<p><span class="bold-span">Max. persons:</span> ${option.max-persons}</p>`
-        fullDay.innerHTML = `<p><span class="bold-price">${option.reservation-full-day}</span> /Full Day</p>`
-        halfDay.innerHTML = `<p><span class="bold-price">${option.reservation-half-day}</span> /Up to 3hrs</p>`
-
-        //Build the image
-        rentPict.setAttribute('src', prophet.imageurl);
-        rentPict.setAttribute('alt', `Image of ${option.make} ${option.type}`);
-        rentPict.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '300');
-        portrait.setAttribute('height', '300');
-
-        // Append the created elements to the section (card)
-        card.appendChild(rentPict);
+        // Append elements to card
+        card.appendChild(image);
         card.appendChild(makeModel);
         card.appendChild(maxCapacity);
         card.appendChild(fullDay);
         card.appendChild(halfDay);
 
-        // Append the created card element to the div in HTML
-        rentalOption.appendChild(card);
+        // Append card to container
+        rentalOptionContainer.appendChild(card);
     });
-}
+
+};
 
 // Fetch and display the rental cards when the page loads
-getRentalData()
+getRentalData();

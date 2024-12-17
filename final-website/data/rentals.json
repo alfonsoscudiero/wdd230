@@ -9,7 +9,7 @@
             "reservation-full-day": "$30",
             "walk-in-half-day": "$25",
             "walk-in-full-day": "$35",
-            "image-url": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-metro-scooter.png" 
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-metro-scooter.png" 
         },
         {
             "make": "Honda",
@@ -20,7 +20,7 @@
             "reservation-full-day": "$40",
             "walk-in-half-day": "$35",
             "walk-in-full-day": "$45",
-            "image-url": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-dio-scooter.png" 
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-dio-scooter.png" 
         },
         {
             "make": "Honda",
@@ -31,7 +31,7 @@
             "reservation-full-day": "$50",
             "walk-in-half-day": "$45",
             "walk-in-full-day": "$55",
-            "image-url": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-pcx-scooter.png" 
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-pcx-scooter.png" 
         },
         {
             "make": "Honda",
@@ -42,7 +42,7 @@
             "reservation-full-day": "$70",
             "walk-in-half-day": "$60",
             "walk-in-full-day": "$80",
-            "image-url": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-pioneer-atv.png" 
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-pioneer-atv.png" 
         },
         {
             "make": "Jeep",
@@ -53,7 +53,7 @@
             "reservation-full-day": "$100",
             "walk-in-half-day": "$85",
             "walk-in-full-day": "$125",
-            "image-url": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/jeep-4door.png" 
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/jeep-4door.png" 
         },
         {
             "make": "Jeep Wrangler",
@@ -64,7 +64,7 @@
             "reservation-full-day": "$85",
             "walk-in-half-day": "$70",
             "walk-in-full-day": "$90",
-            "image-url": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/jeep-2door.png" 
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/jeep-2door.png" 
         }
     ]
 }
