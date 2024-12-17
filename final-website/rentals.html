@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We've Received Your Message</title>
+    <title>Scoots Adventure- Motor Rental Company</title>
     <!-- Meta Description -->
-    <meta name="description" content="Thank you for your interest in Scoots Adventure. We'll be in touch soon.">
+    <meta name="description" content="Escape the crowds and explore Cozumel's hidden gems! Rent scooters, ATVs, or jeeps from Scoots Adventure and experience the island your way.">
     <!-- Meta Author -->
     <meta name="author" content="Alfonso Scudiero">
     <!--  Favicon -->
@@ -22,6 +22,8 @@
     <!--External scripts-->
     <script src="scripts/date-copyright.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/visit-date-scoots.js" defer></script>
+    <script src="scripts/weather-cozumel.js" defer></script>
     <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,10 +46,10 @@
             <!--'&times;' represents the multiplication symbol (×) -->
             <div id="close-btn">&times;</div> <!--resembles the traditional "close" symbol -->
             <ul>
-                <li><a href="">Home</a></li>
+                <li class="active"><a href="">Home</a></li>
                 <li><a href="">Rentals</a></li>
                 <li><a href="">Reservations</a></li>
-                <li class="active"><a href="">Contact</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
          </nav>
 
@@ -63,18 +65,29 @@
         <section class="hero-container">
             <div class="hero-container-img">
                 <picture>
-                    <source media="(min-width: 992px)" srcset="images/thankYou/hero-lg.webp">
-                    <source media="(min-width: 600px)" srcset="images/thankYou/hero-med.webp">
-                    <img src="images/thankYou/hero-small.jpg" id="hero-image" alt="View of the Ocean" width="600" height="400">
+                    <source media="(min-width: 992px)" srcset="images/rentals/hero-lg.webp">
+                    <source media="(min-width: 600px)" srcset="images/rentals/hero-med.webp">
+                    <img src="images/rentals/hero-small.jpg" id="hero-image" alt="Sea star by the shore" width="600" height="400">
                 </picture>
             </div>
-            <h2 class="hero-container-heading">Thank you for contacting us!</h2>
+            <h2 class="hero-container-heading">Island Escapes,<br>Your Style</h2>
+            <!-- <h3 class="hero-container-subheading">Rent Your Ride, Explore Your Way</h3> -->
         </section>
 
-        <section class="thank-you-section">
-            <h2>Thank you for Your Message</h2>
-            <p>We have received your message and will process it shortly.<br>A confirmation email has been sent to the provided address.</p>
-            <p>In the meantime, feel free to browse our <a href="#">fleet</a> to see what we have to offer!</p>
+        <section class="card-section">
+            <h3>Ignite your Journey with Us!</h3>
+            <div id="rental-option">
+            <!-- The JavaScript will dynamically insert elements here -->
+                <!-- <img src="images/rentals/fleet/honda-metro-scooter.png" alt="">
+                <h2>Honda Metro Scooter</h2>
+                <p><span class="bold-span">Max. persons:</span> 1</p>
+                <p><span class="bold-price">$30</span> /Full Day</p>
+                <p><span class="bold-price">$25</span> /Up to 3hrs</p> -->
+            </div>
+        </section>
+
+        <section id="cta-rentals">
+            <button><a href="">Book Online</a></button>
         </section>
 
      </main>

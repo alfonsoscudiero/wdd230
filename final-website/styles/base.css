@@ -19,7 +19,7 @@
 body {
     font-family: var(--main-font-family);
     width: 100%;
-    max-width: 1440px;
+    max-width: 1980px;
     height: 100vh;
     background-color: var(--site-color-06);
     margin: 0 auto;
@@ -90,14 +90,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 30px;
+    width: 25px;
     padding: 5px 0;
     cursor: pointer;
 }
 
 #menu-btn span {
     display: block;
-    height: 5px;
+    height: 3px;
     background-color: var(--site-color-02);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -122,10 +122,10 @@ header {
 
 #close-btn {
     position: absolute;
-    top: -1%;
+    top: -.5%;
     right: 1%;
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 400;
     cursor: pointer;
     color: var(--site-color-06);
 }
@@ -170,7 +170,10 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     color: var(--site-color-01);
-    background-color: rgba(255, 255, 255, 0.6);
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.5);
+    line-height: 2rem;
+    padding: 1rem;
     width: fit-content;
     z-index: 1;
 }
@@ -184,7 +187,7 @@ header {
     background: var(--site-color-05);
     width: 100%;
     padding: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: -.25rem;
 }
 
 .banner h3 {
@@ -208,7 +211,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .company-highlight-container h3 {
@@ -251,8 +254,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--site-color-03);
-    color: var(--site-color-02);
+    background: var(--site-color-05);
+    color: var(--site-color-06);
     padding: 1.5rem;
 }
 
@@ -266,7 +269,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
 }
 
 .rentals-card h3, 
@@ -320,7 +323,7 @@ header {
 }
 
 .type-scooters:hover .dark-overlay {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .type-atvs {
@@ -542,7 +545,93 @@ footer p {
     color: var(--site-color-02);
 }
 
-/* -----Contact Page / Form---- */
+/* -----Rentals Page Style ---- */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    margin: 1rem 0 2rem;
+}
+
+.card-section h3 {
+    margin: 2rem;
+}
+
+#rental-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    /* background: var(--site-color-02); */
+    width: minmax(250px, 300px);
+    height: auto;
+    transition: all ease-in-out 0.2s;
+}
+
+#rental-option:hover {
+    /* New Morphism */
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white; 
+}
+
+#rental-option img {
+    padding: .5rem 0;
+}
+
+#rental-option h2 {
+    font-size: 1.2rem;
+    padding: .5rem 0;
+}
+
+#rental-option p {
+    /* align-self: flex-start; */
+    padding: 0.2rem 1rem;
+}
+
+.bold-span {
+    font-weight: 600;
+}
+
+.bold-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#rental-option p:nth-child(5) {
+    margin-bottom: .5rem;
+}
+
+
+#cta-rentals  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2rem;
+}
+
+#cta-rentals button {
+    background: var(--site-color-05);
+    color: var(--site-color-06);
+    font-family: var(--navigation-font-family);
+    border-radius: .25rem;
+    padding: 2%;
+    transition: all ease-in-out .2s;
+}
+
+#cta-rentals button:hover {
+    background: var(--site-color-01);
+    color: var(--site-color-03);
+}
+
+#cta-rentals button a {
+    color: inherit;
+}
+
+/* -----Contact Page Style--- */
 .content-container-contact {
     display: flex;
     flex-direction: column;
