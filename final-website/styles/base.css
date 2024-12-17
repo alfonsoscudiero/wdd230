@@ -551,27 +551,35 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 1.5rem;
     margin: 1rem 0 2rem;
 }
 
+#test {
+    width: 100%;
+    background: var(--site-color-05);
+}
 .card-section h3 {
-    margin: 2rem;
+   text-align: center;
+    color: var(--site-color-06);
+    padding: 1.5rem;
 }
 
-#rental-option {
+.rental-option {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
-    /* background: var(--site-color-02); */
+    row-gap: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .75rem;
     width: minmax(250px, 300px);
     height: auto;
+    padding: 1rem;
+    margin: 2rem;
     transition: all ease-in-out 0.2s;
 }
 
-#rental-option:hover {
+.rental-option:hover {
     /* New Morphism */
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
     -10px -10px 10px white; 
@@ -581,29 +589,14 @@ footer p {
     padding: .5rem 0;
 }
 
-#rental-option h4 {
-    font-size: 1.2rem;
-    padding: .5rem 0;
-}
-
-#rental-option p {
-    /* align-self: flex-start; */
-    padding: 0.2rem 1rem;
-}
-
 .bold-span {
     font-weight: 600;
 }
 
 .bold-price {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
 }
-
-#rental-option p:nth-child(5) {
-    margin-bottom: .5rem;
-}
-
 
 #cta-rentals  {
     display: flex;

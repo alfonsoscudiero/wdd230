@@ -1,4 +1,4 @@
-//Initialize elements
+// Initialize elements
 const url = "https://alfonsoscudiero.github.io/wdd230/final-website/data/rentals.json";
 const rentalOptionContainer = document.querySelector('#card-section-rental-options'); // Target the container
 
@@ -23,43 +23,23 @@ async function getRentalData() {
 
 // Dynamically display rental cards
 const displayRentalCards = (options) => {
-    console.log('Displaying options:', options); //Debugging
     rentalOptionContainer.innerHTML = ""; // Clear container before adding new cards
 
     options.forEach((option) => {
         // Create elements for each card
-        let card = document.createElement('section');
+        const card = document.createElement('section');
         card.classList.add('rental-option');
 
-        let image = document.createElement('img');
-        let makeModel = document.createElement('h4');
-        let maxCapacity = document.createElement('p');
-        let fullDay = document.createElement('p');
-        let halfDay = document.createElement('p');
+        card.innerHTML = `
+            <img src="${option.imageUrl}" alt="Image of ${option.make} ${option.type}" loading="lazy" width="300" height="200">
+            <h4>${option.make} ${option.model} - ${option.type}</h4>
+            <p><span class="bold-span">Max. persons:</span> ${option["max-persons"]}</p>
+            <p><span class="bold-price">${option["reservation-full-day"]}</span> /Full Day</p>
+            <p><span class="bold-price">${option["reservation-half-day"]}</span> /Up to 3hrs</p>
+        `;
 
-        // Set element content
-        image.setAttribute('src', option.imageUrl);
-        image.setAttribute('alt', `Image of ${option.make} ${option.type}`);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '300');
-        image.setAttribute('height', '200');
-
-        makeModel.textContent = `${option.make} ${option.model} - ${option.type}`;
-        maxCapacity.innerHTML = `<span class="bold-span">Max. persons:</span> ${option["max-persons"]}`;
-        fullDay.innerHTML = `<span class="bold-price">${option["reservation-full-day"]}</span> /Full Day`;
-        halfDay.innerHTML = `<span class="bold-price">${option["reservation-half-day"]}</span> /Up to 3hrs`;
-
-        // Append elements to card
-        card.appendChild(image);
-        card.appendChild(makeModel);
-        card.appendChild(maxCapacity);
-        card.appendChild(fullDay);
-        card.appendChild(halfDay);
-
-        // Append card to container
         rentalOptionContainer.appendChild(card);
     });
-
 };
 
 // Fetch and display the rental cards when the page loads
