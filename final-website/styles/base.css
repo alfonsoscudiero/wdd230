@@ -551,7 +551,7 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 0;
 }
 
 #test {
@@ -562,6 +562,10 @@ footer p {
    text-align: center;
     color: var(--site-color-06);
     padding: 1.5rem;
+}
+
+#card-section-rental-options {
+    margin-top: 0;
 }
 
 .rental-option {
@@ -575,7 +579,7 @@ footer p {
     width: minmax(250px, 300px);
     height: auto;
     padding: 1rem;
-    margin: 2rem;
+    margin: 0 1rem 2rem;
     transition: all ease-in-out 0.2s;
 }
 
@@ -583,6 +587,10 @@ footer p {
     /* New Morphism */
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
     -10px -10px 10px white; 
+}
+
+.rental-option:last-child {
+    margin: 0;
 }
 
 #rental-option img {
@@ -598,33 +606,173 @@ footer p {
     font-weight: 600;
 }
 
-#cta-rentals  {
+#cta-rentals,
+#cta-let-connect {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 0 2rem;
+    margin: 0 0 2.5rem;
+    width: 100%;
 }
 
-#cta-rentals button {
+#cta-rentals button,
+#cta-let-connect button {
+    border: none;
     background: var(--site-color-05);
     color: var(--site-color-06);
     font-family: var(--navigation-font-family);
     border-radius: .25rem;
     padding: 2%;
+    margin: 2rem 0 0;
     transition: all ease-in-out .2s;
 }
 
-#cta-rentals button:hover {
+#cta-rentals button:hover,
+#cta-let-connect button:hover {
     background: var(--site-color-01);
     color: var(--site-color-03);
 }
 
-#cta-rentals button a {
+#cta-rentals button a,
+#cta-let-connect a {
     color: inherit;
 }
 
-/* -----Contact Page Style--- */
+/* -----Reservation Page Styling--- */
+    /* -----Reservation Form--- */
+.reservation-section {
+    background: rgb(0, 0, 0, .2);
+    border-radius: .25rem;
+    padding: 1rem;
+    margin: .5rem 1.5rem 2.5rem ;
+    
+}
+
+.reservation-section h4 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.reservation-form fieldset {
+    border: 1px solid var(--site-color-02);
+    border-radius: .25rem;
+    padding: 0 1rem 1rem;
+    margin: 1em 0 1.5rem;
+}
+
+.reservation-form legend {
+    font-family: var(--navigation-font-family);
+    font-weight: 500;
+    padding: 0 .5rem;
+}
+
+.reservation-form label {
+    display: block;
+    font-size: .9rem;
+    padding-top: .75rem;
+}
+
+.required-symbol {
+    font-weight: 700;
+}
+
+.reservation-form div {
+    font-size: .9rem;
+    padding-top: .75rem;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"],
+.reservation-form select,
+.reservation-form textarea {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: .25rem;
+    background: var(--site-color-02);
+    padding: .75rem;
+    color: var(--site-color-01);
+    width: 100%;
+    max-width: 600px;
+    appearance: none;
+}
+
+.reservation-form input[type="radio"],
+.reservation-form input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+.reservation-form input[type="submit"] {
+    cursor: pointer;
+    background: var(--site-color-05);
+    color: var(--site-color-06);
+    font-family: var(--navigation-font-family);
+    border: none;
+    border-radius: .25rem;
+    padding: .5rem;
+    width: 96%;
+    max-width: 600px;
+    margin: -2rem 2% 1rem 2%;
+    transition: all ease-in-out .2s;
+}
+
+.reservation-form input[type="submit"]:hover {
+    background: var(--site-color-01);
+    color: var(--site-color-03);
+}
+
+.reservation-form div::before{
+    content: "📌";
+    font-size: .85rem;
+}
+
+    /* -----Rental Services Agreement Table--- */
+#reservation-heading h3 {
+    font-size: var(--headline-font-family);
+    color: var(--site-color-06);
+    background: var(--site-color-05);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#reservation-heading p {
+    padding: 1rem 1.5rem;
+}
+
+.rental-agreement-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .5rem;
+    padding: 1.5rem 1.5rem 0;
+}
+
+.rental-agreement table {
+    border-collapse: collapse;
+}
+
+.rental-agreement td {
+    padding: .5rem .75rem;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rental-agreement table ul li:before {
+    content: '✓';
+    font-family: var(--main-font-family);
+    font-weight: 900;
+    margin-right: .5rem;
+}
+
+.rental-agreement tbody tr:nth-child(odd) {
+    background: rgba(20, 16, 35, .2);
+}
+
+/* -----Contact Page Styling--- */
 .content-container-contact {
     display: flex;
     flex-direction: column;
@@ -736,7 +884,7 @@ footer p {
     color: var(--site-color-03);
 }
 
-/* -----Thank You Page--- */
+/* -----Thank You Page Styling--- */
 .thank-you-section {
     display: flex;
     flex-direction: column;
@@ -753,4 +901,30 @@ footer p {
 .thank-you-section p {
     font-size: 1rem;
     line-height: 1.2rem;
+}
+
+/* -----Confirmation Page Styling--- */
+.confirmation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 1rem;
+    padding: 0 1.5rem;
+    margin: 2rem 0;
+}
+
+#clip-path-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clip-path-image {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 100%;
+    min-width: 250px;
+    height: auto;
+    margin: 2rem 1.5rem;
 }
