@@ -2,14 +2,69 @@
     "options": [
         {
             "make": "Honda",
-            "model": "Metro Scooter",
+            "model": "Metro",
             "type": "Scooter",
             "max-persons": 1,
             "reservation-half-day": "$20",
             "reservation-full-day": "$30",
             "walk-in-half-day": "$25",
             "walk-in-full-day": "$35",
-            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-metro-scooter.jpg" // Corrected to imageUrl (common practice)
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-metro-scooter.jpg" 
+        },
+        {
+            "make": "Honda",
+            "model": "Dio",
+            "type": "Scooter",
+            "max-persons": 2,
+            "reservation-half-day": "$30",
+            "reservation-full-day": "$40",
+            "walk-in-half-day": "$35",
+            "walk-in-full-day": "$45",
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-dio-scooter.jpg" 
+        },
+        {
+            "make": "Honda",
+            "model": "PXC150",
+            "type": "Scooter",
+            "max-persons": 2,
+            "reservation-half-day": "$40",
+            "reservation-full-day": "$50",
+            "walk-in-half-day": "$45",
+            "walk-in-full-day": "$55",
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-pcx150-scooter.jpg" 
+        },
+        {
+            "make": "Honda",
+            "model": "Pioneer",
+            "type": "ATV",
+            "max-persons": 4,
+            "reservation-half-day": "$50",
+            "reservation-full-day": "70",
+            "walk-in-half-day": "$60",
+            "walk-in-full-day": "$80",
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/honda-pioneer-atv.jpg" 
+        },
+        {
+            "make": "Jeep Wrangler",
+            "model": "4-Door",
+            "type": "Jeep",
+            "max-persons": 5,
+            "reservation-half-day": "$70",
+            "reservation-full-day": "100",
+            "walk-in-half-day": "$85",
+            "walk-in-full-day": "$125",
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/jeep-4door.jpg" 
+        },
+        {
+            "make": "Jeep Wrangler",
+            "model": "2-Door",
+            "type": "Jeep",
+            "max-persons": 4,
+            "reservation-half-day": "$60",
+            "reservation-full-day": "85",
+            "walk-in-half-day": "$70",
+            "walk-in-full-day": "$90",
+            "imageUrl": "https://alfonsoscudiero.github.io/wdd230/final-website/images/rentals/fleet/jeep-2door.jpg" 
         }
     ]
 }

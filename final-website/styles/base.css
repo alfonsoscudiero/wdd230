@@ -227,15 +227,15 @@ header {
     padding: 2%;
     border: none;
     border-radius: .25rem;
-    background: var(--site-color-03);
-    color: var(--site-color-01);
+    background: var(--site-color-05);
+    color: var(--site-color-06);
     margin: auto;
     transition: all ease-in-out 0.2s;
 }
 
 .company-highlight-container button:hover {
-    color: var(--site-color-01);
-    background: var(--site-color-03);
+    color: var(--site-color-03);
+    background: var(--site-color-01);
 
 }
 
