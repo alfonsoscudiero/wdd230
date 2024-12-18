@@ -1,0 +1,190 @@
+/* Media Query for Medium Viewport */
+@media only screen and ( 600px <= width <= 991px ) {
+    /* Header */
+    header {
+        padding: 1rem .75rem 1rem 0;
+    }
+
+    .logo > img {
+        width: 110px;
+        height: auto;
+    }
+
+    #menu-btn, 
+    #close-btn {
+        display: none;
+    }
+
+    #menu {
+        position: static;
+        width: auto;
+        background: transparent;
+        z-index: unset;
+    }
+
+    #menu ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    #menu ul li {
+        margin-right: 1rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    #menu ul li:last-child {
+        margin-right: 0;
+    }
+
+    /* Main */
+    /*Home Page */
+    .hero-container h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+
+    .company-highlight-container,
+    .rentals-card,
+    .current-weather-card,
+    .location-card,
+    .confirmation-section,
+    .thank-you-section,
+    .company-location-card {
+        padding: 0 3rem;
+    }
+
+    .banner-2 h3 {
+        font-size: 1.75rem;
+        padding: .75rem 0;
+    }
+
+    .rentals-type {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .current-weather-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 1rem 2rem;
+    }
+
+    .company-highlight-container h3, 
+    .rentals-card h3,
+    .current-weather-card h3,
+    .location-card h3,
+    .thank-you-section h3,
+    .company-location-card h3,
+    .form-section h3,
+    .rental-heading-message h3 {
+        font-size: 1.2rem;
+    }
+
+    .current-weather-card p {
+        font-size: 1rem;
+    }
+
+    .forecast-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .forecast-table {
+        grid-template-columns: repeat(3, 120px);
+        gap: .75rem;
+        margin: 0 auto 2rem;
+        padding: 1rem;
+    }
+
+    .forecast-item h4 {
+        font-size: 1rem;
+    }
+
+    .forecast-item h5 {
+        font-size: .9rem;
+    }
+
+    .forecast-item p {
+        font-size: .9rem;
+    }
+
+    .forecast-item .temp-display {
+        font-size: 1.2rem;
+    }
+
+    /* Contact Page */
+    .location-master-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3rem;
+        column-gap: 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    /* Thank you Page */
+    .thank-you-section > p,
+    .confirmation-section > p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+
+    /* Footer */
+    .footer-top-container {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 1.5fr;
+        align-content: center;
+        justify-content: center;
+        grid-template-areas: "footer-contact-info footer-about-us footer-social-media-channels";
+        padding: 0 3rem;
+    }
+
+    .footer-contact-info {
+        grid-column: 1 / 2;
+        justify-self: start;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .footer-about-us {
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        justify-self: center;
+    }
+
+    .footer-about-us img {
+        width: 200px;
+        height: auto;
+    }
+
+    .footer-social-media-channels {
+        grid-column: 3 / -1;
+        align-self: start;
+        margin-top: 1rem;
+    }
+
+    .footer-social-media-channels .sm-icons  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+
+
+    
+
+
+}

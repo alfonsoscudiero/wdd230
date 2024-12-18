@@ -19,6 +19,8 @@
     <!-- External styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <!--External scripts-->
     <script src="scripts/date-copyright.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
@@ -44,10 +46,10 @@
             <!--'&times;' represents the multiplication symbol (×) -->
             <div id="close-btn">&times;</div> <!--resembles the traditional "close" symbol -->
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Rentals</a></li>
-                <li><a href="">Reservations</a></li>
-                <li class="active"><a href="">Contact</a></li>
+                <li><a href="https://alfonsoscudiero.github.io/wdd230/final-website/">Home</a></li>
+                <li><a href="https://alfonsoscudiero.github.io/wdd230/final-website/rentals.html">Rentals</a></li>
+                <li><a href="https://alfonsoscudiero.github.io/wdd230/final-website/reservations.html">Reservations</a></li>
+                <li  class="active"><a href="https://alfonsoscudiero.github.io/wdd230/final-website/contact.html">Contact</a></li>
             </ul>
          </nav>
 
@@ -71,53 +73,59 @@
             <h2 class="hero-container-heading">Your Adventure Starts Here</h2>
         </section>
 
-        <section class="content-container-contact">
+        <div class="content-container-contact">
+
             <section class="company-location-card">
                 <h3>Discover Cozumel Your Way</h3>
                 <p>Scoots Adventure offers convenient rental locations throughout Cozumel to cater to your needs. Whether you're arriving by ferry or cruise ship, we've got you covered.</p>
-                <div class="location-card-main">
-                    <div>
+            </section>
+
+            <div class="location-form-container">
+                <aside class="location-master-card">
+                    <div class="location-card-main">
                         <h4>Downtown Cozumel</h4>
                         <p>Av. Rafael E. Melgar 1253<br>
                             Colonos Cuzamil<br>
                             77668 Cozumel, Q.R.<br>    
                             Mexico
                         </p>
-                    </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2200.839486352472!2d-86.96219896237099!3d20.499610700330997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59de693feaeb%3A0xc44b6407c8226ebc!2sAv.%20Rafael%20E.%20Melgar%201253%2C%20Colonos%20Cuzamil%2C%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1734240471434!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
-
-                <div class="location-card-alt">
-                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2200.839486352472!2d-86.96219896237099!3d20.499610700330997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59de693feaeb%3A0xc44b6407c8226ebc!2sAv.%20Rafael%20E.%20Melgar%201253%2C%20Colonos%20Cuzamil%2C%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1734240471434!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </class=>
+                    </div> 
+    
+                    <div class="location-card-alt">
                         <h4>Puerto Maya</h4>
                         <p>Carr. Costera Sur 4<br>
                             Zona Hotelera Sur<br>
                             77675 Cozumel, Q.R.<br>    
                             Mexico
                         </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1868.8591509548212!2d-86.97586521839933!3d20.476760080598666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748a32ba76d%3A0xa0a3abac2af10fb8!2sCarr.%20Costera%20Sur%204%2C%20Zona%20Hotelera%20Sur%2C%2077675%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1734240641431!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1868.8591509548212!2d-86.97586521839933!3d20.476760080598666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748a32ba76d%3A0xa0a3abac2af10fb8!2sCarr.%20Costera%20Sur%204%2C%20Zona%20Hotelera%20Sur%2C%2077675%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1734240641431!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
-            </section>
-
-            <aside class="form-section">
-                <h3>Contact Us</h3>
-                <form action="thankyou.html" method="get" class="contact-form">
-                    <label for="firt-name">First Name *</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                    
-                    <label for="last-name">Last Name *</label>
-                    <input type="text" id="last-name" name="last-name" required>
+                </aside>
                 
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" placeholder="someone@example.com" required>
+                <aside class="form-section">
+                    <h3>Contact Us</h3>
+                    <form action="thankyou.html" method="get" class="contact-form">
+                        <label for="firt-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="someone@example.com" required>
+    
+    
+                        <label for="comment" id="comment">Message / Comment</label>
+                        <textarea name="comment" id="comment" rows="6"></textarea>
+    
+                        <input type="submit" value="Get in Touch">
+                    </form>
+                </aside>
+    
+            </div>
 
-
-                    <label for="comment" id="comment">Message / Comment</label>
-                    <textarea name="comment" id="comment" rows="6"></textarea>
-
-                    <input type="submit" value="Get in Touch">
-                </form>
-            </aside>
-        </section>
+        </div>
 
      </main>
 

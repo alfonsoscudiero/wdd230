@@ -38,7 +38,13 @@ const displayRentalCards = (options) => {
             <p><span class="bold-price">${option["reservation-half-day"]}</span> /Up to 3hrs</p>
         `;
 
+        // Check Each option Object in the Loop
+        console.log("Current option:", option);
+        console.log("Image URL:", option.imageUrl);
+        console.log("Max persons:", option["max-persons"]);
+
         rentalOptionContainer.appendChild(card);
+        console.log("Generated card:", card.innerHTML);
     });
 };
 

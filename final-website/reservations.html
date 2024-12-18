@@ -19,9 +19,13 @@
     <!-- External styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
     <!--External scripts-->
     <script src="scripts/date-copyright.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/reservation-dates.js" defer></script>
     <!--Embed Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,10 +48,10 @@
             <!--'&times;' represents the multiplication symbol (×) -->
             <div id="close-btn">&times;</div> <!--resembles the traditional "close" symbol -->
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Rentals</a></li>
-                <li class="active"><a href="">Reservations</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="https://alfonsoscudiero.github.io/wdd230/final-website/">Home</a></li>
+                <li><a href="https://alfonsoscudiero.github.io/wdd230/final-website/rentals.html">Rentals</a></li>
+                <li class="active"><a href="https://alfonsoscudiero.github.io/wdd230/final-website/reservations.html">Reservations</a></li>
+                <li><a href="https://alfonsoscudiero.github.io/wdd230/final-website/contact.html">Contact</a></li>
             </ul>
          </nav>
 
@@ -72,167 +76,169 @@
             <!-- <h3 class="hero-container-subheading">Rent Your Ride, Explore Your Way</h3> -->
         </section>
 
-        <section id="reservation-heading">
-            <h3>Reserve your Cozumel Vehicle</h3>
-            <div>
+        <div class="content-container-reservation">
+            <section class="reservation-heading">
+                <h3>Reserve your Cozumel Vehicle</h3>
                 <p>Join us on the track, trail or scenic route and ignite your with our rentals.</p>
-
+            </section>
+    
+            <section class="reservation-section">
+                <h4>Book Your Cozumel Rental<br>Easy and Secure</h4>
+                <form action="confirmation.html" method="get" class="reservation-form">
+                    <fieldset>
+                        <legend>Driver Information</legend>
+                        <label for="first-name">First Name <span class="required-symbol">*</span></label>
+                        <input type="text" id="first-name" name="first-name" required>
+        
+                        <label for="last-name">Last Name <span class="required-symbol">*</span></label>
+                        <input type="text" id="last-name" name="last-name" required>
+        
+                        <label for="email">Email <span class="required-symbol">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="someone@example.com" required>
+        
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="1235551234">
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Rental Details</legend>
+                        <div>Pickup & Return Locations</div>
+                        <label for="main-location">
+                            <input type="radio" id="main-location" name="locations" value="main">Downtown Cozumel
+                        </label>
+                        <label for="alt-location">
+                            <input type="radio" id="alt-location" name="locations" value="alternative">Puerto Maya
+                        </label>
+        
+                        <label for="same-location-checked">
+                            <input type="checkbox" id="same-location-checked" name="same-location" value="yes">Return to a different location
+                        </label>
+    
+                        <label for="pickup-date">Pickup Date
+                            <input type="date" id="pickup-date" name="pickup-date">
+                        </label>
+        
+                        <label for="pickup-time">Pickup Time
+                            <input type="time" id="pickup-time" name="pickup-time">
+                        </label>
+                        
+                        <label for="dropoff-date">Dropff Date
+                            <input type="date" id="dropoff-date" name="dropoff-date">
+                        </label>
+        
+                        <label for="pickup-date-time">Dropoff Time
+                            <input type="time" id="dropoff-time" name="dropoff-time">
+                        </label>
+        
+                        <label for="vehicle-preference" id="vehicle-preference-emoji" required>Vehicle Preference <span class="required-symbol">*</span>
+                            <select name="name" id="vehicle-preference">
+                                <option value="">Please select &#9662</option>
+                                <option value="metro">Honda Metropolitan Scooter (49cc)</option>
+                                <option value="dio">Honda Dio Scooter (110cc)</option>
+                                <option value="pcx150">Honda PCX150 Scooter (149cc)</option>
+                                <option value="pioneer">Honda Pioneer 1000 (SxS)</option>
+                                <option value="jeep-4d">Jeep Wrangler 4-door</option>
+                                <option value="jeep-2d">Jeep Wrangler 2-door</option>
+                            </select>
+                        </label>
+        
+                        <label for="comments">Comments / Special Accommodations</label>
+                        <textarea name="comments" id="comments" rows="4"></textarea>
+                        
+                    </fieldset>
+        
+                    <input id="cta-reserve-ride" type="submit" value="Reserve My Ride">
+                </form>
+            </section>
+    
+            <section class="rental-agreement-section">
+                <h4>Rental Services and Agreements</h4>
+                <div class="rental-agreement">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>A $50 security deposit is required to confirm reservations.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>A valid drivers license is required in hand at the time of rental.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Fuel charge is not included.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Unlimited mileage.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Liability insurance is included.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Damage insurance is available for purchase.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Rentals may be returned to either physical location</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+            </section>
+    
+            <div id="cta-let-connect">
+                <a href="https://alfonsoscudiero.github.io/wdd230/final-website/contact.html"><button>Let's Connect</button></a>
             </div>
-        </section>
+        </div>
 
-        <section class="reservation-section">
-            <h4>Book Your Cozumel Rental<br>Easy and Secure</h4>
-            <form action="confirmation.html" method="get" class="reservation-form">
-                <fieldset>
-                    <legend>Driver Information</legend>
-                    <label for="first-name">First Name <span class="required-symbol">*</span></label>
-                    <input type="text" id="first-name" name="first-name" required>
-    
-                    <label for="last-name">Last Name <span class="required-symbol">*</span></label>
-                    <input type="text" id="last-name" name="last-name" required>
-    
-                    <label for="email">Email <span class="required-symbol">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="someone@example.com" required>
-    
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="1235551234">
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Rental Details</legend>
-                    <div>Pickup & Return Locations</div>
-                    <label for="main-location">
-                        <input type="radio" id="main-location" name="locations" value="main">Downtown Cozumel
-                    </label>
-                    <label for="alt-location">
-                        <input type="radio" id="alt-location" name="locations" value="alternative">Puerto Maya
-                    </label>
-    
-                    <label for="same-location-checked">
-                        <input type="checkbox" id="same-location-checked" name="same-location" value="yes">Return to a different location
-                    </label>
+        
 
-                    <label for="pickup-date">Pickup Date
-                        <input type="date" id="pickup-date" name="pickup-date">
-                    </label>
-    
-                    <label for="pickup-time">Pickup Time
-                        <input type="time" id="pickup-time" name="pickup-time">
-                    </label>
-                    
-                    <label for="dropoff-date">Dropff Date
-                        <input type="date" id="dropoff-date" name="dropoff-date">
-                    </label>
-    
-                    <label for="pickup-date-time">Dropoff Time
-                        <input type="time" id="dropoff-time" name="dropoff-time">
-                    </label>
-    
-                    <label for="vehicle-preference" id="vehicle-preference-emoji">Vehicle Preference
-                        <select name="name" id="vehicle-preference">
-                            <option value="">Please select &#9662</option>
-                            <option value="metro">Honda Metropolitan Scooter (49cc)</option>
-                            <option value="dio">Honda Dio Scooter (110cc)</option>
-                            <option value="pcx150">Honda PCX150 Scooter (149cc)</option>
-                            <option value="pioneer">Honda Pioneer 1000 (SxS)</option>
-                            <option value="jeep-4d">Jeep Wrangler 4-door</option>
-                            <option value="jeep-2d">Jeep Wrangler 2-door</option>
-                        </select>
-                    </label>
-    
-                    <label for="comments">Comments / Special Accommodations</label>
-                    <textarea name="comments" id="comments" rows="4"></textarea>
-                    
-                </fieldset>
-    
-                <input id="cta-reserve-ride" type="submit" value="Reserve My Ride">
-            </form>
-        </section>
-
-        <section class="rental-agreement-section">
-            <h4>Rental Services and Agreements</h4>
-            <div class="rental-agreement">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>A $50 security deposit is required to confirm reservations.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>A valid drivers license is required in hand at the time of rental.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Fuel charge is not included.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Unlimited mileage.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Liability insurance is included.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Damage insurance is available for purchase.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Rentals may be returned to either physical location</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </section>
-
-        <section id="cta-let-connect">
-            <button><a href="">Let's Connect</a></button>
-        </section>
 
      </main>
 

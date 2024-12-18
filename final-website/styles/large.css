@@ -1,0 +1,349 @@
+/* Media Query for Large Viewport */
+@media only screen and ( min-width: 992px) {
+    header {
+        padding: 1rem;
+    }
+
+    .logo > img {
+        width: 200px;
+        height: auto;
+    }
+
+    .logo-brand h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .logo-brand p {
+        font-size: .9rem;
+        color: var(--site-color-03);
+        margin: 0;
+    }
+
+    #menu-btn, 
+    #close-btn {
+        display: none;
+    }
+
+    #menu {
+        position: static;
+        width: auto;
+        background: transparent;
+        z-index: unset;
+    }
+
+    #menu ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu ul li {
+        margin-right: 2rem;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    #menu ul li:last-child {
+        margin-right: 0;
+    }
+
+    /* Main */
+    /*Home Page */
+    .hero-container h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .company-highlight-container,
+    .rentals-card,
+    .current-weather-card,
+    .location-card,
+    .thank-you-section,
+    .confirmation-section,
+    .company-location-card,
+    .location-master-card,
+    .form-section,
+    .rental-heading-message
+    {
+        padding: 0 5rem;
+    }
+
+    .banner-2 h3 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    .rentals-type {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        max-width: 100%;
+        gap: 2rem;
+    }
+
+    .current-weather-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .company-highlight-container h3, 
+    .rentals-card h3,
+    .current-weather-card h3,
+    .location-card h3,
+    .reservation-heading h3,
+    .thank-you-section,
+    .confirmation-section h3,
+    .form-section h3,
+    .company-location-card h3,
+    .rental-heading-message h3
+     {
+        font-size: 1.5rem;
+        padding: .75rem 0;
+    }
+
+    .company-highlight-container p  {
+        padding: 0;
+    }
+
+    .current-weather-card p {
+        font-size: 1rem;
+    }
+
+    .location-card-desc {
+        margin-left: -1.25rem;
+    }
+
+    .forecast-card h3 {
+        font-size: 1.75rem;
+    }
+
+    .forecast-table {
+        grid-template-columns: repeat(3, 150px);
+        gap: 1rem;
+        margin: 0 auto 2.5rem;
+        padding: 1rem;
+    }
+
+    .forecast-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .forecast-item h5 {
+        font-size: 1rem;
+    }
+
+    .forecast-item p {
+        font-size: 1rem;
+    }
+
+    .forecast-item .temp-display {
+        font-size: 1.5rem;
+    }
+
+    a button {
+        font-size: 1.25rem;
+    }
+
+    /* ---Rental Page --- */
+   .card-section {
+        margin-bottom: 2rem;
+    }
+
+    #card-section-rental-options {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        max-width: 100%;
+        gap: 2rem;
+        padding: 0 5rem;
+    }
+
+    /* ---Reservation Page --- */
+    .content-container-reservation {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(450px, 1fr));
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        column-gap: 2rem;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+
+    .reservation-heading {
+        grid-column: 1 / -1;
+    }
+
+    .reservation-section {
+        grid-column: 1 / 2;
+        margin-left: 5rem;
+    }
+
+    .rental-agreement-section {
+        grid-column: 2; 
+        align-self: start; /* Align to the start of its grid area */
+        padding: 2rem 1rem;
+        position: sticky;
+        top: 0;
+    }
+
+    #cta-let-connect {
+        grid-column: 1 / -1;
+        margin-top: 0;
+    }
+
+    #cta-let-connect button {
+        margin: 0;
+        font-size: 1.25rem;
+    }
+
+    .reservation-section h4 {
+        font-size: 1.5rem;
+    }
+
+    .reservation-form label {
+        display: block;
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .reservation-form legend {
+        font-size: 1.25rem;
+    }
+
+    .reservation-form div {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .reservation-form input[type="text"],
+    .reservation-form input[type="email"],
+    .reservation-form input[type="tel"],
+    .reservation-form input[type="date"],
+    .reservation-form input[type="time"],
+    .reservation-form select,
+    .reservation-form textarea {
+        padding: .9rem;
+        font-size: 1rem;
+    }
+
+    .reservation-form input[type="submit"] {
+        font-size: 1.5rem;
+    }
+
+    .reservation-form div::before{
+        font-size: 1rem;
+    }
+
+    /* Contact Page */
+    .location-card-main h4,
+    .location-card-alt h4 {
+        font-size: 1.25rem;
+    }
+
+    .location-card-main p,
+    .location-card-alt p {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .location-card-main iframe,
+    .location-card-alt iframe {
+    width: 300px;
+    height: auto;
+    margin-top: .75rem;
+}
+
+    .location-master-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3rem;
+        column-gap: 10rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* Thank you Page */
+    .thank-you-section {
+        padding: 0 5rem;
+    }
+
+    .thank-you-section > p, 
+    .confirmation-section > p,
+    .company-location-card p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    /* ---Confirmation Page--- */
+    #clip-path-banner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0; 
+        align-items: center; /* Vertically center the images */
+      }
+
+
+
+
+
+    /* Footer */
+    footer p {
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
+
+    .footer-contact-info h4,
+    .footer-social-media-channels h4 {
+    font-size: 1.1rem;
+}
+
+    .footer-top-container {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 1.5fr;
+        align-content: center;
+        justify-content: center;
+        grid-template-areas: "footer-contact-info footer-about-us footer-social-media-channels";
+        padding: 0 5rem;
+    }
+
+    .footer-contact-info {
+        grid-column: 1 / 2;
+        justify-self: start;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .footer-about-us {
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        justify-self: center;
+    }
+
+    .footer-about-us img {
+        width: 250px;
+        height: auto;
+    }
+
+    .footer-social-media-channels {
+        grid-column: 3 / -1;
+        align-self: start;
+        margin-top: 1rem;
+    }
+
+    .footer-social-media-channels .sm-icons  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    
+
+}
