@@ -75,11 +75,19 @@
         padding: 1rem 0;
     }
 
+    .rentals-type img {
+        width: 200px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        object-fit: cover; /* Crop the image to fit the dimensions */
+        justify-self: center; /* Center the image horizontally */
+        align-self: center; /* Center the image vertically */
+    }
+
     .rentals-type {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        max-width: 100%;
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Keep grid items from stretching */
+        gap: 2rem; 
+        justify-content: center; /* Center the entire grid */
     }
 
     .current-weather-card {
@@ -115,6 +123,10 @@
 
     .location-card-desc {
         margin-left: -1.25rem;
+    }
+
+    .location-card-desc iframe {
+        max-width: 600px;
     }
 
     .forecast-card h3 {
