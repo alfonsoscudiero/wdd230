@@ -120,6 +120,24 @@
         font-size: 1.2rem;
     }
 
+    /* ---Rental Page --- */
+    .rental-option {
+        max-width: 250px;
+        height: 280px;
+        margin: 0;
+    }
+
+    #card-section-rental-options {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        width: 95%;
+        gap: 1rem;
+        place-items: center;        
+        /* padding: 0 2rem; */
+    }
+
+
+
     /* Contact Page */
     .location-master-card {
         display: flex;

@@ -82,12 +82,12 @@
         justify-self: center; /* Center the image horizontally */
         align-self: center; /* Center the image vertically */
     }
-
     .rentals-type {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Keep grid items from stretching */
-        gap: 2rem; 
-        justify-content: center; /* Center the entire grid */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 100%;
+        gap: 1rem;
+        justify-content: center;
     }
 
     .current-weather-card {
@@ -165,12 +165,20 @@
         margin-bottom: 2rem;
     }
 
+    .rental-option {
+        width: 275px;
+        height: 300px;
+        margin: 0;
+
+    }
+
     #card-section-rental-options {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        max-width: 100%;
+        width: 95%;
         gap: 2rem;
-        padding: 0 5rem;
+        place-items: center;
+        /* padding: 0 2rem; */
     }
 
     /* ---Reservation Page --- */
