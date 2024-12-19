@@ -816,7 +816,7 @@ reservation-heading
     justify-content: center;
     background: var(--site-color-05);
     padding: 0 1.5rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: 100%;
 }
 
@@ -850,11 +850,6 @@ reservation-heading
     padding: 1rem 0;
 }
 
-.location-card-main h4,
-.location-card-alt h4{
-    margin-bottom: .5rem;
-}
-
 .location-card-main iframe,
 .location-card-alt iframe {
     width: 100%;
@@ -869,10 +864,9 @@ reservation-heading
     justify-content: center;
     padding: 0 1.5rem;
     margin: 1rem 0 3rem;
+    min-width: 400px;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 3rem;
+    max-width: 800px;
 }
 
 .form-section h3 {
@@ -882,7 +876,7 @@ reservation-heading
 
 .contact-form {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     border: 1px solid var(--site-color-01);
     border-radius: .25rem;
     padding: .5rem 2%;
@@ -901,7 +895,7 @@ reservation-heading
     padding: 0.75em;
     font-size: .9rem;
     appearance: none;
-    max-width: 600px;
+    max-width: 800px;
     border-radius: .25rem;
     margin-top: .25rem;
 }
@@ -916,7 +910,7 @@ reservation-heading
     border-radius: .25rem;
     height: 2.75em;
     padding: .75rem;
-    max-width: 600px;
+    max-width: 800px;
     font-family: var(--navigation-font-family);
     color: var(--site-color-06);
     font-size: 1.1rem;

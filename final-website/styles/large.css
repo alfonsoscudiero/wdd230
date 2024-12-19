@@ -260,33 +260,47 @@
     }
 
     /* Contact Page */
-    .location-card-main h4,
+    /* .location-card-main h4,
     .location-card-alt h4 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .location-card-main p,
     .location-card-alt p {
         font-size: 1.2rem;
         line-height: 1.2;
-    }
+    } */
 
     .location-card-main iframe,
     .location-card-alt iframe {
-    width: 300px;
-    height: auto;
-    margin-top: .75rem;
+    min-width: 300px;
+    width: 350px;
+    aspect-ratio: 16 / 9;
+    margin-top: .2rem;
 }
+
+.location-form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* width: 100%; */
+}
+
 
     .location-master-card {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 0 3rem;
-        column-gap: 10rem;
         width: 100%;
         margin-bottom: 2rem;
+    }
+
+    .form-section {
+        padding: 0 3rem;
     }
 
     /* Thank you Page */
