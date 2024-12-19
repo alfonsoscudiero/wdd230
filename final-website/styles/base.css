@@ -323,6 +323,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: minmax(250px,300px);
     row-gap: 1.5rem;
     margin: 1rem;
 }
