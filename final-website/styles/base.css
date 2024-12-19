@@ -42,6 +42,7 @@ ul {
     list-style-type: none;
 }
 
+
 button {
     font-family: var(--navigation-font-family);
 }
@@ -102,6 +103,25 @@ header {
     background-color: var(--site-color-02);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+/* ----- Button Styling---- */
+.button {
+    display: inline-block;
+    padding: 1rem;
+    background: var(--site-color-05);
+    font-family: var(--navigation-font-family);
+    color: var(--site-color-06);
+    text-decoration: none;
+    border-radius: .25rem;
+
+    /* font-weight: bold; */
+}
+
+.button:hover {
+    background: var(--site-color-01);
+    color: var(--site-color-03);
+}
+
 
 /* -----Navigation---- */
 #menu {
