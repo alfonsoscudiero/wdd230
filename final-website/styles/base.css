@@ -671,45 +671,6 @@ reservation-heading
     margin: 2rem;
 }
 
-/* #cta-rentals button,
-#cta-let-connect button {
-    border: none;
-    background: var(--site-color-05);
-    color: var(--site-color-06);
-    font-family: var(--navigation-font-family);
-    border-radius: .25rem;
-    padding: .75rem;
-    margin: 2rem 0 0;
-    transition: all ease-in-out .2s;
-}
-
-#cta-rentals button:hover,
-#cta-let-connect button:hover {
-    background: var(--site-color-01);
-    color: var(--site-color-03);
-}
-
-#cta-rentals button a,
-#cta-let-connect a {
-    color: inherit;
-}
-
-a button {
-    border: none;
-    background: var(--site-color-05);
-    color: var(--site-color-06);
-    font-family: var(--navigation-font-family);
-    border-radius: .25rem;
-    padding: .75rem;
-    margin: 2rem 0;
-    transition: all ease-in-out .2s;
-}
-
-a button:hover {
-    background: var(--site-color-01);
-    color: var(--site-color-03);
-} */
-
 /* -----Reservation Page Styling--- */
     /* -----Reservation Form--- */
 .reservation-section {
