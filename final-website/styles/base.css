@@ -668,9 +668,10 @@ reservation-heading
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 2rem;
 }
 
-#cta-rentals button,
+/* #cta-rentals button,
 #cta-let-connect button {
     border: none;
     background: var(--site-color-05);
@@ -707,7 +708,7 @@ a button {
 a button:hover {
     background: var(--site-color-01);
     color: var(--site-color-03);
-}
+} */
 
 /* -----Reservation Page Styling--- */
     /* -----Reservation Form--- */
