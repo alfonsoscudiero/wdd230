@@ -259,18 +259,6 @@
         font-size: 1rem;
     }
 
-    /* Contact Page */
-    /* .location-card-main h4,
-    .location-card-alt h4 {
-        font-size: 1.1rem;
-    }
-
-    .location-card-main p,
-    .location-card-alt p {
-        font-size: 1.2rem;
-        line-height: 1.2;
-    } */
-
     .location-card-main iframe,
     .location-card-alt iframe {
     min-width: 300px;
@@ -287,7 +275,6 @@
     gap: 2rem;
     /* width: 100%; */
 }
-
 
     .location-master-card {
         display: flex;
@@ -322,10 +309,6 @@
         gap: 0; 
         align-items: center; /* Vertically center the images */
       }
-
-
-
-
 
     /* Footer */
     footer p {
@@ -377,7 +360,5 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
-    
 
 }
